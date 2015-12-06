@@ -2,8 +2,9 @@
   background-image: url("images/launchScreen.png");
   background-repeat: no-repeat;
   background-size: contain;
-  height: 100%;
-  width: 100%;
+  background-position: center center;
+  height: 150%;
+  width: 150%;
   position: fixed;
   top: 0;
   bottom: 0;
