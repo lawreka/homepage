@@ -12,13 +12,14 @@
 }
 nav{
   background-color: rgba(0, 0, 0, 0.4);
-  height: 30%;
+  height: 20%;
+  min-height: none;
   border-bottom: solid 1px rgb(100, 100, 100);
-  font-size: large;
 }
 .icon{
-  height: 200px;
-  width: 200px;
+  float: none;
+  height: 400px;
+  width: 400px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -30,15 +31,19 @@ a{
   float: right;
   margin: 50px;
   text-decoration: none;
+  font-size: large;
 }
 .title{
   text-align: center;
   font-family: sans-serif;
+  font-size: large;
+  color: white;
+  text-shadow: none;
 }
 .maintext{
   background-color: rgba(0, 0, 0, 0.4);
   width: 70%;
-  padding: 100px;
+  padding: 50px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
