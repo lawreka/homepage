@@ -17,33 +17,33 @@ nav{
   font-size: large;
 }
 .icon{
-  margin: 10px;
-  height: 100px;
-  width: 100px;
-  text-align: center;
+  height: 200px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 a{
   color: white;
 }
 .navlinks{
-  margin: 20px;
+  position: relative;
+  float: right;
+  margin: 50px;
   text-decoration: none;
 }
 .title{
   text-align: center;
-  font-size: 50px;
-  color: red;
-  text-shadow: 0px 5px rgba(0, 0, 0, 0.7);
+  font-family: sans-serif;
 }
 .maintext{
   background-color: rgba(0, 0, 0, 0.4);
   width: 70%;
-  padding: 10px;
+  padding: 100px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   border-radius: 5px;
-  font-size: large;
+  font-size: x-large;
 }
 footer{
   font-size: x-large;
