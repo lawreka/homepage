@@ -37,6 +37,10 @@ main{
 .appstore{
   width: 80%;
 }
+a{
+  color: white;
+}
 .back{
   font-size: 40px;
+  margin: 100px;
 }
