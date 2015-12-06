@@ -22,7 +22,7 @@ main{
   border-radius: 10px;
 }
 .logo{
-  width: 50%;
+  width: 80%;
   margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
@@ -30,11 +30,5 @@ main{
 .icon{
   width: 200px;
   height: 200px;
-  border-radius: 10px;
-}
-.footer{
-  width: 50%
-  margin-top: 100px;
-  margin-left: auto;
-  margin-right: auto;
+  border-radius: 50px;
 }
