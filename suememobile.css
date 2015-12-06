@@ -21,8 +21,15 @@ main{
   margin-right: auto;
   border-radius: 10px;
 }
+.icon{
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
 .footer{
-  max-width: 60%;
   margin-left: auto;
   margin-right: auto;
   position: relative;
