@@ -20,7 +20,7 @@ main{
   margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 10px;
+  border-radius: 30px;
 }
 .logo{
   width: 100%;
@@ -32,7 +32,7 @@ main{
 .icon{
   width: 200px;
   height: 200px;
-  border-radius: 40px;
+  border-radius: 30px;
 }
 .appstore{
   margin-top: 100px;
