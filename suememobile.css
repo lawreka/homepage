@@ -22,7 +22,7 @@ main{
   border-radius: 10px;
 }
 .logo{
-  width: 60%;
+  width: 50%;
   margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
@@ -32,6 +32,7 @@ main{
   height: 200px;
 }
 .footer{
+  width: 50%
   margin-left: auto;
   margin-right: auto;
   position: relative;
