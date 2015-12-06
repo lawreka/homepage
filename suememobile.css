@@ -1,4 +1,3 @@
-@media only screen and (max-device-width: 480){
   main{
   background-image: linear-gradient(180deg, red, black);
   position: fixed;
@@ -49,5 +48,4 @@ footer{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-}
 }
