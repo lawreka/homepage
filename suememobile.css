@@ -1,10 +1,5 @@
   main{
-  background-image: "launchScreen.png"
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  background-image: url("launchScreen.png");
 }
 nav{
   text-align: center;
