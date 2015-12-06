@@ -9,6 +9,7 @@ main{
   padding: 0;
   color: white;
   font-family: sans-serif;
+  overflow: scroll;
 }
 .maintext{
   background-color: rgba(0, 0, 0, 0.4);
