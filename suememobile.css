@@ -30,11 +30,9 @@ main{
 .icon{
   width: 20%
   border-radius: 40px;
-  position: relative;
-  float: left;
 }
 .appstore{
   width: 80%;
-  position: relative;
-  float: right;
+  position: fixed;
+  bottom: 50px;
 }
