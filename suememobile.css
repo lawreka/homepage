@@ -34,6 +34,7 @@ main{
   border-radius: 40px;
 }
 .appstore{
+  margin-top: 100px;
   width: 80%;
 }
 a{
@@ -45,4 +46,5 @@ a{
   margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
+  font-size: 40px;
 }
