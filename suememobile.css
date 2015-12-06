@@ -6,10 +6,10 @@
   height: 100%;
   width: 100%;
   position: fixed;
-  top: -10;
-  bottom: -10;
-  left: -10;
-  right: -10;
+  top: -100;
+  bottom: -100;
+  left: -100;
+  right: -100;
 }
 nav{
   text-align: center;
