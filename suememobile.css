@@ -30,5 +30,8 @@ main{
 .icon{
   width: 200px;
   height: 200px;
-  border-radius: 50px;
+  border-radius: 40px;
+}
+.appstore{
+  width: 80%;
 }
