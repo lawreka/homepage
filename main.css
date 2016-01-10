@@ -1,5 +1,5 @@
 main{
-  background-image: linear-gradient(180deg, white, grey);
+  background-image: linear-gradient(180deg, white, black);
   position: fixed;
   top: 0;
   bottom: 0;
@@ -7,20 +7,44 @@ main{
   right: 0;
   margin: 0;
   padding: 0;
-  color: white;
-  font-family: sans-serif;
+  overflow-y: scroll;
 }
-nav{
-  background-color: rgba(0, 0, 0, 0.4);
-  height: 10%;
-  min-height: 60px;
-  border-bottom: solid 1px rgb(100, 100, 100);
+div{
+  box-shadow: 0px 20px 5px black;
 }
 .navlinks{
-  float: right;
-  margin: 20px;
-  text-decoration: none;
-}
-a{
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
   color: white;
+  font-family: sans-serif;
+  font-weight: lighter;
+
+}
+.navlinks a{
+  color: white;
+  text-decoration: none;
+  font-size: 3em;
+}
+#about{
+  height: 90%;
+  background-image: linear-gradient(180deg, black, grey);
+}
+#gallery{
+  height: 90%;
+  background-image: linear-gradient(180deg, grey, red);
+}
+#sueme{
+  height: 90%;
+  background-image: linear-gradient(180deg, red, black);
+}
+#alm{
+  height: 90%;
+  background-image: linear-gradient(180deg, black, grey);
+}
+#top{
+  height: 70%;
+  background-image: linear-gradient(180deg, grey, white);
 }
