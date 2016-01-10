@@ -59,7 +59,7 @@ main{
   margin-top: 50px;
 }
 
-@media (max-width: 600px){
+@media (max-width: 1000px){
   main{
     background-image: linear-gradient(180deg, black, red);
   }
