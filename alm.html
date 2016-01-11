@@ -10,14 +10,18 @@
   </head>
   <body>
     <main>
-      <div>Welcome to ANTISOCIAL LAME MACHINE<div>
-      <div>please log in to facebook to see how many events you didn't attend for the lifetime of your facebook profile</div>
+      <div id="welcome">Welcome to ANTISOCIAL LAME MACHINE</div>
+      <div id="please">please log in to facebook to see how many events you didn't attend for the lifetime of your facebook profile</div>
       <br>
-      <button id="login"> Log in to Facebook </button>
-      <br>
-      <br>
+      <div id="buttons">
+        <button id="login"> Log in to Facebook </button>
+        <br>
+        <br>
       <!-- <button id="events"> Get my Events </button> -->
-      <div id="main" class="navlinks">
+      </div>
+      <div id="eventlist">
+      </div>
+      <div id="home" class="navlinks">
         <a href="index.html"> MAIN </a>
       </div>
     </main>
@@ -43,7 +47,7 @@
                 }
             }, { scope: "user_events"});
             $("#login").remove();
-            $("<button>").attr("id", "events").text("Get my events").appendTo("body").on("click", lameMachine);
+            $("<button>").attr("id", "events").text("Get my events").appendTo("#buttons").on("click", lameMachine);
           });
 
 
@@ -58,13 +62,13 @@
             function (response){
               if (response && !response.error){
                 console.log(response);
-                var eventList = $("<ul>").appendTo("body");
+                var eventList = $("<ul>").appendTo("#eventlist");
                 var eventArr = response["data"];
                 for (var i = 0; i < eventArr.length; i++){
                   var eventNam = response["data"][i]["name"];
                   var nuvent = $("<li>").text(eventNam).appendTo(eventList);
                 }
-                var antisoc = $("<div>").appendTo("body").text("you were only invited to " + eventArr.length + " events in your profile's lifetime, how sad");
+                var antisoc = $("<div>").appendTo("#eventlist").text("you were only invited to " + eventArr.length + " events in your profile's lifetime, how sad");
               }
               else{
                 console.log("Events not found");
