@@ -9,9 +9,6 @@ main{
   padding: 0;
   overflow-y: scroll;
 }
-div{
-  box-shadow: 0px 20px 5px black;
-}
 .navlinks{
   box-sizing: border-box;
   text-align: center;
@@ -47,4 +44,12 @@ div{
 #top{
   height: 70%;
   background-image: linear-gradient(180deg, grey, white);
+}
+@media (max-width: 1000px){
+  .navlinks{
+    padding-top: 100px;
+  }
+  .navlinks a{
+    font-size: 5em;
+  }
 }
