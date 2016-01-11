@@ -52,4 +52,10 @@ main{
   .navlinks a{
     font-size: 5em;
   }
+  #about{
+    height: 300px;
+  }
+  #gallery{
+    height: 300px;
+  }
 }
