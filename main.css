@@ -54,17 +54,25 @@ main{
   }
   #about{
     height: 300px;
+    background-image: none;
+    background-color: black;
   }
   #gallery{
     height: 300px;
+    background-image: none;
+    background-color: grey;
   }
   #sueme{
     height: 300px;
+    background-image: none;
+    background-color: red;
   }
   #alm{
     height: 300px;
+    background-image: none;
+    background-color: grey;
   }
   #top{
-    height: 100px;
+    display: none;
   }
 }
