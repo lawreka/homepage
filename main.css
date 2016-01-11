@@ -46,4 +46,9 @@ main{
   background-image: linear-gradient(180deg, grey, white);
 }
 @media (max-width: 1000px){
+  .navlinks{
+    box-sizing: border-box;
+    font-size: 5em;
+    padding-top: 400px;
+  }
 }
