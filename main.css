@@ -48,7 +48,7 @@ main{
 @media (max-width: 1000px){
   .navlinks{
     box-sizing: border-box;
-    font-size: 4em;
     padding-top: 400px;
+    font-size: large;
   }
 }
