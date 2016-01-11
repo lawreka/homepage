@@ -16,8 +16,30 @@ body{
   margin-right: auto;
   text-align: center;
   color: white;
+  font-family: sans-serif;
+  font-weight: lighter;
 }
-
+#welcome{
+  font-size: 3em;
+  margin: 20px;
+  padding: 20px;
+}
+#please{
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.5em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+button{
+  color: black;
+  background-color: lightgrey;
+  padding: 4px 12px 6px;
+  border: 4px outset buttonface;
+  font-size: 1.2em;
+  border-radius: 5px;
+}
 ul{
   list-style: none;
 }
