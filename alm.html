@@ -68,7 +68,8 @@
                   var eventNam = response["data"][i]["name"];
                   var nuvent = $("<li>").text(eventNam).appendTo(eventList);
                 }
-                var antisoc = $("<div>").appendTo("#eventlist").text("you were only invited to " + eventArr.length + " events in your profile's lifetime, how sad");
+                $("#events").remove();
+                var antisoc = $("<div>").appendTo("#eventlist").addClass("sad").text("you were only invited to " + eventArr.length + " events in your profile's lifetime, how sad");
               }
               else{
                 console.log("Events not found");
