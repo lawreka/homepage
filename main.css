@@ -46,33 +46,4 @@ main{
   background-image: linear-gradient(180deg, grey, white);
 }
 @media (max-width: 1000px){
-  .navlinks{
-    padding-top: 100px;
-  }
-  .navlinks a{
-    font-size: 5em;
-  }
-  #about{
-    height: 300px;
-    background-image: none;
-    background-color: black;
-  }
-  #gallery{
-    height: 300px;
-    background-image: none;
-    background-color: grey;
-  }
-  #sueme{
-    height: 300px;
-    background-image: none;
-    background-color: red;
-  }
-  #alm{
-    height: 300px;
-    background-image: none;
-    background-color: grey;
-  }
-  #top{
-    display: none;
-  }
 }
