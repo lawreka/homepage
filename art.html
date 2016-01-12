@@ -14,46 +14,72 @@
     <!-- bootstrap js -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
+    <link rel="stylesheet" type="text/css" href="art.css">
 
+    <script>
+      function writeCaption(t, s, m, y){
+        $("#title").text(t);
+        $("#size").text(s);
+        $("#medium").text(m);
+        $("#year").text(y);
+      }
+    </script>
   </head>
   <body>
+    <main>
+      <div id="portfoliocontainer">
+        <div id="portfolio" class="carousel" data-interval="false">
+        <!-- no carousel indicators because they look dumb  -->
+        <!-- <ol class="carousel-indicators">
+          <li data-target="#portfolio" data-slide-to="0" class="active"></li>
+          <li data-target="#portfolio" data-slide-to="1"></li>
+          <li data-target="#portfolio" data-slide-to="2">
+        </ol> -->
 
-    <div id="portfolio" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#portfolio" data-slide-to="0" class="active">
-        </li>
-        <li data-target="#portfolio" data-slide-to="1">
-        </li>
-        <li data-target="#portfolio" data-slide-to="2">
-      </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="images/moon.jpg" alt="Moon">
+              <script>
+                writeCaption("Moon", "30in", "Oil", "2015");
+              </script>
+            </div>
 
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img src="images/moon.jpg" alt="Moon">
-        </div>
+            <div class="item">
+              <img src="images/moth.jpg" alt="Moth">
+            </div>
 
-        <div class="item">
-          <img src="images/moth.jpg" alt="Moth">
-        </div>
+            <div class="item">
+              <img src="images/fly.jpg" alt="Fly">
+            </div>
 
-        <div class="item">
-          <img src="images/fly.jpg" alt="Fly">
+          </div>
         </div>
       </div>
 
-      <a class="left carousel-control" href="#portfolio" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true">
-        </span>
-        <span class="sr-only"> Previous </span>
-      </a>
-      <a class="right carousel-control" href="#portfolio" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true">
-        </span>
-        <span class="sr-only"> Next </span>
-      </a>
-    </div>
+
+        <a class="left carousel-control" href="#portfolio" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true">
+          </span>
+          <span class="sr-only"> Previous </span>
+        </a>
+        <a class="right carousel-control" href="#portfolio" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true">
+          </span>
+          <span class="sr-only"> Next </span>
+        </a>
+
+        <div id="caption">
+          <p id="title">Title</p>
+          <p id="size">Size</p>
+          <p id="medium">Medium</p>
+          <p id="year">Year</p>
+        </div>
 
 
+        <div id="home" class="navlinks">
+          <a href="index.html"> MAIN </a>
+        </div>
+    </main>
 
   </body>
 </html>
