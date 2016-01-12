@@ -14,6 +14,25 @@ main{
   width: 30%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50%;
-  color: black;
+  margin-top: 30%;
+  font-family: sans-serif;
+  font-weight: lighter;
+  color: grey;
+}
+.navlinks{
+  box-sizing: border-box;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-top: 200px;
+  /*padding-top: 200px;*/
+  color: white;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+.navlinks a{
+  color: white;
+  text-decoration: none;
+  font-size: 3em;
 }
