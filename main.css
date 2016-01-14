@@ -27,7 +27,7 @@ main{
 }
 #about{
   height: 90%;
-  background-image: linear-gradient(180deg, black, grey);
+  background-image: linear-gradient(180deg, grey, white);
 }
 #gallery{
   height: 90%;
@@ -43,7 +43,7 @@ main{
 }
 #top{
   height: 70%;
-  background-image: linear-gradient(180deg, grey, white);
+  background-image: linear-gradient(180deg, white, white);
 }
 @media (max-width: 1000px){
   .navlinks{
