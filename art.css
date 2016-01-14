@@ -1,5 +1,5 @@
 main{
-  background-image: linear-gradient(180deg, rgb(160, 138, 118), white);
+  background-image: linear-gradient(180deg, white, black);
   position: fixed;
   top: 0;
   bottom: 0;
@@ -9,30 +9,21 @@ main{
   padding: 0;
   overflow-y: scroll;
 }
-#portfolio{
-  height: 80%;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+#oil{
+  height: 50%;
+  background-image: linear-gradient(180deg, pink, pink);
 }
-.item{
-  height: 80%;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+#other{
+  height: 50%;
+  background-image: linear-gradient(180deg, pink, grey);
 }
-.carousel-control.left{
-  background-image: none;
+#art{
+  height: 50%;
+  background-image: linear-gradient(180deg, grey, red);
 }
-.carousel-control.right{
-  background-image: none;
-}
-#caption{
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2%;
-  font-size: 2em;
+#home{
+  height: 50%;
+  background-image: linear-gradient(180deg, grey, black);
 }
 .navlinks{
   box-sizing: border-box;
@@ -40,14 +31,15 @@ main{
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0px;
-  margin-top: 200px;
-  /*padding-top: 200px;*/
+  /*margin-top: 200px;*/
+  padding-top: 100px;
   color: white;
   font-family: sans-serif;
   font-weight: lighter;
+  opacity: 0.5;
 }
 .navlinks a{
-  color: black;
+  color: white;
   text-decoration: none;
   font-size: 3em;
 }

@@ -1,0 +1,83 @@
+main{
+  background-image: linear-gradient(180deg, white, white);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+}
+#frame{
+  text-align: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.image{
+  width:auto;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+
+}
+#caption{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  font-size: 2em;
+}
+.butt{
+  height: 100%;
+  width: 10%;
+  color: white;
+  margin: 0px;
+}
+.actL{
+  background-image: linear-gradient(90deg, black, white);
+  opacity: 0.3;
+}
+.actR{
+  background-image: linear-gradient(90deg, white, black);
+  opacity: 0.3;
+}
+#left{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  text-align: left;
+}
+#right{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  text-align: right;
+}
+#art{
+  height: 60%;
+  background-image: linear-gradient(180deg, white, grey);
+}
+#home{
+  height: 60%;
+  background-image: linear-gradient(180deg, grey, black);
+}
+.navlinks{
+  box-sizing: border-box;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  /*margin-top: 200px;*/
+  padding-top: 200px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: lighter;
+  opacity: 0.5;
+}
+.navlinks a{
+  color: white;
+  text-decoration: none;
+  font-size: 3em;
+}
