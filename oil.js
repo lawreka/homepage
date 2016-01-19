@@ -380,8 +380,6 @@ $("#right").on("mouseleave", function(){
   $("#right").toggleClass("actR");
 });
 $("#right").on("click", nextPaint);
-$("#frame").on("swiperight", prevPaint);
-$("#frame").on("swipeleft", nextPaint);
 
 var paintIndex = 0;
 displayPainting(portfolio[paintIndex]);
