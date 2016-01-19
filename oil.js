@@ -365,8 +365,7 @@ function displayPainting(p, i, t, s, m, y){
   $("#year").text(p.y);
 };
 
-$("#frame").on("swipeleft", prevPaint);
-$("#frame").on("swiperight", nextPaint);
+
 $("#left").on("mouseenter", function(){
   $("#left").toggleClass("actL");
 });
@@ -381,6 +380,8 @@ $("#right").on("mouseleave", function(){
   $("#right").toggleClass("actR");
 });
 $("#right").on("click", nextPaint);
+$("#frame").swipeleft(prevPaint);
+$("#frame").swiperight(nextPaint);
 
 var paintIndex = 0;
 displayPainting(portfolio[paintIndex]);
