@@ -365,6 +365,8 @@ function displayPainting(p, i, t, s, m, y){
   $("#year").text(p.y);
 };
 
+$("#frame").on("swipeleft", prevPaint);
+$("#frame").on("swiperight", nextPaint);
 $("#left").on("mouseenter", function(){
   $("#left").toggleClass("actL");
 });
