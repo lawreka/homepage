@@ -243,15 +243,13 @@ p29 = {
   y: "2015"
 };
 
-
 p30 = {
   i: "images/lily.jpg",
   t: "Lily",
   s: "12 in x 8 in",
   m: "Oil on canvas paper",
-  y: "2015"
+  y: "2014"
 };
-
 
 p31 = {
   i: "images/prayerhands.jpg",
@@ -261,7 +259,6 @@ p31 = {
   y: "2013"
 };
 
-
 p32 = {
   i: "images/prayerhands2.jpg",
   t: "Prayer Hands 2",
@@ -270,7 +267,6 @@ p32 = {
   y: "2013"
 };
 
-
 p33 = {
   i: "images/seurat.jpg",
   t: "A Bit of Seurat",
@@ -278,7 +274,6 @@ p33 = {
   m: "Oil on paper",
   y: "2011"
 };
-
 
 p34 = {
   i: "images/teal.jpg",
@@ -289,7 +284,78 @@ p34 = {
 };
 
 
-var portfolio = [painting, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17, p18, p19, p20, p21, p22, p23, p24, p25, p26, p27, p28, p29, p30, p31, p32, p33, p34];
+var portfolio = [
+  //moon (2012)
+  painting,
+  //yizhi (2013)
+  p25,
+  //moth (2015)
+  p15,
+  //trophy (2015)
+  p23,
+  //body (2011)
+  p6,
+  //girls (2012)
+  p12,
+  //fly (2014)
+  p2,
+  //seahorse (2015)
+  p1,
+  //toaster (2014)
+  p21,
+  //eagle (2015)
+  p11,
+  //si (2014)
+  p16,
+  //daisy (2014)
+  p8,
+  //bottle (2013)
+  p27,
+  //happy stream (2014)
+  p20,
+  //prayerhands1 (2013)
+  p31,
+  //prayerhands2 (2013)
+  p32,
+  //sunset (2014)
+  p7,
+  //donut (2015)
+  p9,
+  //darkness (2015)
+  p28,
+  //jewel in (2013)
+  p14,
+  //blue hand (2015)
+  p13,
+  //lily (2014)
+  p30,
+  //dragon (2014)
+  p10,
+  //snowy trees (2014)
+  p18,
+  //volcano (2014)
+  p24,
+  //still life (2014)
+  p19,
+  //snail (2014)
+  p17,
+  //trees (2014)
+  p22,
+  //bigsur (2011)
+  p26,
+  //landscape (2015)
+  p29,
+  //teal (2013)
+  p34,
+  //seurat (2011)
+  p33,
+  //abstract (2014)
+  p3,
+  //boats (2011)
+  p5,
+  //american spirit (2011)
+  p4];
+
 
 function displayPainting(p, i, t, s, m, y){
   $("<img>").attr("src", p.i).addClass("image").appendTo("#frame");
