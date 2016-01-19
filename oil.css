@@ -11,8 +11,8 @@ main{
 }
 #frame{
   text-align: center;
-  width: 80%;
-  height: 100%;
+  width: 90%;
+  height: 95%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -21,14 +21,16 @@ main{
   height: auto;
   max-height: 100%;
   max-width: 100%;
-
 }
 #caption{
   text-align: center;
+  margin: 0px;
+  padding: 0px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2%;
   font-size: 2em;
+  color: black;
+  text-shadow: 1px 1px 5px grey;
 }
 .butt{
   height: 100%;
