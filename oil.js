@@ -380,6 +380,13 @@ $("#right").on("mouseleave", function(){
   $("#right").toggleClass("actR");
 });
 $("#right").on("click", nextPaint);
+$("#frame").on("swipeleft", function(){
+  prevPaint();
+});
+$("#frame").on("swiperight", function(){
+  nextPaint();
+});
+
 
 var paintIndex = 0;
 displayPainting(portfolio[paintIndex]);
@@ -418,14 +425,3 @@ function displayPainting(p, i, t, s, m, y){
   $("#medium").text(p.m);
   $("#year").text(p.y);
 };
-
-$(function(){
-  $("#frame").on("swipeleft", swipeLeftHandler);
-  function swipeLeftHandler(event){
-    prevPaint();
-  }
-  $("#frame").on("swiperight", swipeRightHandler);
-  function swipeRightHandler(event){
-    nextPaint();
-  }
-});
