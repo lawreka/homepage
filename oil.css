@@ -98,6 +98,7 @@ main{
 @media (max-width: 1000px){
   #frame{
     width: 100%;
+    height: auto;
   }
   .butt{
     width: 0%;
