@@ -59,8 +59,10 @@ main{
   margin-top: 50px;
 }
 
-@media (max-width: 1000px){
-  /*main{
-    background-image: linear-gradient(180deg, black, red);
-  }*/
+@media (max-width: 800px){
+  .navlinks{
+      box-sizing: border-box;
+      /*padding-top: 400px;*/
+      font-size: 20px;
+    }
 }

@@ -11,27 +11,31 @@ main{
 }
 #frame{
   text-align: center;
-  width: 80%;
+  width: 90%;
+  height: 95%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 10px;
 }
 .image{
   width:auto;
   height: auto;
   max-height: 100%;
   max-width: 100%;
-
 }
 #caption{
   text-align: center;
+  margin: 0px;
+  padding: 0px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2%;
   font-size: 2em;
+  color: black;
+  text-shadow: 1px 1px 5px grey;
 }
 .butt{
   height: 100%;
-  width: 10%;
+  width: 20%;
   color: white;
   margin: 0px;
 }
@@ -91,4 +95,25 @@ main{
   color: white;
   text-decoration: none;
   font-size: 3em;
+}
+@media (max-width: 800px){
+  #frame{
+    margin-top: 0px;
+    width: 100%;
+    height: auto;
+  }
+  .butt{
+    width: 50%;
+  }
+  .actL{
+    background-image: none;
+  }
+  .actR{
+    background-image: none;
+  }
+  .navlinks{
+    box-sizing: border-box;
+    /*padding-top: 400px;*/
+    font-size: 20px;
+  }
 }
