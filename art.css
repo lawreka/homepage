@@ -11,19 +11,15 @@ main{
 }
 #oil{
   height: 50%;
-  background-image: linear-gradient(180deg, pink, pink);
+  background-image: linear-gradient(180deg, pink, violet);
 }
 #other{
   height: 50%;
-  background-image: linear-gradient(180deg, pink, grey);
-}
-#art{
-  height: 50%;
-  background-image: linear-gradient(180deg, grey, red);
+  background-image: linear-gradient(180deg, violet, purple);
 }
 #home{
   height: 50%;
-  background-image: linear-gradient(180deg, grey, black);
+  background-image: linear-gradient(180deg, purple, black);
 }
 .navlinks{
   box-sizing: border-box;
