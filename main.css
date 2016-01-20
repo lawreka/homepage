@@ -26,11 +26,11 @@ main{
 }
 #about{
   height: 90%;
-  background-image: linear-gradient(180deg, grey, turquoise);
+  background-image: linear-gradient(180deg, grey, cyan);
 }
 #gallery{
   height: 90%;
-  background-image: linear-gradient(180deg, pink, red);
+  background-image: linear-gradient(180deg, orchid, red);
 }
 #sueme{
   height: 90%;
@@ -42,7 +42,7 @@ main{
 }
 #top{
   height: 70%;
-  background-image: linear-gradient(180deg, turquoise, blue);
+  background-image: linear-gradient(180deg, cyan, blue);
 }
 @media (max-width: 800px){
   .navlinks{
