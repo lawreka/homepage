@@ -51,14 +51,12 @@ main{
 }
 #left{
   position: absolute;
-  padding-top: 50%;
   top: 0px;
   left: 0px;
   text-align: left;
 }
 #right{
   position: absolute;
-  padding-top: 50%;
   top: 0px;
   right: 0px;
   text-align: right;
@@ -108,12 +106,15 @@ main{
   }
   .butt{
     width: 50%;
+    color: black;
   }
   .actL{
     background-image: none;
+    padding-top: 95%;
   }
   .actR{
     background-image: none;
+    padding-top: 95%;
   }
   .navlinks{
     box-sizing: border-box;
