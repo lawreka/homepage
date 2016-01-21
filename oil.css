@@ -108,13 +108,17 @@ main{
     width: 50%;
     color: black;
   }
+  #left{
+    padding-top: 95%;
+  }
+  #right{
+    padding-top: 95%;
+  }
   .actL{
     background-image: none;
-    padding-top: 95%;
   }
   .actR{
     background-image: none;
-    padding-top: 95%;
   }
   .navlinks{
     box-sizing: border-box;
