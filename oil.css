@@ -106,13 +106,6 @@ main{
   }
   .butt{
     width: 50%;
-    color: black;
-  }
-  #left{
-    padding-top: 95%;
-  }
-  #right{
-    padding-top: 95%;
   }
   .actL{
     background-image: none;
