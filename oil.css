@@ -42,10 +42,12 @@ main{
 .actL{
   background-image: linear-gradient(90deg, black, white);
   opacity: 0.3;
+  cursor: w-resize;
 }
 .actR{
   background-image: linear-gradient(90deg, white, black);
   opacity: 0.3;
+  cursor: e-resize;
 }
 #left{
   position: absolute;
