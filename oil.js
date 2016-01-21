@@ -8,7 +8,9 @@ var painting = {
   //medium
   m: "Oil on canvas",
   //year
-  y: "2012"
+  y: "2012",
+  //background-color
+  b: "rgb(243, 243, 243)"
 };
 
 p1 = {
@@ -16,7 +18,7 @@ p1 = {
   t: "Sea Horse",
   s: "20 in x 16 in",
   m: "Oil on canvas board",
-  y: "2015"
+  y: "2015",
 };
 
 p2 = {
@@ -408,7 +410,7 @@ function prevPaint(event){
   displayPainting(portfolio[paintIndex]);
 }
 
-function displayPainting(p, i, t, s, m, y){
+function displayPainting(p, i, t, s, m, y, b){
   if ($("#frame").has("img")){
     $("#frame").empty();
   }
@@ -417,4 +419,5 @@ function displayPainting(p, i, t, s, m, y){
   $("#size").text(p.s);
   $("#medium").text(p.m);
   $("#year").text(p.y);
+  $("main").css("background-image", "linear-gradient(180deg," + p.b + ", white)");
 };
