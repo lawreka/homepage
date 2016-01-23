@@ -368,14 +368,11 @@ function displayPainting(p, i, t, s, m, y){
 };
 
 var pics = document.getElementById("frame");
-var hammertime = new Hammer(pics, {
-  recognizers: [
-    [Hammer.Swipe, { direction: Hammer.DIRECTION_LEFT}],
-    [Hammer.Swipe, { direction: Hammer.DIRECTION_RIGHT}],
-  ]
-});
-hammertime.on("swipeleft", prevPaint);
-hammertime.on("swiperight", nextPaint);
+var hammertime = new Hammer(pics);
+var hammertiem = new Hammer(pics);
+hammertime.on("swipeleft", nextPaint);
+hammertiem.on("swiperight", prevPaint);
+
 $("#left").on("mouseenter", function(){
   $("#left").toggleClass("actL");
 });
@@ -402,7 +399,6 @@ function nextPaint(event){
   else{
     paintIndex = paintIndex + 1;
   }
-  console.log(paintIndex);
   displayPainting(portfolio[paintIndex]);
 }
 
@@ -414,7 +410,6 @@ function prevPaint(event){
   else{
     paintIndex = paintIndex - 1;
   }
-  console.log(paintIndex);
   displayPainting(portfolio[paintIndex]);
 }
 
