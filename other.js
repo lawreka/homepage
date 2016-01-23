@@ -115,6 +115,11 @@ function displayPainting(p, i, t, s, m, y){
   $("#year").text(p.y);
 };
 
+var pics = document.getElementById("frame");
+var hammertime = new Hammer(pics);
+var hammertiem = new Hammer(pics);
+hammertime.on("swipeleft", nextPaint);
+hammertiem.on("swiperight", prevPaint);
 
 $("#left").on("mouseenter", function(){
   $("#left").toggleClass("actL");
