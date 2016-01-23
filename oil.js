@@ -367,7 +367,15 @@ function displayPainting(p, i, t, s, m, y){
   $("#year").text(p.y);
 };
 
-
+var pics = document.getElementById("frame");
+var hammertime = new Hammer(pics, {
+  recognizers: [
+    [Hammer.Swipe, { direction: Hammer.DIRECTION_LEFT}],
+    [Hammer.Swipe, { direction: Hammer.DIRECTION_RIGHT}],
+  ]
+});
+hammertime.on("swipeleft", prevPaint);
+hammertime.on("swiperight", nextPaint);
 $("#left").on("mouseenter", function(){
   $("#left").toggleClass("actL");
 });
