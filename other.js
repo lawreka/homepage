@@ -109,6 +109,10 @@ var portfolio2 = [
 
 function displayPainting(p, i, t, s, m, y){
   $("<img>").attr("src", p.i).addClass("image").appendTo("#frame");
+  //add below for background color stealing
+  //$("#image").load(function(){
+  //  steal();
+  //});
   $("#title").text(p.t);
   $("#size").text(p.s);
   $("#medium").text(p.m);
@@ -168,8 +172,18 @@ function displayPainting(o, i, t, s, m, y){
     $("#frame").empty();
   }
   $("<img>").attr("src", o.i).addClass("image").appendTo("#frame");
+  //add to above line for background color stealing
+  //.attr("id", "backgroundImage").attr("onload", "steal()");
   $("#title").text(o.t);
   $("#size").text(o.s);
   $("#medium").text(o.m);
   $("#year").text(o.y);
 };
+
+// to use background color stealing
+// function steal(){
+//   var backgroundColorThief = new BackgroundColorTheif();
+//   var rgb = backgroundColorThief.getBackGroundColor(document.getElementById("backgroundImage"));
+//   document.getElementById("backGroundColor").style.backgroundColor = 'rgb(' + rgb[0] + ',' + rgb[1] + ',' + rgb[2] +')';
+//   console.log("steal?");
+// };
