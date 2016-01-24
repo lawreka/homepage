@@ -94,6 +94,15 @@ o10 = {
   b: "rgb(48, 39, 29)"
 };
 
+o11 = {
+  i: "images/birthday.jpg",
+  t: "Birthday Cake",
+  s: "~11 in x ~4 in",
+  m: "Found object sculpture: candles, Jack Daniel's bottle",
+  y: "2016",
+  b: "rgb(187, 106, 65)"
+};
+
 var portfolio2 = [
   //glam (2014)
   other,
@@ -114,7 +123,9 @@ var portfolio2 = [
   //turtle (2010)
   o8,
   //yolo (2013)
-  o10
+  o10,
+  //birthday
+  o11,
 ]
 
 
