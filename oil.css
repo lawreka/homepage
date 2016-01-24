@@ -21,6 +21,7 @@ main{
   height: auto;
   max-height: 100%;
   max-width: 100%;
+  background-image: url("ajax-loader.gif") no-repeat;
 }
 #caption{
   text-align: center;
