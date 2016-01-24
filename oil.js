@@ -421,7 +421,7 @@ function displayPainting(p, i, t, s, m, y, b){
   if ($("#frame").has("img")){
     $("#frame").empty();
   }
-  $("<img>").attr("src", p.i).addClass("image").appendTo("#frame");
+  $("<img>").attr("src", p.i).attr("lowsrc", "ajax-loader.gif").addClass("image").appendTo("#frame");
   //add to above line for background color stealing
   //.attr("id", "backgroundImage").attr("onload", "steal()");
   $("#title").text(p.t);
