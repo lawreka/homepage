@@ -10,7 +10,7 @@ var painting = {
   //year
   y: "2012",
   //background-color
-  b: "rgb(243, 243, 243)"
+  b: "rgb(39, 36, 38)"
 };
 
 p1 = {
@@ -19,6 +19,7 @@ p1 = {
   s: "20 in x 16 in",
   m: "Oil on canvas board",
   y: "2015",
+  b: "rgb(50, 42, 52)"
 };
 
 p2 = {
@@ -26,7 +27,8 @@ p2 = {
   t: "Fly",
   s: "12 in x 9 in",
   m: "Oil on canvas",
-  y: "2014"
+  y: "2014",
+  b: "rgb(215, 208, 184)"
 };
 
 p3 = {
@@ -34,7 +36,8 @@ p3 = {
   t: "Abstract 1",
   s: "20 in x 16 in",
   m: "Oil on canvas board",
-  y: "2014"
+  y: "2014",
+  b: "rgb(197, 190, 174)"
 };
 
 p4 = {
@@ -42,7 +45,8 @@ p4 = {
   t: "American Spirit",
   s: "24 in x 12 in",
   m :"Oil on canvas",
-  y: "2011"
+  y: "2011",
+  b: "rgb(94, 56, 54)"
 };
 
 p5 = {
@@ -50,7 +54,8 @@ p5 = {
   t: "Boats",
   s: "24 in x 24 in",
   m: "Oil on canvas",
-  y: "2011"
+  y: "2011",
+  b: "rgb(62, 54, 45)"
 };
 
 p6 = {
@@ -58,7 +63,8 @@ p6 = {
   t: "Occupy Body",
   s: "62 in x 34 in",
   m: "Oil on canvases",
-  y: "2011"
+  y: "2011",
+  b: "rgb(164, 146, 124)"
 };
 
 p7 = {
@@ -66,7 +72,8 @@ p7 = {
   t: "Sunset",
   s: "24 in x 17 in",
   m: "Oil on canvas",
-  y: "2014"
+  y: "2014",
+  b: "rgb(100, 86, 96)"
 };
 
 p8 = {
@@ -74,7 +81,8 @@ p8 = {
   t: "Daisies",
   s: "20 in x 16 in",
   m: "Oil on canvas board",
-  y: "2014"
+  y: "2014",
+  b: "rgb(211, 203, 186)"
 };
 
 p9 = {
@@ -82,7 +90,8 @@ p9 = {
   t: "Donut",
   s: "20 in x 20 in",
   m: "Oil on canvas",
-  y: "2015"
+  y: "2015",
+  b: "rgb(216, 195, 180)"
 };
 
 p10 = {
@@ -90,7 +99,8 @@ p10 = {
   t: "Dragon",
   s: "20 in x 16 in",
   m: "Oil on canvas board",
-  y: "2014"
+  y: "2014",
+  b: "rgb(56, 60, 65)"
 };
 
 p11 = {
@@ -98,7 +108,8 @@ p11 = {
   t: "Eagle",
   s: "20 in x 16 in",
   m: "Oil on canvas board",
-  y: "2015"
+  y: "2015",
+  b: "rgb(93, 26, 56)"
 };
 
 p12 = {
@@ -106,7 +117,8 @@ p12 = {
   t: "Girls",
   s: "16 in x 55 in",
   m: "Oil on canvas",
-  y: "2012"
+  y: "2012",
+  b: "rgb(192, 183, 167)"
 };
 
 p13 = {
@@ -114,7 +126,8 @@ p13 = {
   t: "The Blue Hand Is Dead! Long Live The Blue Hand",
   s: "20 in x 16 in",
   m: "Oil on canvas board",
-  y: "2015"
+  y: "2015",
+  b: "rgb(217, 201, 189)"
 };
 
 p14 = {
@@ -122,7 +135,8 @@ p14 = {
   t: "The Jewel In The Lotus",
   s: "12 in x 12 in",
   m: "Oil on canvas",
-  y: "2013"
+  y: "2013",
+  b: "rgb(88, 106, 122)"
 };
 
 p15 = {
@@ -130,7 +144,8 @@ p15 = {
   t: "Moth",
   s: "20 in x 20 in",
   m: "Oil on canvas",
-  y: "2015"
+  y: "2015",
+  b: "rgb(207, 196, 185)"
 };
 
 p16 = {
@@ -138,7 +153,8 @@ p16 = {
   t: "Si",
   s: "20 in x 16 in",
   m: "Oil on canvas board",
-  y: "2014"
+  y: "2014",
+  b: "rgb(225, 216, 202)"
 };
 
 p17 = {
@@ -146,7 +162,8 @@ p17 = {
   t: "Snail From The Sea",
   s: "20 in x 16 in",
   m: "Oil on canvas board",
-  y: "2014"
+  y: "2014",
+  b: "rgb(198, 188, 171)"
 };
 
 p18 = {
@@ -154,7 +171,8 @@ p18 = {
   t: "Snowy Trees",
   s: "20 in x 16 in",
   m: "Oil on canvas board",
-  y: "2014"
+  y: "2014",
+  b: "rgb(44, 43, 40)"
 };
 
 p19 = {
@@ -162,15 +180,17 @@ p19 = {
   t: "Still Life At Reed College",
   s: "31 in x 23 in",
   m: "Oil on canvas",
-  y: "2014"
+  y: "2014",
+  b: "rgb(219, 212, 196)"
 };
 
 p20 = {
   i: "images/stream.jpg",
-  t: "A Happy Little Stream, ft. Bob Ross",
+  t: "A Happy Little Stream (Composition by Bob Ross)",
   s: "20 in x 16 in",
   m: "Oil on canvas board",
-  y: "2014"
+  y: "2014",
+  b: "rgb(213, 206, 190)"
 };
 
 p21 = {
@@ -178,7 +198,8 @@ p21 = {
   t: "Toastr",
   s: "32 in x 23-17 in",
   m: "Oil on canvas",
-  y: "2014"
+  y: "2014",
+  b: "rgb(207, 197, 174)"
 };
 
 p22 = {
@@ -186,7 +207,8 @@ p22 = {
   t: "Trees",
   s: "20 in x 16 in",
   m: "Oil on canvas board",
-  y: "2014"
+  y: "2014",
+  b: "rgb(67, 39, 70)"
 };
 
 p23 = {
@@ -194,7 +216,8 @@ p23 = {
   t: "Trophy",
   s: "24 in x 24 in",
   m: "Oil on canvas",
-  y: "2015"
+  y: "2015",
+  b: "rgb(75, 70, 66)"
 };
 
 p24 = {
@@ -202,7 +225,8 @@ p24 = {
   t: "Volcano",
   s: "20 in x 16 in",
   m: "Oil on canvas board",
-  y: "2014"
+  y: "2014",
+  b: "rgb(46, 49, 72)"
 };
 
 p25 = {
@@ -210,15 +234,17 @@ p25 = {
   t: "Self Portrait (Yi Zhi)",
   s: "36 in x 36 in",
   m: "Oil on canvas",
-  y: "2013"
+  y: "2013",
+  b: "rgb(187, 171, 160)"
 };
 
 p26 = {
   i: "images/bigsur.jpg",
-  t: "Objects x Big Sur",
+  t: "Objects x Big Sur (Overlay of Big Sur, Maryanne Jacobsen)",
   s: "16 in x 24 in",
   m: "Oil on boards",
-  y: "2011"
+  y: "2011",
+  b: "rgb(110, 108, 97)"
 };
 
 p27 = {
@@ -226,7 +252,8 @@ p27 = {
   t: "Bouteille",
   s: "12 in x 8 in",
   m: "Oil on canvas paper",
-  y: "2013"
+  y: "2013",
+  b: "rgb(206, 196, 183)"
 };
 
 p28 = {
@@ -234,7 +261,8 @@ p28 = {
   t: "Light",
   s: "16 in x 20 in",
   m: "Oil on canvas paper",
-  y: "2015"
+  y: "2015",
+  b: "rgb(237, 228, 205)"
 };
 
 p29 = {
@@ -242,7 +270,8 @@ p29 = {
   t: "Landscape",
   s: "16 in x 20 in",
   m: "Oil on canvas paper",
-  y: "2015"
+  y: "2015",
+  b: "rgb(208, 196, 179)"
 };
 
 p30 = {
@@ -250,7 +279,8 @@ p30 = {
   t: "Lily",
   s: "12 in x 8 in",
   m: "Oil on canvas paper",
-  y: "2014"
+  y: "2014",
+  b: "rgb(231, 225, 212)"
 };
 
 p31 = {
@@ -258,7 +288,8 @@ p31 = {
   t: "Prayer Hands",
   s: "16 in x 20 in",
   m: "Oil on canvas paper",
-  y: "2013"
+  y: "2013",
+  b: "rgb(227, 215, 201)"
 };
 
 p32 = {
@@ -266,15 +297,17 @@ p32 = {
   t: "Prayer Hands 2",
   s: "16 in x 20 in",
   m: "Oil on canvas paper",
-  y: "2013"
+  y: "2013",
+  b: "rgb(76, 76, 79)"
 };
 
 p33 = {
   i: "images/seurat.jpg",
-  t: "A Bit of Seurat",
+  t: "A Bit of Seurat (Excerpt from A Sunday on La Grande Jatte, Georges Seurat)",
   s: "16 in x 21 in",
   m: "Oil on paper",
-  y: "2011"
+  y: "2011",
+  b: "rgb(43, 43, 37)"
 };
 
 p34 = {
@@ -282,7 +315,8 @@ p34 = {
   t: "Teal",
   s: "8 in x 12 in",
   m: "Oil on paper",
-  y: "2013"
+  y: "2013",
+  b: "rgb(210, 211, 198)"
 };
 
 
@@ -421,13 +455,14 @@ function displayPainting(p, i, t, s, m, y, b){
   if ($("#frame").has("img")){
     $("#frame").empty();
   }
-  $("<img>").attr("src", p.i).attr("lowsrc", "ajax-loader.gif").addClass("image").appendTo("#frame");
+  $("<img>").attr("src", p.i).addClass("image").appendTo("#frame");
   //add to above line for background color stealing
   //.attr("id", "backgroundImage").attr("onload", "steal()");
   $("#title").text(p.t);
   $("#size").text(p.s);
   $("#medium").text(p.m);
   $("#year").text(p.y);
+  $("main").attr("style", "background-color:" + p.b);
 };
 
 // to use background color stealing

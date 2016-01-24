@@ -8,7 +8,9 @@ var other = {
   //medium
   m: "Photoshop",
   //year
-  y: "2014"
+  y: "2014",
+  //background color
+  b: "rgb(229, 232, 219)"
 };
 
 o1 = {
@@ -16,7 +18,8 @@ o1 = {
   t: "The Jewel In The Lotus",
   s: "722 px x 500 px",
   m: "Photoshop",
-  y: "2014"
+  y: "2014",
+  b: "rgb(75, 76, 84)"
 };
 
 o3 = {
@@ -24,7 +27,8 @@ o3 = {
   t: "Lantern",
   s: "1224 px x 1224 px",
   m: "Digital photo",
-  y: "2014"
+  y: "2014",
+  b: "rgb(6, 4, 5)"
 };
 
 o4 = {
@@ -32,7 +36,8 @@ o4 = {
   t: "Kitteh",
   s: "18 in x 24 in",
   m :"Spray paint on newsprint",
-  y: "2012"
+  y: "2012",
+  b: "rgb(179, 163, 143)"
 };
 
 o5 = {
@@ -40,7 +45,8 @@ o5 = {
   t: "Hello I Am Phone",
   s: "na",
   m: "Durational performance",
-  y: "2015"
+  y: "2015",
+  b: "rgb(251, 251, 251)"
 };
 
 o6 = {
@@ -48,7 +54,8 @@ o6 = {
   t: "Pumpky",
   s: "6 in x 6 in",
   m: "Watercolor on paper",
-  y: "2010"
+  y: "2010",
+  b: "rgb(242, 244, 242)"
 };
 
 o7 = {
@@ -56,7 +63,8 @@ o7 = {
   t: "Strugs",
   s: "2592 px x 432 px",
   m: "Digital illustration",
-  y: "2015"
+  y: "2015",
+  b: "rgb(250, 250, 250)"
 };
 
 o8 = {
@@ -64,7 +72,8 @@ o8 = {
   t: "Turtle With Teeth",
   s: "7 in x 5 in",
   m: "Linoprint",
-  y: "2010"
+  y: "2010",
+  b: "rgb(225, 219, 208)"
 };
 
 o9 = {
@@ -72,7 +81,8 @@ o9 = {
   t: "Drawing Exercises",
   s: "864 px x 864 px",
   m: "Digital illustration",
-  y: "2015"
+  y: "2015",
+  b: "rgb()"
 };
 
 o10 = {
@@ -80,7 +90,8 @@ o10 = {
   t: "YOLO",
   s: "? in x ? in",
   m: "Spray paint on trash",
-  y: "2013"
+  y: "2013",
+  b: "rgb(48, 39, 29)"
 };
 
 var portfolio2 = [
@@ -178,6 +189,7 @@ function displayPainting(o, i, t, s, m, y){
   $("#size").text(o.s);
   $("#medium").text(o.m);
   $("#year").text(o.y);
+  $("main").attr("style", "background-color:" + o.b);
 };
 
 // to use background color stealing
