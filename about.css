@@ -94,24 +94,27 @@ main{
     width: 100%;
     text-align: center;
   }
+  #self{
+    font-size: 4em;
+  }
   #insta{
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
   }
   #twitter{
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
   }
   #git{
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
   }
   #linked{
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
   }
   #facebook{
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
   }
 }
