@@ -94,4 +94,24 @@ main{
     width: 100%;
     text-align: center;
   }
+  #insta{
+    height: 200px;
+    width: 200px;
+  }
+  #twitter{
+    height: 200px;
+    width: 200px;
+  }
+  #git{
+    height: 200px;
+    width: 200px;
+  }
+  #linked{
+    height: 200px;
+    width: 200px;
+  }
+  #facebook{
+    height: 200px;
+    width: 200px;
+  }
 }
