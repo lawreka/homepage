@@ -61,7 +61,7 @@ o6 = {
 o7 = {
   i: "images/strugs.png",
   t: "Strugs",
-  s: "2592 px x 432 px",
+  s: "2592 px x 432 px (Open in new window for full size)",
   m: "Digital illustration",
   y: "2015",
   b: "rgb(250, 250, 250)"
@@ -96,24 +96,58 @@ o10 = {
 
 o11 = {
   i: "images/birthday.jpg",
-  t: "Birthday Cake",
+  t: "Celebrate",
   s: "~11 in x ~4 in",
-  m: "Found object sculpture: candles, Jack Daniel's bottle",
+  m: "Found object sculpture",
   y: "2016",
   b: "rgb(187, 106, 65)"
 };
 
+o12 = {
+  i: "images/ed.png",
+  t: "Elise",
+  s: "10 in x 10 in",
+  m: "Digital illustration",
+  y: "2016",
+  b: "rgb(31, 24, 51)"
+}
+
+o13 = {
+  i: "images/jb.png",
+  t: "Jen",
+  s: "10 in x 10 in",
+  m: "Digital illustration",
+  y: "2016",
+  b: "rgb(25, 19, 20)"
+}
+
+o14 = {
+  i: "images/jg.png",
+  t: "Jamal",
+  s: "10 in x 10 in",
+  m: "Digital illustration",
+  y: "2016",
+  b: "rgb(214, 194, 187)"
+}
 var portfolio2 = [
-  //glam (2014)
-  other,
-  //jewelinlotus (2014)
-  o1,
-  //strugs (2015)
-  o7,
-  //lantern (2014)
-  o3,
+  //Jamal
+  o14,
+  //Jen
+  o13,
+  //Elise
+  o12,
   //yoga (2015)
   o9,
+  //lantern (2014)
+  o3,
+  //glam (2014)
+  other,
+  //strugs (2015)
+  o7,
+  //birthday
+  o11,
+  //jewelinlotus (2014)
+  o1,
   //phone (2015)
   o5,
   //pumpkin (2010)
@@ -123,9 +157,7 @@ var portfolio2 = [
   //turtle (2010)
   o8,
   //yolo (2013)
-  o10,
-  //birthday
-  o11,
+  o10
 ]
 
 
