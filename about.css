@@ -95,26 +95,21 @@ main{
     text-align: center;
   }
   #self{
-    font-size: 20px;
-  }
-  #insta{
-    height: 100px;
-    width: 100px;
+    font-size: 10px;
   }
   #twitter{
-    height: 100px;
-    width: 100px;
-  }
-  #git{
-    height: 100px;
-    width: 100px;
-  }
-  #linked{
-    height: 100px;
-    width: 100px;
+    margin: 30px;
   }
   #facebook{
-    height: 100px;
-    width: 100px;
+    margin: 30px;
+  }
+  #linked{
+    margin: 30px;
+  }
+  #git{
+    margin: 30px;
+  }
+  #insta{
+    margin: 30px;
   }
 }
