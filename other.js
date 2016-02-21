@@ -139,7 +139,18 @@ o15 = {
   b: "rgb(141, 137, 117)"
 }
 
+o16 = {
+  i: "images/wc.jpg",
+  t: "Winifred",
+  s: "14 in x 10 in",
+  m: "Digital illustration",
+  y: "2016",
+  b: "rgb(52, 60, 63)"
+}
+
 var portfolio2 = [
+  //Winifred
+  o16,
   //Jamal
   o14,
   //Jen
