@@ -1,4 +1,79 @@
-main{
+.center {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+
+h1{
+  font-family: 'Monsieur La Doulaise', cursive;
+  font-size: 5em;
+  font-weight: 100;
+  margin: 0px;
+  padding: 0px;
+}
+
+h2{
+  font-family: 'Pinyon Script', cursive;
+  font-size: 2em;
+  font-weight: 100;
+  margin-top: -40px;
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.reveal {
+  animation: reveal;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+
+#smallnav {
+  font-family: 'Tangerine', cursive;
+  font-size: 3em;
+  color: black;
+  border-image: none;
+  background-color: white;
+  border: none;
+  margin-top: -70px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+#smallnav:hover {
+  color: red;
+}
+
+#dropdown-content a {
+  font-family: 'Tangerine', cursive;
+  font-size: 3em;
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 2%;
+}
+
+#dropdown-content a:hover {
+  color: red;
+}
+
+
+/*main{
   background-image: linear-gradient(180deg, white, black);
   position: fixed;
   top: 0;
@@ -43,11 +118,9 @@ main{
 #top{
   height: 70%;
   background-image: linear-gradient(180deg, cyan, blue);
-}
+}*/
 @media (max-width: 800px){
-  .navlinks{
-    box-sizing: border-box;
-    /*padding-top: 400px;*/
-    font-size: 20px;
+  #dropdown-content a {
+    display: block;
   }
 }
