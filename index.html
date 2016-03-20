@@ -3,26 +3,172 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Kathryn Isabelle Lawrence HOME</title>
+    <title>Kathryn Isabelle Lawrence</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
+    </script>
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link href='https://fonts.googleapis.com/css?family=Tangerine|Monsieur+La+Doulaise|Pinyon+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:300italic,300' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <main>
-      <div id="gallery" class="navlinks">
-        <a href="art.html"> ART </a>
+      <a href="index.html">
+        <h1 class="center"> Kathryn Isabelle </h1>
+        <h2 class="center"> .com </h2>
+      </a>
+      <div id="navdiv" class="center">
+        <button id="smallnav" class="hidden">menu</button>
       </div>
-      <div id="sueme" class="navlinks">
-        <a href="sueme.html"> SUE ME </a>
+      <div id="dropdown-content" class="center reveal">
+          <a href="#" class="navlink" id="art"> art </a>
+          <a href="#" class="navlink" id="proj"> projects </a>
+          <a href="#" class="navlink" id="res"> résumé </a>
+          <a href="mailto:kathrynisabellelawrence@gmail.com" class="navlink"> email </a>
       </div>
-      <div id="alm" class="navlinks">
-        <a href="alm.html"> ANTISOCIAL LAME MACHINE </a>
+      <div id="artdiv" class="activepage hidden">
+        <div id="gallery">
+          <h3 class="subhead">digital</h3>
+          <img class="thumb" src="images/efu.jpg" data="o19"/>
+          <img class="thumb" src="images/am.jpg" data="o18"/>
+          <img class="thumb" src="images/ph.jpg" data="o20"/>
+          <img class="thumb" src="images/lw.jpg" data="o17"/>
+          <img class="thumb" src="images/bh.jpg" data="o15"/>
+          <img class="thumb" src="images/jg.png" data="o14"/>
+          <img class="thumb" src="images/jb.png" data="o13"/>
+          <img class="thumb" src="images/ed.png" data="o12"/>
+          <img class="thumb" src="images/pisces.jpg" data="o21"/>
+          <img class="thumb" src="images/wc.jpg" data="o16"/>
+          <img class="thumb" src="images/yoga.png" data="o9"/>
+          <img class="thumb" src="images/strugs.png" data="o7"/>
+          <img class="thumb" src="images/glammskell.jpg" data="other"/>
+          <img class="thumb" src="images/jewelindaalotus.jpg" data="o1"/>
+          <h3 class="subhead">oil</h3>
+          <img class="thumb" src="images/moon.jpg" data="painting"/>
+          <img class="thumb" src="images/yizhi.jpg" data="p25"/>
+          <img class="thumb" src="images/moth.jpg" data="p15"/>
+          <img class="thumb" src="images/trophy.jpg" data="p23"/>
+          <img class="thumb" src="images/body.jpg" data="p6"/>
+          <img class="thumb" src="images/girls.jpg" data="p12"/>
+          <img class="thumb" src="images/fly.jpg" data="p2"/>
+          <img class="thumb" src="images/seahorse.jpg" data="p1"/>
+          <img class="thumb" src="images/toastr.jpg" data="p21"/>
+          <img class="thumb" src="images/eagle.jpg" data="p11"/>
+          <img class="thumb" src="images/si.jpg" data="p16"/>
+          <img class="thumb" src="images/daisy.jpg" data="p8"/>
+          <img class="thumb" src="images/bottle.jpg" data="p27"/>
+          <img class="thumb" src="images/stream.jpg" data="p20"/>
+          <img class="thumb" src="images/prayerhands.jpg" data="p31"/>
+          <img class="thumb" src="images/prayerhands2.jpg" data="p32"/>
+          <img class="thumb" src="images/clouds.jpg" data="p7"/>
+          <img class="thumb" src="images/donut.jpg" data="p9"/>
+          <img class="thumb" src="images/darkness.jpg" data="p28"/>
+          <img class="thumb" src="images/jewel.jpg" data="p14"/>
+          <img class="thumb" src="images/grey.jpg" data="p13"/>
+          <img class="thumb" src="images/dragon.jpg" data="p10"/>
+          <img class="thumb" src="images/snowytrees.jpg" data="p18"/>
+          <img class="thumb" src="images/volcano.jpg" data="p24"/>
+          <img class="thumb" src="images/stilllife.jpg" data="p19"/>
+          <img class="thumb" src="images/snail.jpg" data="p17"/>
+          <img class="thumb" src="images/trees.jpg" data="p22"/>
+          <img class="thumb" src="images/bigsur.jpg" data="p26"/>
+          <img class="thumb" src="images/lands.jpg" data="p29"/>
+          <img class="thumb" src="images/lily.jpg" data="p30"/>
+          <img class="thumb" src="images/teal.jpg" data="p34"/>
+          <img class="thumb" src="images/seurat.jpg" data="p33"/>
+          <img class="thumb" src="images/abstrct.jpg" data="p3"/>
+          <img class="thumb" src="images/boats.jpg" data="p5"/>
+          <img class="thumb" src="images/americanspirit.jpg" data="p4"/>
+          <h3 class="subhead">other</h3>
+          <img class="thumb" src="images/lanternphoto.JPG" data="o3"/>
+          <img class="thumb" src="images/birthday.jpg" data="o11"/>
+          <img class="thumb" src="images/phone.png" data="o5"/>
+          <img class="thumb" src="images/pump.jpg" data="o6"/>
+          <img class="thumb" src="images/kitteh.jpg" data="o4"/>
+          <img class="thumb" src="images/turtle.jpg" data="o8"/>
+          <img class="thumb" src="images/yolologo.jpg" data="o10"/>
+        </div>
+        <div id="frame" class="hidden center">
+          <span id="leftbutt" class="navbutt"> </span>
+          <span id="rightbutt" class="navbutt"> </span>
+          <img id="bign"/>
+          <div id="caption">
+            <p id="title"></p>
+            <p id="size">Size</p>
+            <p id="medium">Medium</p>
+            <p id="year">Year</p>
+          </div>
+          <div id="navdiv" class="center">
+            <button id="smallnav2">return to art</button>
+          </div>
+        </div>
       </div>
-      <div id="about" class="navlinks">
-        <a href="about.html"> LINKS </a>
+      <div id="projdiv" class="activepage hidden">
+        <div class="center">
+        <a href="alm.html" id="alm" class="projectlink"> Antisocial Lame Machine </a>
+        <a href="sueme.html" id="sueme" class="projectlink"> Sue Me </a>
+        <div id="preview" class="hidden">
+          <iframe id="prevwindow"></iframe>
+        </div>
       </div>
-      <div id="top" class="navlinks">
-        <a href="index.html"> TOP </a>
       </div>
+      <div id="resdiv" class="activepage hidden">
+        <div class="full">
+          <h3>Education</h3>
+          <h4 class="nored">General Assembly, Front-end Web Development 10/2015 - 1/2016</h4>
+          <h4 class="jobtitle clickable">Reed College 2014, BA in Art</h4>
+          <div class="jobdescrip hidden">
+            <div class="afterrd">Commendation for Excellence for academic performance 2013-2014 (Senior GPA: 3.52)</div>
+            <h3 class="research">Research</h3>
+            <div class="afterrd"><a href="https://drive.google.com/file/d/0BwUMBVuVjkUrOXc5ZzVlMFdzRm8/view?usp=sharing" target="_blank" class="ital clickable">Cyber Corpus,</a> senior thesis on the representational politics of embodiment in cyberspace</div>
+            <div class="afterrd"><a href="https://drive.google.com/file/d/0BwUMBVuVjkUrNUU2NEFjSmZZVFk/view?usp=sharing" target="_blank" class="ital clickable">Miraculous Transformations, Manifestations, and Interpretations of the Bodhisattva Guanyin,</a> art history departmental qualifying paper on the iconographic evolution of a Buddhist deity</div>
+          </div>
+        </div>
+          <div class="leftcol">
+          <h3>Skills</h3>
+          <div class="skills">
+            <li>jQuery <span class="stars">★★★★☆<span></li>
+            <li>JavaScript <span class="stars">★★★★☆<span></li>
+            <li>HTML <span class="stars">★★★★★<span></li>
+            <li>CSS <span class="stars">★★★★★<span></li>
+            <li>Photoshop <span class="stars">★★★★☆<span></li>
+            <li>Bootstrap <span class="stars">★★☆☆☆<span></li>
+            <li>Ruby on Rails <span class="stars">★★☆☆☆<span></li>
+            <li>Swift <span class="stars">★★★☆☆<span></li>
+            <li>Processing <span class="stars">★★☆☆☆<span></li>
+            <li>Google Suite <span class="stars">★★★★★<span></li>
+            <li>Microsoft Office <span class="stars">★★★★★<span></li>
+            <li>Mac and PC <span class="stars">★★★★★<span></li>
+          </div>
+        </div>
+        <div class="rightcol">
+          <h3>Projects</h3>
+          <h4 class="jobtitle clickable">Ongoing, 2016 - present</h4>
+          <div class="jobdescrip hidden">Creating custom softare for artists with February 13 Creative, learning Ruby on Rails, using Cloud 9 and Heroku for deployment, designing user interface and assets</div>
+          <h4 class="jobtitle clickable">kathrynisabelle.com, 2015-2016</h4>
+          <div class="jobdescrip hidden">Online portfolio of art and other projects, re-coded and re-designed for mobile optimization during General Assembly's front end web development course</div>
+          <h4 class="jobtitle clickable">ANTISOCIAL LAME MACHINE, 2015</h4>
+          <div class="jobdescrip hidden">Web application using Facebook API</div>
+          <h4 class="jobtitle clickable">Sue Me, 2015</h4>
+          <div class="jobdescrip hidden">iOS app available in iTunes App Store, wrote all Swift code and designed all assets</div>
+        </div>
+        <div class="full">
+          <h3>Employment</h3>
+          <h4 class="jobtitle clickable">ROBLOX, Recruiting Coordinator, December 2015 - present</h4>
+          <div class="jobdescrip hidden">Coordinating, scheduling, and ensuring timeliness of candidate interviews for all departments, arranging flights and accommodations for out-of-state and international prospects, maintaining job postings and reporting on career site traffic data via Google Analytics, collecting and analyzing information on applicants via Greenhouse, representing ROBLOX at recruiting events</div>
+          <h4 class="jobtitle clickable">BRIDGE Property Management Company, Occupancy Specialist, January - November 2015</h4>
+          <div class="jobdescrip hidden">Overseeing tax credit compliance of a portfolio of 800-1000 units located at properties in California, receiving occupants' documents and generating lease amendments after annualizing income to assure compliance with TCAC, HUD, and other regulating agencies, calculating rent increases and rent for DAH and PACE properties, sending out notices for non-compliance, attending file audits and physical inspections</div>
+          <h4 class="jobtitle clickable">Bay Staffing Solutions, Occupancy Specialist, October 2014 - January 2015</h4>
+          <div class="jobdescrip hidden">Placed as a temporary Occupancy Specialist until hired full time by BRIDGE (above)</div>
+          <h4 class="jobtitle clickable">Caviar, Courier, August - October 2014</h4>
+          <div class="jobdescrip hidden">Supported five star restaurant delivery service by collecting and distributing orders, handled multiple orders simultaneously, ensured quality and safety of delivered items</div>
+          <h4 class="jobtitle clickable">Reed College Mail Room, Mail Clerk, 2011-2013</h4>
+          <div class="jobdescrip hidden">Collected and delivered mail and packages campus-wide, sorted and forwarded alumni mail, assisted in mass mailing of college catalog, changed mailbox lock combinations, sold postage</div>
+          <h3>Other</h3>
+          <h4 class="nored">Residential training at Great Vow Zen Monastery in Clatskanie, OR, June - August 2014</h4>
+        </div>
+      </div>
+
     </main>
+    <script type="text/javascript" src="main.js"></script>
   </body>
 </html>

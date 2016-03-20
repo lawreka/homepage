@@ -1,53 +1,289 @@
-main{
-  background-image: linear-gradient(180deg, white, black);
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: 0;
-  padding: 0;
-  overflow-y: scroll;
-}
-.navlinks{
-  box-sizing: border-box;
-  text-align: center;
-  padding-top: 200px;
+.center {
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
-  color: white;
-  font-family: sans-serif;
-  font-weight: lighter;
+  text-align: center;
 }
-.navlinks a{
-  color: white;
+
+.hidden {
+  display: none;
+}
+a{
+  color: black;
   text-decoration: none;
+}
+
+h1{
+  font-family: 'Monsieur La Doulaise', cursive;
+  font-size: 5em;
+  font-weight: 100;
+  margin: 0px;
+  padding: 0px;
+}
+
+h2{
+  font-family: 'Pinyon Script', cursive;
+  font-size: 2em;
+  font-weight: 100;
+  margin-top: -40px;
+}
+h3{
+  font-family: 'Pinyon Script', cursive;
+  font-size: 2em;
+  font-weight: 100;
+}
+h3 a:hover{
+  color: red;
+}
+@keyframes reveal {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.reveal {
+  animation: reveal;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+@keyframes clickable{
+  0% {
+    color: black;
+  }
+  50% {
+    color: red;
+  }
+}
+.clickable{
+  animation: clickable infinite;
+  animation-duration: 3.5s;
+}
+
+#smallnav {
+  font-family: 'Tangerine', cursive;
   font-size: 3em;
+  color: black;
+  border-image: none;
+  background-color: white;
+  border: none;
+  margin-top: -70px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
 }
-#about{
-  height: 90%;
-  background-image: linear-gradient(180deg, grey, cyan);
+
+#smallnav2 {
+  font-family: 'Tangerine', cursive;
+  font-size: 3em;
+  color: black;
+  border-image: none;
+  background-color: white;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
 }
-#gallery{
-  height: 90%;
-  background-image: linear-gradient(180deg, orchid, red);
+
+#smallnav:hover {
+  color: red;
 }
-#sueme{
-  height: 90%;
-  background-image: linear-gradient(180deg, red, black);
+
+#smallnav2:hover {
+  color: red;
 }
-#alm{
-  height: 90%;
-  background-image: linear-gradient(180deg, black, grey);
+
+#dropdown-content a {
+  font-family: 'Tangerine', cursive;
+  font-size: 3em;
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 2%;
 }
-#top{
-  height: 70%;
-  background-image: linear-gradient(180deg, cyan, blue);
+
+#dropdown-content a:hover {
+  color: red;
 }
-@media (max-width: 800px){
-  .navlinks{
-    box-sizing: border-box;
-    /*padding-top: 400px;*/
-    font-size: 20px;
+
+.subhead {
+  margin-left: 10%;
+}
+.gallery {
+  width: 80%;
+  margin-top: 1%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.thumb {
+  max-width: 200px;
+  max-height: 200px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  cursor: pointer;
+}
+.navbutt {
+  height: 120%;
+  width: 20%;
+}
+
+#leftbutt {
+  position:absolute;
+  left: 0;
+  top: 32%;
+  cursor: w-resize;
+}
+#rightbutt {
+  position:absolute;
+  right: 0;
+  top: 32%;
+  cursor: e-resize;
+}
+#bign {
+  max-width: 80%;
+  height: auto;
+  margin-top: 2%;
+}
+
+#caption {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5em;
+}
+
+#caption #title {
+  font-size: 2em;
+  font-style: italic;
+}
+
+.projectlink {
+  font-family: 'Tangerine', cursive;
+  font-size: 3em;
+  color: black;
+  text-decoration: none;
+  margin-top: 2%;
+  padding: 10px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.projectlink:hover{
+  color: red;
+}
+#preview{
+  width: 500px;
+  height: 500px;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+iframe {
+  border: 0;
+  transform: scale(0.5);
+  transform-origin: 0 0;
+  width: 200%;
+  height: 200%;
+}
+#resdiv{
+  margin-left: 10%;
+}
+
+h4 {
+  font-family: 'Lato', sans-serif;
+  font-size: 2em;
+  font-style: italic;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+h4:hover {
+  color: red;
+  cursor: pointer;
+}
+.nored:hover{
+  color: black;
+  cursor: default;
+}
+.stars{
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.jobdescrip {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5em;
+}
+
+.skills{
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5em;
+  font-style: italic;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+li{
+  list-style: circle;
+}
+.afterrd{
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  padding-top: 10px;
+}
+.afterrd a:hover{
+  color: red;
+}
+
+.ital{
+  font-style: italic;
+}
+.research{
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+.leftcol{
+  width: 40%;
+  position: relative;
+  float: left;
+}
+.rightcol{
+  width: 60%;
+  position: relative;
+  float: right;
+}
+.full{
+  width: 90%;
+  position: relative;
+  float: left;
+}
+
+.logo{
+  height: 100px;
+  width: 100px;
+  margin: 20px;
+  background-color: black;
+  border: 2px outset black;
+  border-radius: 50%;
+}
+.logo:hover{
+  border: 2px outset red;
+}
+
+@media (max-width: 600px){
+  h2 {
+    margin-top: -30px;
+  }
+  #dropdown-content a {
+    display: block;
+  }
+  .subhead {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  #bign {
+    width: 90%;
+  }
+  #preview {
+    display:none;
   }
 }
