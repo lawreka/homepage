@@ -1,5 +1,6 @@
 $(window).on("load", function (){
-  $("#dropdown-content").toggleClass("reveal flashred");
+  $("#dropdown-content").toggleClass("reveal");
+  $(".navlink").toggleClass("flashred");
 })
 
 $(".navlink").on("click", function (){
