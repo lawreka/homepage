@@ -61,6 +61,12 @@ h3 a:hover{
   animation-duration: 3.5s;
 }
 
+.flashred{
+  animation: clickable;
+  animation-duration: 3.5s;
+  animation-iteration-count: 1;
+}
+
 #smallnav {
   font-family: 'Tangerine', cursive;
   font-size: 3em;
