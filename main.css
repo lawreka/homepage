@@ -91,6 +91,17 @@ h3 a:hover{
   cursor: pointer;
 }
 
+#moi {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 75px;
+}
+
 #smallnav:hover {
   color: red;
 }
