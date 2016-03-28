@@ -302,4 +302,10 @@ li{
   #preview {
     display:none;
   }
+  .leftcol{
+    width: 100%;
+  }
+  .rightcol{
+    width: 100%;
+  }
 }
