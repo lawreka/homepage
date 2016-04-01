@@ -45,7 +45,7 @@ h3 a:hover{
 }
 .reveal {
   animation: reveal;
-  animation-duration: 5s;
+  animation-duration: 3s;
   animation-iteration-count: 1;
 }
 @keyframes clickable{
@@ -63,7 +63,7 @@ h3 a:hover{
 
 .flashred{
   animation: clickable;
-  animation-duration: 3.5s;
+  animation-duration: 5s;
   animation-iteration-count: 1;
 }
 #smallnav {
