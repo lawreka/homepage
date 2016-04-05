@@ -222,6 +222,15 @@ o21 = {
   d: "o21"
 }
 
+o22 = {
+  i: "images/moi.gif",
+  t: "Moi",
+  s: "300px x 300px",
+  m: "gif",
+  y: "2016",
+  d: "o22"
+}
+
 var painting = {
   //image source
   i: "images/moon.jpg",
@@ -543,7 +552,7 @@ p34 = {
   d: "p34"
 };
 
-var allArts = [o19, o18, o20, o17, o15, o14, o13, o12, o21, o16, o9, o7, other, o1, painting, p25, p15, p23, p6, p12, p2, p1, p21, p11, p16, p8, p27, p20, p31, p32, p7, p9, p28, p14, p13, p10, p18, p24, p19, p17, p22, p26, p29, p30, p34, p33, p3, p5, p4, o3, o11, o5, o6, o4, o8, o10];
+var allArts = [o22, o19, o18, o20, o17, o15, o14, o13, o12, o21, o16, o9, o7, other, o1, painting, p25, p15, p23, p6, p12, p2, p1, p21, p11, p16, p8, p27, p20, p31, p32, p7, p9, p28, p14, p13, p10, p18, p24, p19, p17, p22, p26, p29, p30, p34, p33, p3, p5, p4, o3, o11, o5, o6, o4, o8, o10];
 
 $(".thumb").on("click", function (){
   var num = $(this).attr('data');

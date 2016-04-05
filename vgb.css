@@ -1,0 +1,20 @@
+.title{
+  font-family: 'Orbitron', sans-serif;
+  font-size: 36px;
+  margin: 5%;
+}
+
+.lead{
+  font-family: 'Quicksand', sans-serif;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.text{
+  font-family: 'Exo', sans-serif;
+}
+
+.ghosty{
+  width: 250px;
+  height: 250px;
+}
