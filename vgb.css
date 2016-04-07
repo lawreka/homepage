@@ -18,3 +18,20 @@
   width: 250px;
   height: 250px;
 }
+@keyframes fader {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100%{
+    opacity: 0.1;
+  }
+}
+
+.fader {
+  animation: fader;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
