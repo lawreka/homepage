@@ -232,6 +232,33 @@ o22 = {
   d: "o22"
 }
 
+o23 = {
+  i: "images/rs.jpg",
+  t: "Roland",
+  s: "10 in x 10 in",
+  m: "Digital illustration",
+  y: "2016",
+  d: "o23"
+}
+
+o24 = {
+  i: "images/kg.jpg",
+  t: "Kate",
+  s: "10 in x 10 in",
+  m: "Digital illustration",
+  y: "2016",
+  d: "o24"
+}
+
+o25 = {
+  i: "images/chrys.png",
+  t: "Chrysanthemums and crabs (in the style of Qi Baishi)",
+  s: "10 in x 5 in",
+  m: "Digital illustration",
+  y: "2016",
+  d: "o25"
+}
+
 var painting = {
   //image source
   i: "images/moon.jpg",
@@ -553,7 +580,7 @@ p34 = {
   d: "p34"
 };
 
-var allArts = [o22, o19, o18, o20, o17, o15, o14, o13, o12, o21, o16, o9, o7, other, o1, painting, p25, p15, p23, p6, p12, p2, p1, p21, p11, p16, p8, p27, p20, p31, p32, p7, p9, p28, p14, p13, p10, p18, p24, p19, p17, p22, p26, p29, p30, p34, p33, p3, p5, p4, o3, o11, o5, o6, o4, o8, o10];
+var allArts = [o22, o24, o23, o19, o18, o20, o17, o15, o14, o13, o12, o21, o16, o25, o9, o7, other, o1, painting, p25, p15, p23, p6, p12, p2, p1, p21, p11, p16, p8, p27, p20, p31, p32, p7, p9, p28, p14, p13, p10, p18, p24, p19, p17, p22, p26, p29, p30, p34, p33, p3, p5, p4, o3, o11, o5, o6, o4, o8, o10];
 
 $(".thumb").on("click", function (){
   var num = $(this).attr('data');
