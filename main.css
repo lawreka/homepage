@@ -318,4 +318,16 @@ li{
   .rightcol{
     width: 100%;
   }
+  .gallery {
+    width: 90%;
+    margin-top: 1%;
+  }
+  .thumb {
+    max-width: 90%;
+    height: auto;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
