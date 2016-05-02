@@ -678,11 +678,101 @@ p34 = {
   d: "p34"
 };
 
-var digiArr = [o34, o29, o31, o27, o28, o30, o25, o32, o9, o7, o36, o22, o26, o33, o24, o23, o19, o18, o20, o17, o15, o14, o13, o12, o16, o35, o21, other, o1];
+p35 = {
+  i: "images/churchsketch.png",
+  t: "Acton Congregational",
+  s: "6 in x 6 in",
+  m: "Pen, paper",
+  y: "unknown",
+  d: "p35"
+}
+
+p36 = {
+  i: "images/crabbo.png",
+  t: "Crabbo",
+  s: "3 in x 3 in",
+  m: "Pen, Post-It",
+  y: "2015",
+  d: "p36"
+}
+
+p37 = {
+  i: "images/drgnsketch.png",
+  t: "Rawr",
+  s: "6 in x 6 in",
+  m: "Markers, paper",
+  y: "unknown",
+  d: "p37"
+}
+
+p38 = {
+  i: "images/lilysketch.png",
+  t: "Lilies",
+  s: "6 in x 6 in",
+  m: "Marker, paper",
+  y: "unknown",
+  d: "p38"
+}
+
+p39 = {
+  i: "images/lobsta.png",
+  t: "Lobsta",
+  s: "3 in x 3 in",
+  m: "Pen, Post-It",
+  y: "2015",
+  d: "p39"
+}
+
+p40 = {
+  i: "images/parkppl.png",
+  t: "Park People",
+  s: "6 in x 6 in",
+  m: "Pen, paper",
+  y: "unknown",
+  d: "p40"
+}
+
+p41 = {
+  i: "images/redyolo.png",
+  t: "Yolo Logo Redux",
+  s: "1350px x 900px",
+  m: "Digital illustration",
+  y: "2016",
+  d: "p41"
+}
+
+p42 = {
+  i: "images/treesketch1.png",
+  t: "Tree Sketch 1",
+  s: "6 in x 6 in",
+  m: "Marker, paper",
+  y: "unknown",
+  d: "p42"
+}
+
+p43 = {
+  i: "images/treesketch2.png",
+  t: "Tree Sketch 2",
+  s: "6 in x 6 in",
+  m: "Marker, paper",
+  y: "unknown",
+  d: "p43"
+}
+
+p44 = {
+  i: "images/seahorse.png",
+  t: "Seahorse",
+  s: "3 in x 3 in",
+  m: "Pen, Post-It",
+  y: "2015",
+  d: "p44"
+}
+
+var digiArr = [o34, o29, o31, o27, o28, o30, o25, o32, p41, o9, o7, o36, o22, o26, o33, o24, o23, o19, o18, o20, o17, o15, o14, o13, o12, o16, o35, o21, other, o1];
 
 var oilArr = [painting, p25, p15, p23, p6, p12, p2, p21, p7, p9, p14, p19, p3, p5, p4, p1, p11, p16, p8, p20, p13, p10, p18, p24, p17, p22, p26, p27, p31, p32, p28, p29, p30, p34, p33];
 
-var otherArr = [o5, o11, o3, o10, o4, o8, o6];
+var otherArr = [o11, o5, p39, p36, p44, p40, p38, o3, o10, p42, p43, p37, p35, o4, o8, o6];
 
 $(".digithumb").on("click", function (){
   var num = $(this).attr('data');
