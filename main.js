@@ -252,7 +252,7 @@ o24 = {
 
 o25 = {
   i: "images/chrys.png",
-  t: "Chrysanthemums and crabs (in the style of Qi Baishi)",
+  t: "Chrysanthemums and Crabs, after Qi Baishi",
   s: "10 in x 5 in",
   m: "Digital illustration",
   y: "2016",
@@ -638,7 +638,7 @@ var digiArr = [o22, o26, o29, o31, o27, o28, o30, o25, o9, o7, o24, o23, o19, o1
 
 var oilArr = [painting, p25, p15, p23, p6, p12, p2, p21, p7, p9, p14, p19, p3, p5, p4, p1, p11, p16, p8, p20, p13, p10, p18, p24, p17, p22, p26, p27, p31, p32, p28, p29, p30, p34, p33];
 
-var otherArr = [o5, o11, o3, o6, o4, o8, o10];
+var otherArr = [o5, o11, o3, o10, o4, o8, o6];
 
 $(".digithumb").on("click", function (){
   var num = $(this).attr('data');
@@ -770,7 +770,7 @@ $("#smallnav2").on("click", function(){
   $("#frame2").toggleClass("hidden");
 });
 
-$("#smallnav2").on("click", function(){
+$("#smallnav3").on("click", function(){
   $("#othergallery").toggleClass("hidden");
   $("#frame3").toggleClass("hidden");
 });
