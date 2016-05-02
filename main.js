@@ -278,7 +278,7 @@ o27 = {
 }
 
 o28 = {
-  i: "images/kafe1.jpg",
+  i: "images/kafe2.jpg",
   t: "Kafe 2 (Light)",
   s: "2048px x 2732px",
   m: "Digital illustration",
