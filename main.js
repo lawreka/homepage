@@ -36,7 +36,7 @@ var other = {
   //size
   s: "500 px x 340 px",
   //medium
-  m: "Photoshop",
+  m: "Collage",
   //year
   y: "2014",
   //data value
@@ -47,7 +47,7 @@ o1 = {
   i: "images/jewelindaalotus.jpg",
   t: "The Jewel In The Lotus",
   s: "722 px x 500 px",
-  m: "Photoshop",
+  m: "Collage",
   y: "2014",
   d: "o1"
 };
@@ -218,7 +218,7 @@ o21 = {
   i: "images/pisces.jpg",
   t: "Three Pisces (Aku, Lisa, Maya)",
   s: "10 in x 10 in",
-  m: "Digital illustration",
+  m: "Digital illustration/collage",
   y: "2016",
   d: "o21"
 }
@@ -329,6 +329,33 @@ o33 = {
   m: "gif",
   y: "2016",
   d: "o33"
+}
+
+o34 = {
+  i: "images/chaus.JPG",
+  t: "Chaussures",
+  s: "2048px x 2732px",
+  m: "Digital illustration",
+  y: "2016",
+  d: "o34"
+}
+
+o35 = {
+  i: "images/knucks.JPG",
+  t: "Knucks",
+  s: "2048px x 2732px",
+  m: "Digital illustration/collage",
+  y: "2016",
+  d: "o35"
+}
+
+o36 = {
+  i: "images/wunder.gif",
+  t: "wunderbar",
+  s: "900px x 540px",
+  m: "gif",
+  y: "2016",
+  d: "o36"
 }
 var painting = {
   //image source
@@ -651,7 +678,7 @@ p34 = {
   d: "p34"
 };
 
-var digiArr = [o29, o31, o27, o28, o30, o25, o32, o9, o7, o22, o26, o33, o24, o23, o19, o18, o20, o17, o15, o14, o13, o12, o16, o21, other, o1];
+var digiArr = [o34, o29, o31, o27, o28, o30, o25, o32, o9, o7, o36, o22, o26, o33, o24, o23, o19, o18, o20, o17, o15, o14, o13, o12, o16, o35, o21, other, o1];
 
 var oilArr = [painting, p25, p15, p23, p6, p12, p2, p21, p7, p9, p14, p19, p3, p5, p4, p1, p11, p16, p8, p20, p13, p10, p18, p24, p17, p22, p26, p27, p31, p32, p28, p29, p30, p34, p33];
 
