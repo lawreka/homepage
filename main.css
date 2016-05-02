@@ -88,8 +88,29 @@ h3 a:hover{
   margin-right: auto;
   cursor: pointer;
 }
-
+#smallnav1 {
+  font-family: 'Tangerine', cursive;
+  font-size: 3em;
+  color: black;
+  border-image: none;
+  background-color: white;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
 #smallnav2 {
+  font-family: 'Tangerine', cursive;
+  font-size: 3em;
+  color: black;
+  border-image: none;
+  background-color: white;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+#smallnav3 {
   font-family: 'Tangerine', cursive;
   font-size: 3em;
   color: black;
@@ -136,13 +157,39 @@ h3 a:hover{
 .subhead {
   margin-left: 10%;
 }
-.gallery {
+.oilgallery {
   width: 80%;
   margin-top: 1%;
   margin-left: auto;
   margin-right: auto;
 }
-.thumb {
+.digigallery {
+  width: 80%;
+  margin-top: 1%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.othergallery {
+  width: 80%;
+  margin-top: 1%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.oilthumb {
+  max-width: 200px;
+  max-height: 200px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  cursor: pointer;
+}
+.otherthumb {
+  max-width: 200px;
+  max-height: 200px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  cursor: pointer;
+}
+.digithumb {
   max-width: 200px;
   max-height: 200px;
   padding-left: 50px;
@@ -154,30 +201,80 @@ h3 a:hover{
   width: 20%;
 }
 
-#leftbutt {
+#leftbutt1 {
   position:absolute;
   left: 0;
   top: 32%;
   cursor: w-resize;
 }
-#rightbutt {
+#leftbutt2 {
+  position:absolute;
+  left: 0;
+  top: 32%;
+  cursor: w-resize;
+}
+#leftbutt3 {
+  position:absolute;
+  left: 0;
+  top: 32%;
+  cursor: w-resize;
+}
+#rightbutt1 {
   position:absolute;
   right: 0;
   top: 32%;
   cursor: e-resize;
 }
-#bign {
+#rightbutt2 {
+  position:absolute;
+  right: 0;
+  top: 32%;
+  cursor: e-resize;
+}
+#rightbutt3 {
+  position:absolute;
+  right: 0;
+  top: 32%;
+  cursor: e-resize;
+}
+#bign1 {
+  max-width: 80%;
+  height: auto;
+  margin-top: 2%;
+}
+#bign2 {
+  max-width: 80%;
+  height: auto;
+  margin-top: 2%;
+}
+#bign3 {
   max-width: 80%;
   height: auto;
   margin-top: 2%;
 }
 
-#caption {
+#caption1 {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5em;
+}
+#caption2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5em;
+}
+#caption3 {
   font-family: 'Lato', sans-serif;
   font-size: 1.5em;
 }
 
-#caption #title {
+#caption1 #title1 {
+  font-size: 2em;
+  font-style: italic;
+}
+#caption2 #title2 {
+  font-size: 2em;
+  font-style: italic;
+}
+#caption3 #title3 {
   font-size: 2em;
   font-style: italic;
 }
@@ -322,7 +419,23 @@ li{
     width: 90%;
     margin-top: 1%;
   }
-  .thumb {
+  .digithumb {
+    max-width: 90%;
+    height: auto;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .oilthumb {
+    max-width: 90%;
+    height: auto;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .otherthumb {
     max-width: 90%;
     height: auto;
     cursor: pointer;
