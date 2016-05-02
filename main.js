@@ -15,14 +15,14 @@ $("#smallnav").on("click", function (){
   $(".activepage").addClass("hidden");
 });
 
-$("#art").on("click", function (){
-  $("#artdiv").toggleClass("hidden reveal");
+$("#digi").on("click", function (){
+  $("#digidiv").toggleClass("hidden reveal");
 });
-$("#proj").on("click", function (){
-  $("#projdiv").toggleClass("hidden reveal");
+$("#oil").on("click", function (){
+  $("#oildiv").toggleClass("hidden reveal");
 });
-$("#res").on("click", function (){
-  $("#resdiv").toggleClass("hidden reveal");
+$("#other").on("click", function (){
+  $("#otherdiv").toggleClass("hidden reveal");
 });
 $("#else").on("click", function (){
   $("#elsediv").toggleClass("hidden reveal");
@@ -252,11 +252,65 @@ o24 = {
 
 o25 = {
   i: "images/chrys.png",
-  t: "Chrysanthemums and crabs (in the style of Qi Baishi)",
+  t: "Chrysanthemums and Crabs, after Qi Baishi",
   s: "10 in x 5 in",
   m: "Digital illustration",
   y: "2016",
   d: "o25"
+}
+
+o26 = {
+  i: "images/ghostyslow.gif",
+  t: "Ghosty",
+  s: "360px x 360px",
+  m: "gif",
+  y: "2016",
+  d: "o26"
+}
+
+o27 = {
+  i: "images/kafe1.jpg",
+  t: "Kafe 1 (Dark)",
+  s: "2048px x 2732px",
+  m: "Digital illustration",
+  y: "2016",
+  d: "o27"
+}
+
+o28 = {
+  i: "images/kafe2.jpg",
+  t: "Kafe 2 (Light)",
+  s: "2048px x 2732px",
+  m: "Digital illustration",
+  y: "2016",
+  d: "o28"
+}
+
+o29 = {
+  i: "images/korhonen.png",
+  t: "Korhonen",
+  s: "2048px x 2732px",
+  m: "Digital illustration",
+  y: "2016",
+  d: "o29"
+}
+
+o30 = {
+  i: "images/meringues.jpg",
+  t: "Meringues",
+  s: "2048px x 2732px",
+  m: "Digital illustration",
+  y: "2016",
+  d: "o30"
+}
+
+o31 = {
+  i: "images/pizza.png",
+  t: "Abandoned Pizza",
+  s: "2048px x 2732px",
+  m: "Digital illustration",
+  y: "2016",
+  d: "o31"
 }
 
 var painting = {
@@ -580,13 +634,31 @@ p34 = {
   d: "p34"
 };
 
-var allArts = [o22, o24, o23, o19, o18, o20, o17, o15, o14, o13, o12, o21, o16, o25, o9, o7, other, o1, painting, p25, p15, p23, p6, p12, p2, p1, p21, p11, p16, p8, p27, p20, p31, p32, p7, p9, p28, p14, p13, p10, p18, p24, p19, p17, p22, p26, p29, p30, p34, p33, p3, p5, p4, o3, o11, o5, o6, o4, o8, o10];
+var digiArr = [o22, o26, o29, o31, o27, o28, o30, o25, o9, o7, o24, o23, o19, o18, o20, o17, o15, o14, o13, o12, o16, o21, other, o1];
 
-$(".thumb").on("click", function (){
+var oilArr = [painting, p25, p15, p23, p6, p12, p2, p21, p7, p9, p14, p19, p3, p5, p4, p1, p11, p16, p8, p20, p13, p10, p18, p24, p17, p22, p26, p27, p31, p32, p28, p29, p30, p34, p33];
+
+var otherArr = [o5, o11, o3, o10, o4, o8, o6];
+
+$(".digithumb").on("click", function (){
   var num = $(this).attr('data');
-  showPainting(num);
-  $("#gallery").toggleClass("hidden");
-  $("#frame").toggleClass("hidden");
+  showPainting1(num);
+  $("#digigallery").toggleClass("hidden");
+  $("#frame1").toggleClass("hidden");
+});
+
+$(".oilthumb").on("click", function (){
+  var num = $(this).attr('data');
+  showPainting2(num);
+  $("#oilgallery").toggleClass("hidden");
+  $("#frame2").toggleClass("hidden");
+});
+
+$(".otherthumb").on("click", function (){
+  var num = $(this).attr('data');
+  showPainting3(num);
+  $("#othergallery").toggleClass("hidden");
+  $("#frame3").toggleClass("hidden");
 });
 
 // $("#frame").on("click", function (){
@@ -594,54 +666,115 @@ $(".thumb").on("click", function (){
 //   $("#frame").toggleClass("hidden");
 // });
 
-function showPainting(num){
-  $("#bign").attr("src", eval(num).i);
-  $("#bign").attr("data", eval(num).d);
-  $("#title").text(eval(num).t);
-  $("#size").text(eval(num).s);
-  $("#medium").text(eval(num).m);
-  $("#year").text(eval(num).y);
+function showPainting1(num){
+  $("#bign1").attr("src", eval(num).i);
+  $("#bign1").attr("data", eval(num).d);
+  $("#title1").text(eval(num).t);
+  $("#size1").text(eval(num).s);
+  $("#medium1").text(eval(num).m);
+  $("#year1").text(eval(num).y);
+}
+function showPainting2(num){
+  $("#bign2").attr("src", eval(num).i);
+  $("#bign2").attr("data", eval(num).d);
+  $("#title2").text(eval(num).t);
+  $("#size2").text(eval(num).s);
+  $("#medium2").text(eval(num).m);
+  $("#year2").text(eval(num).y);
+}
+function showPainting3(num){
+  $("#bign3").attr("src", eval(num).i);
+  $("#bign3").attr("data", eval(num).d);
+  $("#title3").text(eval(num).t);
+  $("#size3").text(eval(num).s);
+  $("#medium3").text(eval(num).m);
+  $("#year3").text(eval(num).y);
 }
 
-$("#leftbutt").on("click", function(){
-    var ind = $("#bign").attr('data');
-    var currentArt = allArts.indexOf(eval(ind));
+$("#leftbutt1").on("click", function(){
+    var ind = $("#bign1").attr('data');
+    var currentArt = digiArr.indexOf(eval(ind));
     if (currentArt == 0){
-      currentArt = allArts.length - 1;
+      currentArt = digiArr.length - 1;
     }
     else {
       currentArt = currentArt - 1;
     }
-  showPainting(allArts[currentArt]);
+  showPainting1(digiArr[currentArt]);
+});
+$("#leftbutt2").on("click", function(){
+    var ind = $("#bign2").attr('data');
+    var currentArt = oilArr.indexOf(eval(ind));
+    if (currentArt == 0){
+      currentArt = oilArr.length - 1;
+    }
+    else {
+      currentArt = currentArt - 1;
+    }
+  showPainting2(oilArr[currentArt]);
 });
 
-$("#rightbutt").on("click", function(){
-    var ind = $("#bign").attr('data');
-    var currentArt = allArts.indexOf(eval(ind));
-    if (currentArt == allArts.length - 1){
+$("#leftbutt3").on("click", function(){
+    var ind = $("#bign3").attr('data');
+    var currentArt = otherArr.indexOf(eval(ind));
+    if (currentArt == 0){
+      currentArt = otherArr.length - 1;
+    }
+    else {
+      currentArt = currentArt - 1;
+    }
+  showPainting3(otherArr[currentArt]);
+});
+
+$("#rightbutt1").on("click", function(){
+    var ind = $("#bign1").attr('data');
+    var currentArt = digiArr.indexOf(eval(ind));
+    if (currentArt == digiArr.length - 1){
       currentArt = 0;
     }
     else {
       currentArt = currentArt + 1;
     }
-  showPainting(allArts[currentArt]);
+  showPainting1(digiArr[currentArt]);
+});
+$("#rightbutt2").on("click", function(){
+    var ind = $("#bign2").attr('data');
+    var currentArt = oilArr.indexOf(eval(ind));
+    if (currentArt == oilArr.length - 1){
+      currentArt = 0;
+    }
+    else {
+      currentArt = currentArt + 1;
+    }
+  showPainting2(oilArr[currentArt]);
+});
+$("#rightbutt3").on("click", function(){
+    var ind = $("#bign3").attr('data');
+    var currentArt = otherArr.indexOf(eval(ind));
+    if (currentArt == otherArr.length - 1){
+      currentArt = 0;
+    }
+    else {
+      currentArt = currentArt + 1;
+    }
+  showPainting3(otherArr[currentArt]);
+});
+
+$("#smallnav1").on("click", function(){
+  $("#digigallery").toggleClass("hidden");
+  $("#frame1").toggleClass("hidden");
 });
 
 $("#smallnav2").on("click", function(){
-  $("#gallery").toggleClass("hidden");
-  $("#frame").toggleClass("hidden");
+  $("#oilgallery").toggleClass("hidden");
+  $("#frame2").toggleClass("hidden");
 });
 
-$(".projectlink").on("mouseover", function(){
-  var source = $(this).attr("href");
-  $("#prevwindow").attr("src", source);
-  $("#preview").removeClass("hidden");
+$("#smallnav3").on("click", function(){
+  $("#othergallery").toggleClass("hidden");
+  $("#frame3").toggleClass("hidden");
 });
 
-$(".jobtitle").on("click", function(){
-  $(this).next().toggleClass("hidden");
-  $(".jobdescrip").toggleClass("reveal");
-});
 
 $(".clickable").on("click", function(){
   $(this).toggleClass("clickable");
