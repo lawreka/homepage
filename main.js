@@ -15,14 +15,14 @@ $("#smallnav").on("click", function (){
   $(".activepage").addClass("hidden");
 });
 
-$("#art").on("click", function (){
-  $("#artdiv").toggleClass("hidden reveal");
+$("#digi").on("click", function (){
+  $("#digidiv").toggleClass("hidden reveal");
 });
-$("#proj").on("click", function (){
-  $("#projdiv").toggleClass("hidden reveal");
+$("#oil").on("click", function (){
+  $("#oildiv").toggleClass("hidden reveal");
 });
-$("#res").on("click", function (){
-  $("#resdiv").toggleClass("hidden reveal");
+$("#other").on("click", function (){
+  $("#otherdiv").toggleClass("hidden reveal");
 });
 $("#else").on("click", function (){
   $("#elsediv").toggleClass("hidden reveal");
