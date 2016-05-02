@@ -313,6 +313,23 @@ o31 = {
   d: "o31"
 }
 
+o32 = {
+  i: "images/gemlogo.png",
+  t: "Gem logo",
+  s: "360px x 360px",
+  m: "Digital illustration",
+  y: "2016",
+  d: "o32"
+}
+
+o33 = {
+  i: "images/loadinggif2.gif",
+  t: "Loading gif",
+  s: "360px x 360px",
+  m: "gif",
+  y: "2016",
+  d: "o33"
+}
 var painting = {
   //image source
   i: "images/moon.jpg",
@@ -634,7 +651,7 @@ p34 = {
   d: "p34"
 };
 
-var digiArr = [o22, o26, o29, o31, o27, o28, o30, o25, o9, o7, o24, o23, o19, o18, o20, o17, o15, o14, o13, o12, o16, o21, other, o1];
+var digiArr = [o29, o31, o27, o28, o30, o25, o32, o9, o7, o22, o26, o33, o24, o23, o19, o18, o20, o17, o15, o14, o13, o12, o16, o21, other, o1];
 
 var oilArr = [painting, p25, p15, p23, p6, p12, p2, p21, p7, p9, p14, p19, p3, p5, p4, p1, p11, p16, p8, p20, p13, p10, p18, p24, p17, p22, p26, p27, p31, p32, p28, p29, p30, p34, p33];
 
