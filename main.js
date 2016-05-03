@@ -768,7 +768,34 @@ p44 = {
   d: "p44"
 }
 
-var digiArr = [o34, o29, o31, o27, o28, o30, o25, o32, p41, o9, o7, o36, o22, o26, o33, o24, o23, o19, o18, o20, o17, o15, o14, o13, o12, o16, o35, o21, other, o1];
+p45 = {
+  i: "images/auberg.JPG",
+  t: "Auberg",
+  s: "2048px x 2732px",
+  m: "Digital illustration",
+  y: "2016",
+  d: "p45"
+}
+
+p46 = {
+  i: "images/fruitbowl.JPG",
+  t: "Fruit bowl",
+  s: "2048px x 2732px",
+  m: "Digital illustration",
+  y: "2016",
+  d: "p46"
+}
+
+p47 = {
+  i: "images/wazup.png",
+  t: "Hold Up",
+  s: "750px x 2000px",
+  m: "Digital illustration",
+  y: "2016",
+  d: "p47"
+}
+
+var digiArr = [p47, p46, p45, o34, o29, o31, o27, o28, o30, o25, o32, p41, o9, o7, o36, o22, o26, o33, o24, o23, o19, o18, o20, o17, o15, o14, o13, o12, o16, o35, o21, other, o1];
 
 var oilArr = [painting, p25, p15, p23, p6, p12, p2, p21, p7, p9, p14, p19, p3, p5, p4, p1, p11, p16, p8, p20, p13, p10, p18, p24, p17, p22, p26, p27, p31, p32, p28, p29, p30, p34, p33];
 
