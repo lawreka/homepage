@@ -795,7 +795,16 @@ p47 = {
   d: "p47"
 }
 
-var digiArr = [p47, p46, p45, o34, o29, o31, o27, o28, o30, o25, o32, p41, o9, o7, o36, o22, o26, o33, o24, o23, o19, o18, o20, o17, o15, o14, o13, o12, o16, o35, o21, other, o1];
+p48 = {
+  i: "images/burn.gif",
+  t: "Bridge burning",
+  s: "2048px x 2732px",
+  m: "gif",
+  y: "2016",
+  d: "p48"
+}
+
+var digiArr = [p47, p46, p45, o34, o29, o31, o27, o28, o30, o25, o32, p41, o9, o7, p48, o36, o22, o26, o33, o24, o23, o19, o18, o20, o17, o15, o14, o13, o12, o16, o35, o21, other, o1];
 
 var oilArr = [painting, p25, p15, p23, p6, p12, p2, p21, p7, p9, p14, p19, p3, p5, p4, p1, p11, p16, p8, p20, p13, p10, p18, p24, p17, p22, p26, p27, p31, p32, p28, p29, p30, p34, p33];
 
