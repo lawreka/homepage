@@ -205,52 +205,73 @@ h3 a:hover{
   position:absolute;
   left: 0;
   top: 32%;
+  width: 20%;
   cursor: w-resize;
 }
 #leftbutt2 {
   position:absolute;
   left: 0;
   top: 32%;
+  width: 20%;
   cursor: w-resize;
 }
 #leftbutt3 {
   position:absolute;
   left: 0;
   top: 32%;
+  width: 20%;
   cursor: w-resize;
 }
 #rightbutt1 {
   position:absolute;
   right: 0;
   top: 32%;
+  width: 20%;
   cursor: e-resize;
 }
 #rightbutt2 {
   position:absolute;
   right: 0;
   top: 32%;
+  width: 20%;
   cursor: e-resize;
 }
 #rightbutt3 {
   position:absolute;
   right: 0;
   top: 32%;
+  width: 20%;
   cursor: e-resize;
 }
 #bign1 {
   max-width: 80%;
   height: auto;
   margin-top: 2%;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
 }
 #bign2 {
   max-width: 80%;
   height: auto;
   margin-top: 2%;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
 }
 #bign3 {
   max-width: 80%;
   height: auto;
   margin-top: 2%;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
 }
 
 #caption1 {
