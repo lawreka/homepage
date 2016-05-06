@@ -858,7 +858,34 @@ p54 = {
   d: "p54"
 }
 
-var digiArr = [p51, p50, p49, p54, p47, p46, p45, o34, o29, o31, o27, o28, o30, o25, o32, p41, o9, o7, p53, p48, o36, o22, o26, o33, p52, o24, o23, o19, o18, o20, o17, o15, o14, o13, o12, o16, o35, o21, other, o1];
+p55 = {
+  i: "images/husk.JPG",
+  t: "Husk",
+  s: "1000px x 1000px",
+  m: "Digital illustration",
+  y: "2016",
+  d: "p55"
+}
+
+p56 = {
+  i: "images/silvery.JPG",
+  t: "The Silvery Moon",
+  s: "1000px x 1000px",
+  m: "Digital illustration",
+  y: "2016",
+  d: "p56"
+}
+
+p57 = {
+  i: "images/sunset.JPG",
+  t: "Sunset",
+  s: "2048px x 2732px",
+  m: "Digital illustration",
+  y: "2016",
+  d: "p57"
+}
+
+var digiArr = [p55, p56, p57, p51, p50, p49, p54, p47, p46, p45, o34, o29, o31, o27, o28, o30, o25, o32, p41, o9, o7, p53, p48, o36, o22, o26, o33, p52, o24, o23, o19, o18, o20, o17, o15, o14, o13, o12, o16, o35, o21, other, o1];
 
 var oilArr = [painting, p25, p15, p23, p6, p12, p2, p21, p7, p9, p14, p19, p3, p5, p4, p1, p11, p16, p8, p20, p13, p10, p18, p24, p17, p22, p26, p27, p31, p32, p28, p29, p30, p34, p33];
 
