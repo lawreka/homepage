@@ -958,6 +958,7 @@ $(".digithumb").on("click", function (){
   showPainting1(num);
   $("#digigallery").toggleClass("hidden");
   $("#frame1").toggleClass("hidden");
+  $("#smallnav").toggleClass("hidden");
 });
 
 $(".oilthumb").on("click", function (){
@@ -965,6 +966,7 @@ $(".oilthumb").on("click", function (){
   showPainting2(num);
   $("#oilgallery").toggleClass("hidden");
   $("#frame2").toggleClass("hidden");
+  $("#smallnav").toggleClass("hidden");
 });
 
 $(".otherthumb").on("click", function (){
@@ -972,6 +974,7 @@ $(".otherthumb").on("click", function (){
   showPainting3(num);
   $("#othergallery").toggleClass("hidden");
   $("#frame3").toggleClass("hidden");
+  $("#smallnav").toggleClass("hidden");
 });
 
 // $("#frame").on("click", function (){
@@ -1004,88 +1007,91 @@ function showPainting3(num){
   $("#year3").text(eval(num).y);
 }
 
-$("#leftbutt1").on("click", function(){
-    var ind = $("#bign1").attr('data');
-    var currentArt = digiArr.indexOf(eval(ind));
-    if (currentArt == 0){
-      currentArt = digiArr.length - 1;
-    }
-    else {
-      currentArt = currentArt - 1;
-    }
-  showPainting1(digiArr[currentArt]);
-});
-$("#leftbutt2").on("click", function(){
-    var ind = $("#bign2").attr('data');
-    var currentArt = oilArr.indexOf(eval(ind));
-    if (currentArt == 0){
-      currentArt = oilArr.length - 1;
-    }
-    else {
-      currentArt = currentArt - 1;
-    }
-  showPainting2(oilArr[currentArt]);
-});
-
-$("#leftbutt3").on("click", function(){
-    var ind = $("#bign3").attr('data');
-    var currentArt = otherArr.indexOf(eval(ind));
-    if (currentArt == 0){
-      currentArt = otherArr.length - 1;
-    }
-    else {
-      currentArt = currentArt - 1;
-    }
-  showPainting3(otherArr[currentArt]);
-});
-
-$("#rightbutt1").on("click", function(){
-    var ind = $("#bign1").attr('data');
-    var currentArt = digiArr.indexOf(eval(ind));
-    if (currentArt == digiArr.length - 1){
-      currentArt = 0;
-    }
-    else {
-      currentArt = currentArt + 1;
-    }
-  showPainting1(digiArr[currentArt]);
-});
-$("#rightbutt2").on("click", function(){
-    var ind = $("#bign2").attr('data');
-    var currentArt = oilArr.indexOf(eval(ind));
-    if (currentArt == oilArr.length - 1){
-      currentArt = 0;
-    }
-    else {
-      currentArt = currentArt + 1;
-    }
-  showPainting2(oilArr[currentArt]);
-});
-$("#rightbutt3").on("click", function(){
-    var ind = $("#bign3").attr('data');
-    var currentArt = otherArr.indexOf(eval(ind));
-    if (currentArt == otherArr.length - 1){
-      currentArt = 0;
-    }
-    else {
-      currentArt = currentArt + 1;
-    }
-  showPainting3(otherArr[currentArt]);
-});
+// $("#leftbutt1").on("click", function(){
+//     var ind = $("#bign1").attr('data');
+//     var currentArt = digiArr.indexOf(eval(ind));
+//     if (currentArt == 0){
+//       currentArt = digiArr.length - 1;
+//     }
+//     else {
+//       currentArt = currentArt - 1;
+//     }
+//   showPainting1(digiArr[currentArt]);
+// });
+// $("#leftbutt2").on("click", function(){
+//     var ind = $("#bign2").attr('data');
+//     var currentArt = oilArr.indexOf(eval(ind));
+//     if (currentArt == 0){
+//       currentArt = oilArr.length - 1;
+//     }
+//     else {
+//       currentArt = currentArt - 1;
+//     }
+//   showPainting2(oilArr[currentArt]);
+// });
+//
+// $("#leftbutt3").on("click", function(){
+//     var ind = $("#bign3").attr('data');
+//     var currentArt = otherArr.indexOf(eval(ind));
+//     if (currentArt == 0){
+//       currentArt = otherArr.length - 1;
+//     }
+//     else {
+//       currentArt = currentArt - 1;
+//     }
+//   showPainting3(otherArr[currentArt]);
+// });
+//
+// $("#rightbutt1").on("click", function(){
+//     var ind = $("#bign1").attr('data');
+//     var currentArt = digiArr.indexOf(eval(ind));
+//     if (currentArt == digiArr.length - 1){
+//       currentArt = 0;
+//     }
+//     else {
+//       currentArt = currentArt + 1;
+//     }
+//   showPainting1(digiArr[currentArt]);
+// });
+// $("#rightbutt2").on("click", function(){
+//     var ind = $("#bign2").attr('data');
+//     var currentArt = oilArr.indexOf(eval(ind));
+//     if (currentArt == oilArr.length - 1){
+//       currentArt = 0;
+//     }
+//     else {
+//       currentArt = currentArt + 1;
+//     }
+//   showPainting2(oilArr[currentArt]);
+// });
+// $("#rightbutt3").on("click", function(){
+//     var ind = $("#bign3").attr('data');
+//     var currentArt = otherArr.indexOf(eval(ind));
+//     if (currentArt == otherArr.length - 1){
+//       currentArt = 0;
+//     }
+//     else {
+//       currentArt = currentArt + 1;
+//     }
+//   showPainting3(otherArr[currentArt]);
+// });
 
 $("#smallnav1").on("click", function(){
   $("#digigallery").toggleClass("hidden");
   $("#frame1").toggleClass("hidden");
+  $("#smallnav").toggleClass("hidden reveal");
 });
 
 $("#smallnav2").on("click", function(){
   $("#oilgallery").toggleClass("hidden");
   $("#frame2").toggleClass("hidden");
+  $("#smallnav").toggleClass("hidden reveal");
 });
 
 $("#smallnav3").on("click", function(){
   $("#othergallery").toggleClass("hidden");
   $("#frame3").toggleClass("hidden");
+  $("#smallnav").toggleClass("hidden reveal");
 });
 
 
