@@ -1002,7 +1002,34 @@ p70 = {
   d: "p70"
 };
 
-var digiArr = [p63, p62, p61, p58, p55, p56, p57, p51, p50, p49, p54, p47, p46, p45, o34, o29, o31, o27, o28, o30, o25, o32, p41, o9, o7, p70, p69, p68, p67, p65, p66, p53, p48, o36, o22, o26, o33, p60, p59, p52, o24, o23, o19, o18, o20, o17, o15, o14, o13, o12, o16, p64, o35, o21, other, o1];
+p71 = {
+  i: "images/ouijabye.gif",
+  t: "BYE",
+  s: "2016px x 1728px",
+  m: "gif",
+  y: "2016",
+  d: "p71"
+};
+
+p72 = {
+  i: "images/ouijalol.gif",
+  t: "LOL",
+  s: "1872px x 1440px",
+  m: "gif",
+  y: "2016",
+  d: "p72"
+};
+
+p73 = {
+  i: "images/ouijanerd.gif",
+  t: "NERD",
+  s: "1584px x 1224px",
+  m: "gif",
+  y: "2016",
+  d: "p73"
+};
+
+var digiArr = [p63, p57, p62, p56, p58, p61, p51, p50, p55,  p49, p54, p47, p46, p45, o34, o29, o31, o27, o28, o30, o25, o32, p41, o9, o7, p70, p69, p68, p72, p73, p71, p67, p65, p66, p53, p48, o36, o26, o33, o22, p60, p59, p52, o24, o23, o19, o18, o20, o17, o15, o14, o13, o12, o16, p64, o35, o21, other, o1];
 
 var oilArr = [painting, p25, p15, p23, p6, p12, p2, p21, p7, p9, p14, p19, p3, p5, p4, p1, p11, p16, p8, p20, p13, p10, p18, p24, p17, p22, p26, p27, p31, p32, p28, p29, p30, p34, p33];
 
