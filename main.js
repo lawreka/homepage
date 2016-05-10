@@ -685,7 +685,7 @@ p35 = {
   m: "Pen, paper",
   y: "unknown",
   d: "p35"
-}
+};
 
 p36 = {
   i: "images/crabbo.png",
@@ -694,7 +694,7 @@ p36 = {
   m: "Pen, Post-It",
   y: "2015",
   d: "p36"
-}
+};
 
 p37 = {
   i: "images/drgnsketch.png",
@@ -703,7 +703,7 @@ p37 = {
   m: "Markers, paper",
   y: "unknown",
   d: "p37"
-}
+};
 
 p38 = {
   i: "images/lilysketch.png",
@@ -712,7 +712,7 @@ p38 = {
   m: "Marker, paper",
   y: "unknown",
   d: "p38"
-}
+};
 
 p39 = {
   i: "images/lobsta.png",
@@ -721,7 +721,7 @@ p39 = {
   m: "Pen, Post-It",
   y: "2015",
   d: "p39"
-}
+};
 
 p40 = {
   i: "images/parkppl.png",
@@ -730,7 +730,7 @@ p40 = {
   m: "Pen, paper",
   y: "unknown",
   d: "p40"
-}
+};
 
 p41 = {
   i: "images/redyolo.png",
@@ -739,7 +739,7 @@ p41 = {
   m: "Digital illustration",
   y: "2016",
   d: "p41"
-}
+};
 
 p42 = {
   i: "images/treesketch1.png",
@@ -748,7 +748,7 @@ p42 = {
   m: "Marker, paper",
   y: "unknown",
   d: "p42"
-}
+};
 
 p43 = {
   i: "images/treesketch2.png",
@@ -757,7 +757,7 @@ p43 = {
   m: "Marker, paper",
   y: "unknown",
   d: "p43"
-}
+};
 
 p44 = {
   i: "images/seahorse.png",
@@ -766,7 +766,7 @@ p44 = {
   m: "Pen, Post-It",
   y: "2015",
   d: "p44"
-}
+};
 
 p45 = {
   i: "images/auberg.JPG",
@@ -775,7 +775,7 @@ p45 = {
   m: "Digital illustration",
   y: "2016",
   d: "p45"
-}
+};
 
 p46 = {
   i: "images/fruitbowl.JPG",
@@ -784,7 +784,7 @@ p46 = {
   m: "Digital illustration",
   y: "2016",
   d: "p46"
-}
+};
 
 p47 = {
   i: "images/wazup.png",
@@ -793,7 +793,7 @@ p47 = {
   m: "Digital illustration",
   y: "2016",
   d: "p47"
-}
+};
 
 p48 = {
   i: "images/burn.gif",
@@ -802,7 +802,7 @@ p48 = {
   m: "gif",
   y: "2016",
   d: "p48"
-}
+};
 
 p49 = {
   i: "images/buddha.PNG",
@@ -811,7 +811,7 @@ p49 = {
   m: "Digital illustration",
   y: "2016",
   d: "p49"
-}
+};
 
 p50 = {
   i: "images/selfdark.JPG",
@@ -820,7 +820,7 @@ p50 = {
   m: "Digital illustration",
   y: "2016",
   d: "p50"
-}
+};
 
 p51 = {
   i: "images/selflight.JPG",
@@ -829,7 +829,7 @@ p51 = {
   m: "Digital illustration",
   y: "2016",
   d: "p51"
-}
+};
 
 p52 = {
   i: "images/ts.jpg",
@@ -838,7 +838,7 @@ p52 = {
   m: "Digital illustration",
   y: "2016",
   d: "p52"
-}
+};
 
 p53 = {
   i: "images/updown.2.gif",
@@ -847,7 +847,7 @@ p53 = {
   m: "gif",
   y: "2016",
   d: "p53"
-}
+};
 
 p54 = {
   i: "images/zazmud.PNG",
@@ -856,7 +856,7 @@ p54 = {
   m: "Digital illustration",
   y: "2016",
   d: "p54"
-}
+};
 
 p55 = {
   i: "images/husk.JPG",
@@ -865,7 +865,7 @@ p55 = {
   m: "Digital illustration",
   y: "2016",
   d: "p55"
-}
+};
 
 p56 = {
   i: "images/silvery.JPG",
@@ -874,7 +874,7 @@ p56 = {
   m: "Digital illustration",
   y: "2016",
   d: "p56"
-}
+};
 
 p57 = {
   i: "images/sunset.JPG",
@@ -883,7 +883,7 @@ p57 = {
   m: "Digital illustration",
   y: "2016",
   d: "p57"
-}
+};
 
 p58 = {
   i: "images/isles.JPG",
@@ -892,7 +892,7 @@ p58 = {
   m: "Digital illustration",
   y: "2016",
   d: "p58"
-}
+};
 
 p59 = {
   i: "images/mam.jpg",
@@ -901,7 +901,7 @@ p59 = {
   m: "Digital illustration",
   y: "2016",
   d: "p59"
-}
+};
 
 p60 = {
   i: "images/mam2.JPG",
@@ -910,7 +910,7 @@ p60 = {
   m: "Digital illustration",
   y: "2016",
   d: "p60"
-}
+};
 
 p61 = {
   i: "images/mouths.PNG",
@@ -919,7 +919,7 @@ p61 = {
   m: "Digital illustration",
   y: "2016",
   d: "p61"
-}
+};
 
 p62 = {
   i: "images/stump.JPG",
@@ -928,7 +928,7 @@ p62 = {
   m: "Digital illustration",
   y: "2016",
   d: "p62"
-}
+};
 
 p63 = {
   i: "images/sunset2.JPG",
@@ -937,7 +937,7 @@ p63 = {
   m: "Digital illustration",
   y: "2016",
   d: "p63"
-}
+};
 
 p64 = {
   i: "images/hairdye.gif",
@@ -946,7 +946,7 @@ p64 = {
   m: "gif/collage",
   y: "2016",
   d: "p64"
-}
+};
 
 p65 = {
   i: "images/kees",
@@ -955,7 +955,7 @@ p65 = {
   m: "gif",
   y: "2016",
   d: "p65"
-}
+};
 
 p66 = {
   i: "images/weenkslow.gif",
@@ -964,7 +964,7 @@ p66 = {
   m: "gif",
   y: "2016",
   d: "p66"
-}
+};
 
 p67 = {
   i: "images/tung.gif",
@@ -973,7 +973,7 @@ p67 = {
   m: "gif",
   y: "2016",
   d: "p67"
-}
+};
 
 p68 = {
   i: "images/madball.gif",
@@ -982,7 +982,7 @@ p68 = {
   m: "gif",
   y: "2016",
   d: "p68"
-}
+};
 
 p69 = {
   i: "images/memeball.gif",
@@ -991,7 +991,7 @@ p69 = {
   m: "gif",
   y: "2016",
   d: "p69"
-}
+};
 
 p70 = {
   i: "images/yasnomayb.gif",
@@ -1000,7 +1000,7 @@ p70 = {
   m: "gif",
   y: "2016",
   d: "p70"
-}
+};
 
 var digiArr = [p63, p62, p61, p58, p55, p56, p57, p51, p50, p49, p54, p47, p46, p45, o34, o29, o31, o27, o28, o30, o25, o32, p41, o9, o7, p70, p69, p68, p67, p65, p66, p53, p48, o36, o22, o26, o33, p60, p59, p52, o24, o23, o19, o18, o20, o17, o15, o14, o13, o12, o16, p64, o35, o21, other, o1];
 
