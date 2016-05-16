@@ -1191,7 +1191,52 @@ p91 = {
   d: "p91"
 };
 
-var digiArr = [p74, p63, p57, p90, p84, p85, p88, p87, p86, p83, p81, p79, p91, p78, p77, p75, p62, p56, p58, p61, p51, p50, p55,  p49, p54, p47, p46, p45, o34, o29, o31, o27, o28, o30, o25, o32, p41, o9, o7, p89, p80, p76, p67, p65, p66, p70, p69, p68, p72, p73, p71, p82, p53, p48, o36, o26, o33, o22, p60, p59, p52, o24, o23, o19, o18, o20, o17, o15, o14, o13, o12, o16, p64, o35, o21, other, o1];
+p92 = {
+  i: "images/boots.JPG",
+  t: "Boots",
+  s: "2048px x 2732px",
+  m: "Digital illustration",
+  y: "2016",
+  d: "p92"
+};
+
+p93 = {
+  i: "images/eevee.JPG",
+  t: "Eevee (commission)",
+  s: "2048px x 2732px",
+  m: "Digital illustration",
+  y: "2016",
+  d: "p93"
+};
+
+p94 = {
+  i: "images/hellno.PNG",
+  t: "hell no",
+  s: "2048px x 2732px",
+  m: "Digital illustration",
+  y: "2016",
+  d: "p94"
+};
+
+p95 = {
+  i: "images/internet.PNG",
+  t: "<3 internet",
+  s: "2048px x 2732px",
+  m: "Digital illustration",
+  y: "2016",
+  d: "p95"
+};
+
+p96 = {
+  i: "images/leeps.gif",
+  t: ":*",
+  s: "1872px x 2448px",
+  m: "gif",
+  y: "2016",
+  d: "p96"
+};
+
+var digiArr = [p74, p63, p57, p90, p84, p85, p88, p87, p86, p95, p94, p93, p92, p83, p81, p79, p91, p78, p77, p75, p62, p56, p58, p61, p51, p50, p55,  p49, p54, p47, p46, p45, o34, o29, o31, o27, o28, o30, o25, o32, p41, o9, o7, p96, p89, p80, p76, p67, p65, p66, p70, p69, p68, p72, p73, p71, p82, p53, p48, o36, o26, o33, o22, p60, p59, p52, o24, o23, o19, o18, o20, o17, o15, o14, o13, o12, o16, p64, o35, o21, other, o1];
 
 var oilArr = [p15, p23, p9, p7, p21, p2, p3, p14, p25, painting, p12, p19, p6, p5, p4, p1, p11, p13, p16, p8, p20, p10, p18, p24, p17, p22, p26, p28, p29, p30, p27, p34, p31, p32, p33];
 
