@@ -1464,7 +1464,7 @@ p121 = {
 p122 = {
   i: "images/moversshakers1.png",
   t: "Movers & Shakers logo concept",
-  s: "2048px x 2732px",
+  s: "1500px x 1500px",
   m: "Digital illustration",
   y: "2016",
   d: "p122"
