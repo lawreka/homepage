@@ -1643,7 +1643,7 @@ p141 = {
 
 p142 = {
   i: "images/whopper.jpeg",
-  t: "Ethereal Whopper",
+  t: "Ethereal Big Mac",
   s: "2048px x 2732px",
   m: "Digital illustration",
   y: "2016",
