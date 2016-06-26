@@ -1948,6 +1948,15 @@ p175 = {
   d: "p175"
 };
 
+p176 = {
+  i: "images/s3lfcomic19.JPG",
+  t: "Self comic 19",
+  s: "2048px x 2732px",
+  m: "Digital illustration",
+  y: "2016",
+  d: "p176"
+};
+
 var digiArr = [p63, p74, p57, p132, p133, p134, p135, p137, p138, p139, p140, p144, p145, p146, p147, p159, p160, p170, p171, p172, p163, p142, p143, p153,
   // p154, p155,
 p149, p150, p90,
