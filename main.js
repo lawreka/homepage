@@ -1984,7 +1984,25 @@ p179 = {
   d: "p179"
 };
 
-var digiArr = [p132, p133, p134, p135, p137, p138, p139, p140, p144, p145, p146, p147, p159, p160, p63, p74, p57,  p170, p171, p172, p163, p142, p143, p153,
+p180 = {
+  i: "images/hermits.JPG",
+  t: "Hermit Crab Decals",
+  s: "1774px x 1774px",
+  m: "Digital illustration",
+  y: "2016",
+  d: "p180"
+};
+
+p181 = {
+  i: "images/s3lfcomic20.JPG",
+  t: "Self comic 20",
+  s: "2048px x 2732px",
+  m: "Digital illustration",
+  y: "2016",
+  d: "p181"
+};
+
+var digiArr = [p132, p133, p134, p135, p137, p138, p139, p140, p144, p145, p146, p147, p159, p160, p63, p74, p57, p180, p170, p171, p172, p163, p142, p143, p153,
   // p154, p155,
 p149, p150, p90,
   // p84, p85, p88, p87, p86,
@@ -2022,7 +2040,7 @@ o24, o23, o19, o18,
   // o20,
 o17, o15, o14, o16, o13, o12, p64,
   // o35, o21,
-other, o1, p108, p109, p110, p113, p117, p118, p119, p120, p121, p126, p130, p131, p136, p141, p148, p152, p157, p158, p156, p124, p47, o7, p178, p179];
+other, o1, p108, p109, p110, p113, p117, p118, p119, p120, p121, p126, p130, p131, p136, p141, p148, p152, p157, p158, p165, p176, p181, p156, p124, p47, o7, p178, p179];
 
 var oilArr = [p15, p23, p9, p7, p21, p2, p3, p14, p25, painting, p12, p19, p6, p5, p4, p1, p11, p13, p16, p8, p20, p10, p18, p24, p17, p22, p26, p28, p29, p30, p27, p34, p31, p32, p33];
 
