@@ -9,45 +9,64 @@ main{
   padding: 0;
   color: white;
   font-family: sans-serif;
+  overflow-y: scroll;
 }
-nav{
-  background-color: rgba(0, 0, 0, 0.4);
-  height: 10%;
-  min-height: 60px;
-  border-bottom: solid 1px rgb(100, 100, 100);
+#logo{
+  text-align: center;
+  margin-top: 50px;
 }
 .icon{
-  float: left;
   margin: 10px;
-  height: 40px;
-  width: 40px;
-}
-a{
-  color: white;
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
 }
 .navlinks{
-  float: right;
-  margin: 20px;
-  text-decoration: none;
-}
-.title{
+  box-sizing: border-box;
   text-align: center;
-  font-family: 'Brush Script MT', cursive;
-  font-size: 50px;
-  color: red;
-  text-shadow: 0px 5px rgba(0, 0, 0, 0.7);
+  /*padding-top: 200px;*/
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-family: sans-serif;
+  font-weight: lighter;
 }
-.maintext{
+.navlinks a{
+  color: white;
+  text-decoration: none;
+  font-size: 3em;
+}
+#maintext{
   background-color: rgba(0, 0, 0, 0.4);
   width: 40%;
   padding: 10px;
   text-align: center;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 5px;
 }
-footer{
+#appbadge{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 50px;
+}
+#git{
+  width: 50%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  /*height: 80px;
+  width: 80px;*/
+}
+
+@media (max-width: 800px){
+  .navlinks{
+      box-sizing: border-box;
+      /*padding-top: 400px;*/
+      font-size: 20px;
+    }
 }

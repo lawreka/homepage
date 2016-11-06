@@ -1,0 +1,60 @@
+.title{
+  font-family: 'Orbitron', sans-serif;
+  font-size: 36px;
+  margin: 5%;
+}
+
+.smalltitle{
+  font-family: 'Exo', sans-serif;
+  font-size: 28px;
+  margin: 2%;
+  margin-bottom: 3%;
+}
+
+.lead{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  margin: 4%;
+}
+
+.text{
+  font-family: 'Lato', sans-serif;
+  margin: 1%;
+  margin-bottom: 3%;
+  text-align: left;
+  font-weight: 200;
+}
+
+.i{
+  font-style: italic;
+}
+
+.ghosty{
+  width: 250px;
+  height: 250px;
+}
+@keyframes fader {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100%{
+    opacity: 0.1;
+  }
+}
+
+.fader {
+  animation: fader;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.left{
+  text-align: left;
+}
+
+.right{
+  text-align: right;
+}
