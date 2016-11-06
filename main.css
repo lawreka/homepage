@@ -1,3 +1,58 @@
+a{
+  color: black;
+  text-decoration: none;
+}
+#myname{
+  font-weight: 200;
+  font-size: 2em;
+  padding: 0.5%;
+  margin: 0.5%;
+  display: block;
+}
+#description{
+  font-size: 1em;
+  font-weight: 100;
+  margin: 0.5%;
+  padding: 0.5%;
+}
+#navdiv{
+  padding-left: 0.5%;
+  margin-left: 0.5%;
+  margin-bottom: 2%;
+}
+#smallnav {
+  font-family: serif;
+  font-size: 1em;
+  color: black;
+  border-image: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+#dropdown-content a {
+  /*font-family: 'Tangerine', cursive;*/
+  font-family: serif;
+  font-size: 1.5em;
+  color: black;
+  text-decoration: none;
+  padding-left: 0.5%;
+  margin-left: 0.5%;
+  margin-bottom: 2%;
+  cursor: pointer;
+}
+#dropdown-content a:hover {
+  color: red;
+}
+.gallery {
+  width: 80%;
+  margin-top: 1%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about{
+  font-family: serif;
+  font-size: 0.5em;
+}
 .loading{
   position: fixed;
 	left: 0px;
@@ -7,40 +62,16 @@
 	z-index: 9999;
 	background: url(images/loadinggif2.gif) center no-repeat #fff;
 }
-
-.center {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
 .hidden {
   display: none;
 }
-a{
-  color: black;
-  text-decoration: none;
-}
 
-h1{
-  font-family: 'Monsieur La Doulaise', cursive;
-  font-size: 5em;
-  font-weight: 100;
-  margin: 0px;
-  padding: 0px;
-}
-
-h2{
-  font-family: 'Pinyon Script', cursive;
-  font-size: 2em;
-  font-weight: 100;
-  margin-top: -40px;
-}
 h3{
-  font-family: 'Pinyon Script', cursive;
-  font-size: 2em;
+  font-family: serif;
+  font-size: 1em;
   font-weight: 100;
+  margin: 0.5%;
+  padding: 0.5%;
 }
 h3 a:hover{
   color: red;
@@ -58,68 +89,39 @@ h3 a:hover{
   animation-duration: 2s;
   animation-iteration-count: 1;
 }
-@keyframes clickable{
-  0% {
-    color: black;
-  }
-  50% {
-    color: red;
-  }
-}
-.clickable{
-  animation: clickable infinite;
-  animation-duration: 3.5s;
-}
 
-.flashred{
-  animation: clickable;
-  animation-duration: 5s;
-  animation-iteration-count: 1;
-}
-#smallnav {
-  font-family: 'Tangerine', cursive;
-  font-size: 3em;
-  color: black;
-  border-image: none;
-  background-color: white;
-  border: none;
-  margin-top: -70px;
-  margin-left: auto;
-  margin-right: auto;
-  cursor: pointer;
-}
 #smallnav1 {
-  font-family: 'Tangerine', cursive;
-  font-size: 3em;
+  /*font-family: 'Tangerine', cursive;*/
+  font-family: serif;
+  font-size: 1em;
   color: black;
   border-image: none;
   background-color: white;
   border: none;
-  margin-left: auto;
-  margin-right: auto;
   cursor: pointer;
+  padding-left: 0.5%;
 }
 #smallnav2 {
-  font-family: 'Tangerine', cursive;
-  font-size: 3em;
+  /*font-family: 'Tangerine', cursive;*/
+  font-family: serif;
+  font-size: 1em;
   color: black;
   border-image: none;
   background-color: white;
   border: none;
-  margin-left: auto;
-  margin-right: auto;
   cursor: pointer;
+  padding-left: 0.5%;
 }
 #smallnav3 {
-  font-family: 'Tangerine', cursive;
+  /*font-family: 'Tangerine', cursive;*/
+  font-family: serif;
   font-size: 3em;
   color: black;
   border-image: none;
   background-color: white;
   border: none;
-  margin-left: auto;
-  margin-right: auto;
   cursor: pointer;
+  padding-left: 0.5%;
 }
 
 #moi {
@@ -141,34 +143,12 @@ h3 a:hover{
   color: red;
 }
 
-#dropdown-content a {
-  font-family: 'Tangerine', cursive;
-  font-size: 3em;
-  color: black;
-  text-decoration: none;
-  padding: 10px;
-  margin-top: 2%;
-}
 
-#dropdown-content a:hover {
-  color: red;
-}
 
 .subhead {
   margin-left: 10%;
 }
-.oilgallery {
-  width: 80%;
-  margin-top: 1%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.digigallery {
-  width: 80%;
-  margin-top: 1%;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .othergallery {
   width: 80%;
   margin-top: 1%;
@@ -189,7 +169,7 @@ h3 a:hover{
   padding-bottom: 50px;
   cursor: pointer;
 }
-.digithumb {
+.thumbnail {
   max-width: 200px;
   max-height: 200px;
   padding-left: 50px;
@@ -275,15 +255,18 @@ h3 a:hover{
 }
 
 #caption1 {
-  font-family: 'Lato', sans-serif;
+  /*font-family: 'Lato', sans-serif;*/
+  font-family: serif;
   font-size: 1.5em;
 }
 #caption2 {
-  font-family: 'Lato', sans-serif;
+  /*font-family: 'Lato', sans-serif;*/
+  font-family: serif;
   font-size: 1.5em;
 }
 #caption3 {
-  font-family: 'Lato', sans-serif;
+  /*font-family: 'Lato', sans-serif;*/
+  font-family: serif;
   font-size: 1.5em;
 }
 
@@ -301,7 +284,8 @@ h3 a:hover{
 }
 
 .projectlink {
-  font-family: 'Tangerine', cursive;
+  /*font-family: 'Tangerine', cursive;*/
+  font-family: serif;
   font-size: 3em;
   color: black;
   text-decoration: none;
@@ -334,7 +318,8 @@ iframe {
 }
 
 h4 {
-  font-family: 'Lato', sans-serif;
+  /*font-family: 'Lato', sans-serif;*/
+  font-family: serif;
   font-size: 2em;
   font-style: italic;
   margin-top: 0px;
@@ -353,12 +338,12 @@ h4:hover {
 }
 
 .jobdescrip {
-  font-family: 'Lato', sans-serif;
+  /*font-family: 'Lato', sans-serif;*/
   font-size: 1.5em;
 }
 
 .skills{
-  font-family: 'Lato', sans-serif;
+  /*font-family: 'Lato', sans-serif;*/
   font-size: 1.5em;
   font-style: italic;
   margin-top: 0px;
@@ -368,7 +353,7 @@ li{
   list-style: circle;
 }
 .afterrd{
-  font-family: 'Lato', sans-serif;
+  /*font-family: 'Lato', sans-serif;*/
   font-size: 1em;
   padding-top: 10px;
 }
@@ -412,11 +397,17 @@ li{
 }
 
 @media (max-width: 600px){
-  h2 {
-    margin-top: -30px;
-  }
   #dropdown-content a {
     display: block;
+  }
+  #navdiv{
+    padding-left: 0.5%;
+    margin-left: 0.5%;
+    margin-bottom: 2%;
+  }
+  #smallnav{
+    margin-bottom: 2%;
+    padding-bottom: 5%;
   }
   .subhead {
     width: 80%;
@@ -430,17 +421,11 @@ li{
   #preview {
     display:none;
   }
-  .leftcol{
-    width: 100%;
-  }
-  .rightcol{
-    width: 100%;
-  }
   .gallery {
     width: 90%;
     margin-top: 1%;
   }
-  .digithumb {
+  .thumbnail {
     max-width: 90%;
     height: auto;
     cursor: pointer;
