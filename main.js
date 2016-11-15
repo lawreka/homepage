@@ -1,32 +1,65 @@
 $(window).on("load", function (){
   $(".loading").fadeOut('1000');
-  $("#dropdown-content").toggleClass("hidden reveal");
-  $(".navlink").toggleClass("flashred");
+  $("#dropdown-content").removeClass("hidden");
+  $("#dropdown-content").addClass("reveal");
+  $(".navlink").addClass("flashred");
 });
 
-$(".navlink").on("click", function (){
-  $("#smallnav").toggleClass("hidden reveal");
-  $("#dropdown-content").toggleClass("hidden reveal");
-});
-
-$("#smallnav").on("click", function (){
-  $("#smallnav").toggleClass("hidden reveal");
-  $("#dropdown-content").toggleClass("hidden reveal");
+$("#smallnav").on("click", function(){
+  $("#gallery").addClass("hidden");
+  $("#smallnav").addClass("hidden");
   $(".activepage").addClass("hidden");
+  $(".activepage").removeClass("activepage");
+  $("#dropdown-content").removeClass("hidden");
+  $("#dropdown-content").addClass("reveal");
+});
+$("#art").on("click", function (){
+  $("#artdiv").addClass("reveal");
+  $("#artdiv").removeClass("hidden");
+  $("#artdiv").addClass("activepage");
+  $("#gallery").removeClass("hidden");
+  $("#dropdown-content").addClass("hidden");
+  $("#smallnav").removeClass("hidden");
+  $("#smallnav").addClass("reveal");
+});
+$("#about").on("click", function (){
+  $("#aboutdiv").addClass("reveal");
+  $("#aboutdiv").removeClass("hidden");
+  $("#aboutdiv").addClass("activepage");
+  $("#dropdown-content").addClass("hidden");
+  $("#smallnav").removeClass("hidden");
+  $("#smallnav").addClass("reveal");
+});
+$("#contact").on("click", function (){
+  $("#contactdiv").addClass("reveal");
+  $("#contactdiv").removeClass("hidden");
+  $("#contactdiv").addClass("activepage");
+  $("#dropdown-content").addClass("hidden");
+  $("#smallnav").removeClass("hidden");
+  $("#smallnav").addClass("reveal");
 });
 
-$("#digi").on("click", function (){
-  $("#digidiv").toggleClass("hidden reveal");
+$("#frame").on("click", function (){
+  $("#gallery").removeClass("hidden");
+  $("#frame").addClass("hidden");
+  $("#smallnav").removeClass("hidden");
 });
-$("#oil").on("click", function (){
-  $("#oildiv").toggleClass("hidden reveal");
+
+$(".thumbnail").on("click", function (){
+  var num = $(this).attr('data');
+  showPainting(num);
+  $("#gallery").addClass("hidden");
+  $("#frame").removeClass("hidden");
+  $("#smallnav").addClass("hidden");
 });
-$("#other").on("click", function (){
-  $("#otherdiv").toggleClass("hidden reveal");
-});
-$("#else").on("click", function (){
-  $("#elsediv").toggleClass("hidden reveal");
-});
+function showPainting(num){
+  $("#bign").attr("src", eval(num).i);
+  $("#bign").attr("data", eval(num).d);
+  $("#title").text(eval(num).t);
+  $("#size").text(eval(num).s);
+  $("#medium").text(eval(num).m);
+  $("#year").text(eval(num).y);
+}
 
 var other = {
   //image source
@@ -2029,192 +2062,13 @@ p184 = {
   d: "p184"
 };
 
-var digiArr = [p132, p133, p134, p135, p137, p138, p139, p140, p144, p145, p146, p147, p159, p160, p63, p74, p57, p180, p170, p171, p172, p163, p142, p143, p153,
-  // p154, p155,
-p149, p150, p90,
-  // p84, p85, p88, p87, p86,
-p129, p125, p123, p97, p100, p98, p99, p78, p168, p166, p167,
-  // p169, p91, p77,
-p79, p81,
-  // p51,
-p50, o34, p103, p102, p104, p164, p92, p55, p46, p45, p75, p62,
-  // p56, p58,
-p83,
-  // p93, o28,
-o27,
-  // o30,
-p95, p94, p61, p161,
-  // p49,
-p54,
-  // o29,
-o31,
-  // p122,
-o32, p41, o9, o25,
- // animation starts here
-p182, p177, p175, p174, p173, p151,
-  //p114,
-p96, p89, p80, p76, p67, p65, p66,
-  // p116, p162,
-p70,
-  // p69, p68,
-p72,
-  // p73, p71,
-p82, p53, p48, o36, o26, o33, p183, o22, p115, p111, p112, p101, p107, p105, p106,
-  // p127, p128,
-p60,
-  // p59, p52,
-o24, o23, o19, o18,
-  // o20,
-o17, o15, o14, o16, o13, o12, p64,
-  // o35, o21,
-other, o1, p108, p109, p110, p113, p117, p118, p119, p120, p121, p126, p130, p131, p136, p141, p148, p152, p157, p158, p165, p176, p181, p184, p156, p124, p47, o7, p178, p179];
+p185 = {
+  i: "images/kunstscheisse.jpg",
+  t: "Kunstscheisse",
+  s: "Approximate",
+  m: "Sculpture",
+  y: "2016",
+  d: "p185"
+};
 
-var oilArr = [p15, p23, p9, p7, p21, p2, p3, p14, p25, painting, p12, p19, p6, p5, p4, p1, p11, p13, p16, p8, p20, p10, p18, p24, p17, p22, p26, p28, p29, p30, p27, p34, p31, p32, p33];
-
-var otherArr = [o11, o5, p39, p36, p44, p40, p38, o3, o10, p42, p43, p37, p35, o4, o8, o6];
-
-$(".digithumb").on("click", function (){
-  var num = $(this).attr('data');
-  showPainting1(num);
-  $("#digigallery").toggleClass("hidden");
-  $("#frame1").toggleClass("hidden");
-  $("#smallnav").toggleClass("hidden");
-});
-
-$(".oilthumb").on("click", function (){
-  var num = $(this).attr('data');
-  showPainting2(num);
-  $("#oilgallery").toggleClass("hidden");
-  $("#frame2").toggleClass("hidden");
-  $("#smallnav").toggleClass("hidden");
-});
-
-$(".otherthumb").on("click", function (){
-  var num = $(this).attr('data');
-  showPainting3(num);
-  $("#othergallery").toggleClass("hidden");
-  $("#frame3").toggleClass("hidden");
-  $("#smallnav").toggleClass("hidden");
-});
-
-// $("#frame").on("click", function (){
-//   $("#gallery").toggleClass("hidden");
-//   $("#frame").toggleClass("hidden");
-// });
-
-function showPainting1(num){
-  $("#bign1").attr("src", eval(num).i);
-  $("#bign1").attr("data", eval(num).d);
-  $("#title1").text(eval(num).t);
-  $("#size1").text(eval(num).s);
-  $("#medium1").text(eval(num).m);
-  $("#year1").text(eval(num).y);
-}
-function showPainting2(num){
-  $("#bign2").attr("src", eval(num).i);
-  $("#bign2").attr("data", eval(num).d);
-  $("#title2").text(eval(num).t);
-  $("#size2").text(eval(num).s);
-  $("#medium2").text(eval(num).m);
-  $("#year2").text(eval(num).y);
-}
-function showPainting3(num){
-  $("#bign3").attr("src", eval(num).i);
-  $("#bign3").attr("data", eval(num).d);
-  $("#title3").text(eval(num).t);
-  $("#size3").text(eval(num).s);
-  $("#medium3").text(eval(num).m);
-  $("#year3").text(eval(num).y);
-}
-
-// $("#leftbutt1").on("click", function(){
-//     var ind = $("#bign1").attr('data');
-//     var currentArt = digiArr.indexOf(eval(ind));
-//     if (currentArt == 0){
-//       currentArt = digiArr.length - 1;
-//     }
-//     else {
-//       currentArt = currentArt - 1;
-//     }
-//   showPainting1(digiArr[currentArt]);
-// });
-// $("#leftbutt2").on("click", function(){
-//     var ind = $("#bign2").attr('data');
-//     var currentArt = oilArr.indexOf(eval(ind));
-//     if (currentArt == 0){
-//       currentArt = oilArr.length - 1;
-//     }
-//     else {
-//       currentArt = currentArt - 1;
-//     }
-//   showPainting2(oilArr[currentArt]);
-// });
-//
-// $("#leftbutt3").on("click", function(){
-//     var ind = $("#bign3").attr('data');
-//     var currentArt = otherArr.indexOf(eval(ind));
-//     if (currentArt == 0){
-//       currentArt = otherArr.length - 1;
-//     }
-//     else {
-//       currentArt = currentArt - 1;
-//     }
-//   showPainting3(otherArr[currentArt]);
-// });
-//
-// $("#rightbutt1").on("click", function(){
-//     var ind = $("#bign1").attr('data');
-//     var currentArt = digiArr.indexOf(eval(ind));
-//     if (currentArt == digiArr.length - 1){
-//       currentArt = 0;
-//     }
-//     else {
-//       currentArt = currentArt + 1;
-//     }
-//   showPainting1(digiArr[currentArt]);
-// });
-// $("#rightbutt2").on("click", function(){
-//     var ind = $("#bign2").attr('data');
-//     var currentArt = oilArr.indexOf(eval(ind));
-//     if (currentArt == oilArr.length - 1){
-//       currentArt = 0;
-//     }
-//     else {
-//       currentArt = currentArt + 1;
-//     }
-//   showPainting2(oilArr[currentArt]);
-// });
-// $("#rightbutt3").on("click", function(){
-//     var ind = $("#bign3").attr('data');
-//     var currentArt = otherArr.indexOf(eval(ind));
-//     if (currentArt == otherArr.length - 1){
-//       currentArt = 0;
-//     }
-//     else {
-//       currentArt = currentArt + 1;
-//     }
-//   showPainting3(otherArr[currentArt]);
-// });
-
-$("#smallnav1").on("click", function(){
-  $("#digigallery").toggleClass("hidden");
-  $("#frame1").toggleClass("hidden");
-  $("#smallnav").toggleClass("hidden reveal");
-});
-
-$("#smallnav2").on("click", function(){
-  $("#oilgallery").toggleClass("hidden");
-  $("#frame2").toggleClass("hidden");
-  $("#smallnav").toggleClass("hidden reveal");
-});
-
-$("#smallnav3").on("click", function(){
-  $("#othergallery").toggleClass("hidden");
-  $("#frame3").toggleClass("hidden");
-  $("#smallnav").toggleClass("hidden reveal");
-});
-
-
-$(".clickable").on("click", function(){
-  $(this).toggleClass("clickable");
-});
+var digiArr = [p63, p74, p57, p173, p170, p50, p185, painting, p65, p150, p142, o26, p167, p159, p25, p177, p153, p143, p151, p95, p152, p85, p88, p34, p129, p96, p146, o25, p15, p124, p175, o5, p78 ,p70, p23, p115, p72, p171, p89, p172, p61, p139, p66, p12, o8, p106, o1, p80, p101, p21, p76, p3, p94, p67, p6, p40, p27, p2, p54, other, p31, p32, o9, p20, p16, p46, p174, p112, o10, p156, p123, p4, p169, o3];
