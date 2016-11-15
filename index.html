@@ -7,22 +7,23 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
     </script>
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
   </head>
   <body>
     <main>
       <a href="index.html">
         <div id="myname"> Kathryn Isabelle </div>
       </a>
-      <div id="description">Digital art | web design | photo retouching | illustration | animation | oil painting | sculpture
+      <div id="description">digital art | web design | photo retouching | illustration | animation | oil painting | sculpture
       </div>
       <div class="loading"></div>
       <div id="navdiv">
         <div id="smallnav" class="hidden">menu</div>
       </div>
-      <div id="dropdown-content" class="center hidden">
+      <div id="dropdown-content" class="hidden">
           <a href="#" class="navlink" id="art"> art </a>
           <a href="#" class="navlink" id="about"> about </a>
-          <a href="#" class="navlink" id="contact"> contact </a>
+          <a href="mailto:kathrynisabellelawrence@gmail.com" class="navlink" id="contact"> contact </a>
       </div>
       <div id="artdiv" class="hidden">
         <div id="gallery">
@@ -96,27 +97,44 @@
           <img class="thumbnail" src="images/cepastel_thumb.PNG" data="p112" />
           <img class="thumbnail" src="images/yolologo_thumb.jpg" data="o10"/>
           <img class="thumbnail" src="images/sharkcomic_thumb.JPG" data="p156" />
-          <img class="thumbnail" src="images/lanternphoto_thumb.JPG" data="o3"/>
           <img class="thumbnail" src="images/alchemy_thumb.JPG" data="p123"/>
           <img class="thumbnail" src="images/americanspirit.jpg" data="p4"/>
           <img class="thumbnail" src="images/carpenoctem.JPG" data="p169"/>
+          <img class="thumbnail" src="images/lanternphoto_thumb.JPG" data="o3"/>
         </div>
         <div id="frame" class="hidden center">
           <img id="bign"/>
           <div id="caption">
-            <p id="title"></p>
-            <p id="size">Size</p>
-            <p id="medium">Medium</p>
-            <p id="year">Year</p>
+            <p id="title" class="captiontitle"></p>
+            <p id="size" class="caption">Size</p>
+            <p id="medium" class="caption">Medium</p>
+            <p id="year" class="caption">Year</p>
           </div>
         </div>
       </div>
       <div id="aboutdiv" class="hidden">
-        <p>About</p>
+        <p class="cvheader">CV</p>
+        <p class="cvtext">b. 1992<br>
+        Berlin, Germany
+        <p class="cvheader">EDUCATION</p>
+        <p class="cvtext">Hochschule für Medien Kommunikation und Wirtschaft, Berlin, DE, expected Master of Arts 2018<br>
+        2016 Front-end Web Development, General Assembly, San Francisco, CA, USA<br>
+        2014 Bachelor of Arts, Reed College, Portland, OR, USA</p>
+        <p class="cvheader">GROUP EXHIBITIONS</p>
+        <p class="cvtext">2016 Sketch the Moment 1st Exhibition, Kunstraum Tapir, Berlin, DE<br>
+        2016 Haihatus International 5, Taidelaitos Haihatus, Joutsa, FI<br>
+        2016 In The Mind's Eye, Kunstraum Tapir, Berlin, DE<br>
+        2016 petal tears, private residence, Los Angeles, CA, USA</p>
+        <p class="cvheader">RESIDENCIES</p>
+        <p class="cvtext">2016 Artist in residence, Takt, Berlin, DE <a href="http://taktberlin.org/">http://taktberlin.org/</a><br>
+        2016 Artist in residence, Taidelaitos Haihatus, Joutsa, FI <a href="http://www.en.haihatus.fi/">http://www.en.haihatus.fi/</a></p>
+        <p class="cvheader">PUBLICATIONS</p>
+        <p class="cvtext">'Kathryn Lawrence' Interview, Taidelaitos Haihatus, published June 16, 2016<br>
+        'Cyber Corpus' Thesis (B.A.) Reed College, 2014, Reed College Library</p>
+        <p class="cvheader">GALLERY EXPERIENCE</p>
+        <p class="cvtext">2016 Gallery intern, Showroom Berliini, Berlin, DE</p>
       </div>
-      <div id="contactdiv" class="hidden">
-        <p>Contact</p>
-      </div>
+      <div id="contactdiv" class="hidden"></div>
     </main>
     <script type="text/javascript" src="main.js"></script>
   </body>

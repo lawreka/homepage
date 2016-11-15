@@ -3,54 +3,59 @@ a{
   text-decoration: none;
 }
 #myname{
+  font-family: 'Crimson Text', serif;
   font-weight: 200;
   font-size: 2em;
   padding: 0.5%;
-  margin: 0.5%;
-  display: block;
+  margin: 1%;
+}
+#myname:hover{
+  color: #fb00ff
 }
 #description{
+  font-family: 'Crimson Text', serif;
   font-size: 1em;
   font-weight: 100;
-  margin: 0.5%;
-  padding: 0.5%;
+  margin-left: 1%;
+  padding-left: 0.5%;
 }
 #navdiv{
-  padding-left: 0.5%;
-  margin-left: 0.5%;
-  margin-bottom: 2%;
+  margin: 1%;
 }
 #smallnav {
-  font-family: serif;
+  font-family: 'Crimson Text', serif;
   font-size: 1em;
   color: black;
   border-image: none;
   background-color: transparent;
   border: none;
   cursor: pointer;
+  margin-bottom: 2%;
+}
+#dropdown-content{
+  margin-left: 1%;
+  padding-left: 0.5%;
+  margin-bottom: 2%;
 }
 #dropdown-content a {
-  /*font-family: 'Tangerine', cursive;*/
-  font-family: serif;
+  font-family: 'Crimson Text', serif;
   font-size: 1.5em;
   color: black;
   text-decoration: none;
-  padding-left: 0.5%;
-  margin-left: 0.5%;
-  margin-bottom: 2%;
   cursor: pointer;
 }
 #dropdown-content a:hover {
-  color: red;
+  color: #ec9fff;
 }
-.gallery {
-  width: 80%;
-  margin-top: 1%;
-  margin-left: auto;
-  margin-right: auto;
+.navlink{
+  margin-right: 1.5%;
+}
+#gallery {
+  width: 100%;
+  margin: 1.5%;
 }
 .about{
-  font-family: serif;
+  font-family: 'Crimson Text', serif;
   font-size: 0.5em;
 }
 .loading{
@@ -67,14 +72,14 @@ a{
 }
 .activepage{}
 h3{
-  font-family: serif;
+  font-family: 'Crimson Text', serif;
   font-size: 1em;
   font-weight: 100;
   margin: 0.5%;
   padding: 0.5%;
 }
 h3 a:hover{
-  color: red;
+  color: #ec9fff;
 }
 @keyframes reveal {
   0% {
@@ -89,11 +94,9 @@ h3 a:hover{
   animation-duration: 2s;
   animation-iteration-count: 1;
 }
-
 #smallnav {
-  /*font-family: 'Tangerine', cursive;*/
-  font-family: serif;
-  font-size: 1em;
+  font-family: 'Crimson Text', serif;
+  font-size: 1.5em;
   color: black;
   border-image: none;
   background-color: white;
@@ -102,44 +105,41 @@ h3 a:hover{
   padding-left: 0.5%;
 }
 #smallnav:hover {
-  color: red;
+  color: #ec9fff;
 }
 
 .thumbnail {
   max-width: 200px;
   max-height: 200px;
-  padding-left: 50px;
-  padding-bottom: 50px;
+  padding-right: 20px;
+  padding-bottom: 20px;
   cursor: pointer;
 }
 #bign {
   max-width: 80%;
   height: auto;
-  margin-top: 2%;
-  user-select: none;
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -o-user-select: none;
+  margin: 1.5%;
+  cursor: pointer;
 }
-
-#caption {
-  font-family: serif;
+.captiontitle {
+  font-family: 'Crimson Text', serif;
   font-size: 1.5em;
+  margin: 1.5%;
 }
-
-#caption #title {
-  font-size: 2em;
-  font-style: italic;
+.caption {
+  font-family: 'Crimson Text', serif;
+  font-size: 1em;
+  margin: 1.5%;
 }
-
-
-.full{
-  width: 90%;
-  position: relative;
-  float: left;
+#aboutdiv{
+  margin: 1.5%;
 }
-
+.cvheader{
+  font-family: 'Crimson Text', serif;
+}
+.cvtext{
+  font-family: 'Crimson Text', serif;
+}
 @media (max-width: 600px){
   #dropdown-content a {
     display: block;
@@ -153,39 +153,17 @@ h3 a:hover{
     margin-bottom: 2%;
     padding-bottom: 5%;
   }
-  .subhead {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
   #bign {
     width: 90%;
   }
   #preview {
     display:none;
   }
-  .gallery {
+  #gallery {
     width: 90%;
-    margin-top: 1%;
+    margin: 1.5%;
   }
   .thumbnail {
-    max-width: 90%;
-    height: auto;
-    cursor: pointer;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .oilthumb {
-    max-width: 90%;
-    height: auto;
-    cursor: pointer;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .otherthumb {
     max-width: 90%;
     height: auto;
     cursor: pointer;
