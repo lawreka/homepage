@@ -1,29 +1,65 @@
 $(window).on("load", function (){
   $(".loading").fadeOut('1000');
-  $("#dropdown-content").toggleClass("hidden reveal");
-  $(".navlink").toggleClass("flashred");
+  $("#dropdown-content").removeClass("hidden");
+  $("#dropdown-content").addClass("reveal");
+  $(".navlink").addClass("flashred");
 });
 
-$(".navlink").on("click", function (){
-  $("#smallnav").toggleClass("hidden reveal");
-  $("#dropdown-content").toggleClass("hidden reveal");
-});
-
-$("#smallnav").on("click", function (){
-  $("#smallnav").toggleClass("hidden reveal");
-  $("#dropdown-content").toggleClass("hidden reveal");
+$("#smallnav").on("click", function(){
+  $("#gallery").addClass("hidden");
+  $("#smallnav").addClass("hidden");
   $(".activepage").addClass("hidden");
+  $(".activepage").removeClass("activepage");
+  $("#dropdown-content").removeClass("hidden");
+  $("#dropdown-content").addClass("reveal");
 });
-
 $("#art").on("click", function (){
-  $("#artdiv").toggleClass("hidden reveal");
+  $("#artdiv").addClass("reveal");
+  $("#artdiv").removeClass("hidden");
+  $("#artdiv").addClass("activepage");
+  $("#gallery").removeClass("hidden");
+  $("#dropdown-content").addClass("hidden");
+  $("#smallnav").removeClass("hidden");
+  $("#smallnav").addClass("reveal");
 });
 $("#about").on("click", function (){
-  $("#aboutdiv").toggleClass("hidden reveal");
+  $("#aboutdiv").addClass("reveal");
+  $("#aboutdiv").removeClass("hidden");
+  $("#aboutdiv").addClass("activepage");
+  $("#dropdown-content").addClass("hidden");
+  $("#smallnav").removeClass("hidden");
+  $("#smallnav").addClass("reveal");
 });
 $("#contact").on("click", function (){
-  $("#contactdiv").toggleClass("hidden reveal");
+  $("#contactdiv").addClass("reveal");
+  $("#contactdiv").removeClass("hidden");
+  $("#contactdiv").addClass("activepage");
+  $("#dropdown-content").addClass("hidden");
+  $("#smallnav").removeClass("hidden");
+  $("#smallnav").addClass("reveal");
 });
+
+$("#frame").on("click", function (){
+  $("#gallery").removeClass("hidden");
+  $("#frame").addClass("hidden");
+  $("#smallnav").removeClass("hidden");
+});
+
+$(".thumbnail").on("click", function (){
+  var num = $(this).attr('data');
+  showPainting(num);
+  $("#gallery").addClass("hidden");
+  $("#frame").removeClass("hidden");
+  $("#smallnav").addClass("hidden");
+});
+function showPainting(num){
+  $("#bign").attr("src", eval(num).i);
+  $("#bign").attr("data", eval(num).d);
+  $("#title").text(eval(num).t);
+  $("#size").text(eval(num).s);
+  $("#medium").text(eval(num).m);
+  $("#year").text(eval(num).y);
+}
 
 var other = {
   //image source
@@ -2035,38 +2071,4 @@ p185 = {
   d: "p185"
 };
 
-var digiArr = [p63, p74, p57, p173, p170, p50, p185, painting, p65, p150, p142, o26, p167, p159, p25, p177, p153, p143, p151, p95, p152, p85, p88, p34, p129, p96, p146, o25, p15, p124, p175, o5, p78 ,p70, p23, p115, p72, p171, p89, p172, p61, p139, p66, p12, o8, p106, o1, p80, p101, p21, p76, p3, p94, p67, p6, p40, p27, p2, p54, other, p31, p32, o9, p20, p16, p46, p174, p112, o10, p156, o3, p123, p4];
-
-
-$(".thumbnail").on("click", function (){
-  var num = $(this).attr('data');
-  showPainting(num);
-  $("#gallery").toggleClass("hidden");
-  $("#frame").toggleClass("hidden");
-  $("#smallnav").toggleClass("hidden");
-});
-
-$("#frame").on("click", function (){
-  $("#gallery").toggleClass("hidden");
-  $("#frame").toggleClass("hidden");
-});
-
-function showPainting(num){
-  $("#bign").attr("src", eval(num).i);
-  $("#bign").attr("data", eval(num).d);
-  $("#title").text(eval(num).t);
-  $("#size").text(eval(num).s);
-  $("#medium").text(eval(num).m);
-  $("#year").text(eval(num).y);
-}
-
-$("#smallnav").on("click", function(){
-  $("#gallery").toggleClass("hidden");
-  $("#frame").toggleClass("hidden");
-  $("#smallnav").toggleClass("hidden reveal");
-});
-
-
-$(".clickable").on("click", function(){
-  $(this).toggleClass("clickable");
-});
+var digiArr = [p63, p74, p57, p173, p170, p50, p185, painting, p65, p150, p142, o26, p167, p159, p25, p177, p153, p143, p151, p95, p152, p85, p88, p34, p129, p96, p146, o25, p15, p124, p175, o5, p78 ,p70, p23, p115, p72, p171, p89, p172, p61, p139, p66, p12, o8, p106, o1, p80, p101, p21, p76, p3, p94, p67, p6, p40, p27, p2, p54, other, p31, p32, o9, p20, p16, p46, p174, p112, o10, p156, o3, p123, p4, p169];
