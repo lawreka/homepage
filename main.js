@@ -5,7 +5,65 @@ $(window).on("load", function (){
   $(".navlink").addClass("flashred");
 });
 
+$("#digilink").on("click", function(){
+  resetArt();
+  showArt();
+  $(".web").addClass("hidden");
+  $(".illu").addClass("hidden");
+  $(".ani").addClass("hidden");
+  $(".oil").addClass("hidden");
+  $(".sculp").addClass("hidden");
+});
+$("#weblink").on("click", function(){
+  resetArt();
+  showArt();
+  $(".digi").addClass("hidden");
+  $(".illu").addClass("hidden");
+  $(".ani").addClass("hidden");
+  $(".oil").addClass("hidden");
+  $(".sculp").addClass("hidden");
+});
+$("#illulink").on("click", function(){
+  resetArt();
+  showArt();
+  $(".digi").addClass("hidden");
+  $(".web").addClass("hidden");
+  $(".ani").addClass("hidden");
+  $(".oil").addClass("hidden");
+  $(".sculp").addClass("hidden");
+});
+$("#anilink").on("click", function(){
+  resetArt();
+  showArt();
+  $(".digi").addClass("hidden");
+  $(".web").addClass("hidden");
+  $(".illu").addClass("hidden");
+  $(".oil").addClass("hidden");
+  $(".sculp").addClass("hidden");
+});
+$("#oillink").on("click", function(){
+  resetArt();
+  showArt();
+  $(".digi").addClass("hidden");
+  $(".web").addClass("hidden");
+  $(".illu").addClass("hidden");
+  $(".ani").addClass("hidden");
+  $(".sculp").addClass("hidden");
+});
+$("#sculplink").on("click", function(){
+  resetArt();
+  showArt();
+  $(".digi").addClass("hidden");
+  $(".web").addClass("hidden");
+  $(".illu").addClass("hidden");
+  $(".ani").addClass("hidden");
+  $(".oil").addClass("hidden");
+});
+function resetArt(){
+  $(".thumbnail").removeClass("hidden");
+}
 $("#smallnav").on("click", function(){
+  resetArt();
   $("#gallery").addClass("hidden");
   $("#smallnav").addClass("hidden");
   $(".activepage").addClass("hidden");
@@ -13,7 +71,8 @@ $("#smallnav").on("click", function(){
   $("#dropdown-content").removeClass("hidden");
   $("#dropdown-content").addClass("reveal");
 });
-$("#art").on("click", function (){
+function showArt(){
+  resetArt();
   $("#artdiv").addClass("reveal");
   $("#artdiv").removeClass("hidden");
   $("#artdiv").addClass("activepage");
@@ -21,6 +80,9 @@ $("#art").on("click", function (){
   $("#dropdown-content").addClass("hidden");
   $("#smallnav").removeClass("hidden");
   $("#smallnav").addClass("reveal");
+}
+$("#art").on("click", function (){
+  showArt();
 });
 $("#about").on("click", function (){
   $("#aboutdiv").addClass("reveal");

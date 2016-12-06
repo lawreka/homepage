@@ -105,9 +105,26 @@ h3 a:hover{
   padding-left: 0.5%;
 }
 #smallnav:hover {
-  color: #ec9fff;
+  color: #e4d1e8
 }
-
+#digilink:hover {
+  color: #fb6dfd;
+}
+#weblink:hover {
+  color: #fb6dfd;
+}
+#illulink:hover {
+  color: #fb6dfd;
+}
+#anilink:hover {
+  color: #fb6dfd;
+}
+#oillink:hover {
+  color: #fb6dfd;
+}
+#sculplink:hover {
+  color: #fb6dfd;
+}
 .thumbnail {
   max-width: 200px;
   max-height: 200px;
