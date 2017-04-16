@@ -1,62 +1,112 @@
+body{
+  margin: 0;
+  background-color: #ffffff;
+}
+ul{
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+}
+li{
+  list-style-type: none;
+}
 a{
-  color: black;
   text-decoration: none;
+  color: #2700ff;
+  font-weight: 600;
 }
-#myname{
-  font-family: 'Crimson Text', serif;
-  font-weight: 200;
-  font-size: 2em;
-  padding: 0.5%;
-  margin: 1%;
+.hidden{
+  display:none;
 }
-#myname:hover{
-  color: #fb00ff
+.mondotext{
+  font-size: 8em;
+  font-weight: 600;
 }
-#description{
-  font-family: 'Crimson Text', serif;
-  font-size: 1em;
-  font-weight: 100;
-  margin-left: 1%;
-  padding-left: 0.5%;
+.bigtext{
+  font-size: 6em;
 }
-#navdiv{
-  margin: 1%;
-}
-#smallnav {
-  font-family: 'Crimson Text', serif;
-  font-size: 1em;
-  color: black;
-  border-image: none;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  margin-bottom: 2%;
-}
-#dropdown-content{
-  margin-left: 1%;
-  padding-left: 0.5%;
-  margin-bottom: 2%;
-}
-#dropdown-content a {
-  font-family: 'Crimson Text', serif;
+.medtext{
   font-size: 1.5em;
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
 }
-#dropdown-content a:hover {
-  color: #ec9fff;
+.regtext{}
+.nav{
+  position: fixed;
+  width: 20%;
+  height: 100%;
+  background-color:#ffffff;
 }
-.navlink{
-  margin-right: 1.5%;
+.navlist{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  height: 80vh;
+  padding-top: 20%;
+  padding-left: 20%;
+  justify-content: space-around;
 }
-#gallery {
-  width: 100%;
-  margin: 1.5%;
+.icon{
+  width:50%;
+  height: 50%;
 }
-.about{
-  font-family: 'Crimson Text', serif;
-  font-size: 0.5em;
+.section{
+  height: 100vh;
+  padding-left: 20%;
+  padding-top: 5%;
+  padding-right: 10%;
+  text-align: left;
+}
+#landing{
+  background-color: #ffffff;
+}
+#about{}
+#art{}
+#writing{
+  height: 120vh;
+}
+#contact{}
+#gallerynav{
+  position: fixed;
+  top: 5%;
+  left: 5%;
+}
+#gallery{
+  width: 80%;
+  margin-left: 20%;
+}
+.writings{
+  padding-left: 5%;
+  padding-top: 1em;
+}
+.writings li{
+  list-style-type: circle;
+}
+.writings a{
+  color: #000000;
+}
+.smicon{
+  width: 50px;
+  height: 50px;
+  padding: 30px;
+}
+#footer{
+  padding-right: 0;
+  height: auto;
+  text-align: center;
+  font-size: 14px;
+}
+table{
+  text-align: center;
+  border: 1px solid black;
+}
+th{
+  font-weight: normal;
+}
+.zicon{
+  width: 30px;
+  height: 20px;
 }
 .loading{
   position: fixed;
@@ -67,125 +117,35 @@ a{
 	z-index: 9999;
 	background: url(images/loadinggif2.gif) center no-repeat #fff;
 }
-.hidden {
-  display: none;
-}
-.activepage{}
-h3{
-  font-family: 'Crimson Text', serif;
-  font-size: 1em;
-  font-weight: 100;
-  margin: 0.5%;
-  padding: 0.5%;
-}
-h3 a:hover{
-  color: #ec9fff;
-}
-@keyframes reveal {
-  0% {
-    opacity: 0;
+@media (max-width: 900px){
+  .mondotext{
+    font-size: 4em;
   }
-  50% {
-    opacity: 1;
+  .bigtext{
+    font-size: 3em;
   }
-}
-.reveal {
-  animation: reveal;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-}
-#smallnav {
-  font-family: 'Crimson Text', serif;
-  font-size: 1.5em;
-  color: black;
-  border-image: none;
-  background-color: white;
-  border: none;
-  cursor: pointer;
-  padding-left: 0.5%;
-}
-#smallnav:hover {
-  color: #e4d1e8
-}
-#digilink:hover {
-  color: #fb6dfd;
-}
-#weblink:hover {
-  color: #fb6dfd;
-}
-#illulink:hover {
-  color: #fb6dfd;
-}
-#anilink:hover {
-  color: #fb6dfd;
-}
-#oillink:hover {
-  color: #fb6dfd;
-}
-#sculplink:hover {
-  color: #fb6dfd;
-}
-.thumbnail {
-  max-width: 200px;
-  max-height: 200px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  cursor: pointer;
-}
-#bign {
-  max-width: 80%;
-  height: auto;
-  margin: 1.5%;
-  cursor: pointer;
-}
-.captiontitle {
-  font-family: 'Crimson Text', serif;
-  font-size: 1.5em;
-  margin: 1.5%;
-}
-.caption {
-  font-family: 'Crimson Text', serif;
-  font-size: 1em;
-  margin: 1.5%;
-}
-#aboutdiv{
-  margin: 1.5%;
-}
-.cvheader{
-  font-family: 'Crimson Text', serif;
-}
-.cvtext{
-  font-family: 'Crimson Text', serif;
-}
-@media (max-width: 600px){
-  #dropdown-content a {
-    display: block;
+  .medtext{
+    font-size: 1em;
   }
-  #navdiv{
-    padding-left: 0.5%;
-    margin-left: 0.5%;
-    margin-bottom: 2%;
+  .regtext{
+    font-size: 12px;
   }
-  #smallnav{
-    margin-bottom: 2%;
-    padding-bottom: 5%;
+  .nav{
+    display: none;
   }
-  #bign {
-    width: 90%;
-  }
-  #preview {
-    display:none;
-  }
-  #gallery {
-    width: 90%;
-    margin: 1.5%;
-  }
-  .thumbnail {
-    max-width: 90%;
+  .section{
     height: auto;
-    cursor: pointer;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: 2em;
+  }
+  #writing{
+    height: auto;
+  }
+  #footer{
+    padding-left: 0;
+    font-size: 10px;
+  }
+  #gallery{
+    width: 100%;
+    margin-left: 0;
   }
 }
