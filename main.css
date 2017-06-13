@@ -42,6 +42,7 @@ a{
   width: 20%;
   height: 100%;
   background-color:#ffffff;
+  padding-top:1%;
 }
 .navlist{
   display: flex;
@@ -50,7 +51,6 @@ a{
   padding: 0;
   height: 100vh;
   justify-content: space-around;
-  padding-top:40%;
 }
 .icon{
   width:50%;
