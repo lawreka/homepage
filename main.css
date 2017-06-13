@@ -23,14 +23,20 @@ a{
 .mondotext{
   font-size: 8em;
   font-weight: 600;
+  line-height: 0.6em;
 }
 .bigtext{
   font-size: 6em;
+  line-height: 0.8em;
 }
 .medtext{
   font-size: 1.5em;
+  line-height: 1.2em;
 }
 .regtext{}
+.tinytext{
+  font-size:0.8em;
+}
 .nav{
   position: fixed;
   width: 20%;
@@ -42,9 +48,7 @@ a{
   flex-direction: column;
   margin: 0;
   padding: 0;
-  height: 80vh;
-  padding-top: 20%;
-  padding-left: 20%;
+  height: 100vh;
   justify-content: space-around;
 }
 .icon{
@@ -55,7 +59,7 @@ a{
   height: 100vh;
   padding-left: 20%;
   padding-top: 5%;
-  padding-right: 10%;
+  padding-right: 2%;
   text-align: left;
 }
 #landing{
@@ -117,6 +121,9 @@ th{
 	z-index: 9999;
 	background: url(images/loadinggif2.gif) center no-repeat #fff;
 }
+#contact{
+  display:none;
+}
 @media (max-width: 900px){
   .mondotext{
     font-size: 4em;
@@ -147,5 +154,8 @@ th{
   #gallery{
     width: 100%;
     margin-left: 0;
+  }
+  #contact{
+    display: block;
   }
 }
