@@ -50,6 +50,7 @@ a{
   padding: 0;
   height: 100vh;
   justify-content: space-around;
+  padding-top:40%;
 }
 .icon{
   width:50%;
