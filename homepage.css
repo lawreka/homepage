@@ -69,18 +69,18 @@ a:hover{
 @media (max-width: 450px) {
   #myface{
     width: 100%;
-    height: 55vh;
+    height: 80vh;
   }
   #about{
     position: absolute;
-    top: 55vh;
+    top: 80vh;
     left: 0;
     width: 100%;
     background-color: #fff;
   }
   #projects{
     position: absolute;
-    top: 110vh;
+    top: 160vh;
     left: 0;
     width: 100%;
     background-color: #fff;
