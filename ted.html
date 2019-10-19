@@ -8,31 +8,34 @@
     <link rel="stylesheet" type="text/css" href="homepage.css">
     <link rel="icon" href="images/moonemoji.png">
 		<style>
-			.video-fixed{
-				position: fixed;
-				width: 100%;
-			}
-			.video{
-				margin-left: auto;
-				margin-right: auto;
-				text-align: center;
-				padding-top: 20px;
-			}
-			.transcript{
-				padding: 20px;
-				position: absolute;
-				top: 200px;
-				overflow: scroll;
-			}
+			div{
+        padding: 20px;
+        max-width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: justify;
+      }
+      @media (max-width: 450px) {
+        div{
+          max-width: 100%;
+        }
+      }
+
 		</style>
   </head>
   <body>
-		<div class="video-fixed">
-			<div class="video">
-			<iframe src="https://player.vimeo.com/video/366111605" width="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-			</div>
+		<div class="video-container">
+      <iframe src="https://player.vimeo.com/video/366111605" width="100%" height="auto" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 		</div>
+    <div class="description">
+      <span style="font-weight:800;">Memorials to our humanity</span><br>
+      AI-generated and voiced TED Talk for <a href="https://thewrong.org/tedx">TEDxgeo, The Wrong 2019</a><br>
+      Watch on <a href="https://vimeo.com/366111605">Vimeo</a><br>
+      Repo: <a href="https://github.com/lawreka/TED-ai">https://github.com/lawreka/TED-ai</a>
+    </div>
 		<div class="transcript">
+      Transcript:
+      <br><br>
 			I'm a little bit of a nerd, and I'm going to be honest, I'm not really good at this.<br><br>
 			I remember when I was asked to give a TEDTalk for the first time, I was up in the balcony of the TED stage. I'm sure you all have, you know, a certain amount of that. I remember being up there, and I got very nervous, and I thought, "I just have to make it look good. I have to just  be nice, and I have to be dignified."<br><br>
 			So I want to start by saying, I'm going to talk about the United States of America. And I'm going to talk about the United States of America and why it's important for us to know what we're doing.<br><br>
