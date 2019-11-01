@@ -59,8 +59,9 @@ a{
 .project{
   padding: 20px;
 }
-.projecttext{
-
+.projecttext a{
+  color: #666;
+  text-decoration: underline;
 }
 @media (max-width: 450px) {
   #myface{
