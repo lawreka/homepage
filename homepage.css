@@ -8,7 +8,7 @@ body{
   position:fixed;
   top:0;
   left: 0;
-  width: 30%;
+  width: 40%;
   height: 100vh;
   display: inline-block;
   overflow: hidden;
@@ -39,6 +39,9 @@ body{
 .abouttext{
   padding: 20px;
 }
+.contactlist{
+  padding: 40px;
+}
 ul{
   list-style: none;
   padding: 0;
@@ -52,9 +55,7 @@ a{
 .contacts{
   padding-bottom: 5px;
   font-size: 16px;
-}
-.projectlink{
-
+  text-align: center;
 }
 .project{
   padding: 20px;
@@ -66,20 +67,28 @@ a{
 @media (max-width: 450px) {
   #myface{
     width: 100%;
-    height: 80vh;
+    height: 40vh;
   }
   #about{
     position: absolute;
-    top: 80vh;
+    top: 40vh;
     left: 0;
     width: 100%;
     background-color: #fff;
+    padding: 0;
+  }
+  .contactlist{
+    padding: 0px;
+  }
+  .contacts{
+    text-align: left;
   }
   #projects{
     position: absolute;
-    top: 160vh;
+    top: 100vh;
     left: 0;
     width: 100%;
     background-color: #fff;
+    overflow: unset;
   }
 }
