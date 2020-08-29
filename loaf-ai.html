@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<head>
+    <title>loaf.ai.fm</title>
+    <meta name='viewport' content='width=device-width,initial-scale=1'>
+    <meta name='description' content='generative lo fi hip hop with magentajs'>
+    <link rel='shortcut icon' href='https://lofi-ai-assets.s3.amazonaws.com/images/nightskyemoji.png' type='image/png'>
+    <script src='https://cdn.jsdelivr.net/npm/tone@14.7.39/build/Tone.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/@magenta/music@^1.19.0'></script>
+    <script src='https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-core@2.3.0/dist/tf-core.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/@magenta/music@^1.19.0/es6/core.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/@magenta/music@^1.19.0/es6/music_rnn.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.min.js'></script>
+    <link rel='stylesheet' type='text/css' href='loaf-ai.css' />
+</head>
+
+<body>
+    <div id='loading' class='invisible'>
+        <img id='spinner' src='https://lofi-ai-assets.s3.amazonaws.com/images/spinner.gif'>
+    </div>
+    <div id='background'></div>
+    <div id='main-screen'>
+        <div id="info"><a id="writeup-link" href="loaf-ai-writeup.html">uwu what's this?</a></div>
+        <div id='menu-wrapper'>
+            <div class='form-heading enabled'>Chords</div>
+            <form id='chords'>
+                <label>
+                    <input class='form-input' type='radio' value='rainyDay' name='chords'
+                        onchange="setChords('rainyDay')" checked />
+                    rainy day
+                </label>
+                <label>
+                    <input class='form-input' type='radio' value='juniper' name='chords'
+                        onchange="setChords('juniper')" />
+                    juniper
+                </label>
+                <label>
+                    <input class='form-input' type='radio' value='jade' name='chords' onchange="setChords('jade')" />
+                    jade
+                </label>
+            </form>
+            <div class='form-heading enabled'>Drums</div>
+            <form id='drums'>
+                <label>
+                    <input class='form-input' type='radio' value='heart' name='drums' onchange="setDrums('heart')"
+                        checked />
+                    heart
+                </label>
+                <label>
+                    <input class='form-input' type='radio' value='star' name='drums' onchange="setDrums('star')" />
+                    star
+                </label>
+                <label>
+                    <input class='form-input' type='radio' value='indigo' name='drums' onchange="setDrums('indigo')" />
+                    indigo
+                </label>
+            </form>
+            <div class='form-heading enabled'>Sound effects</div>
+            <form id='natureSounds'>
+                <label>
+                    <input class='form-input' type='radio' value='rain' name='natureSounds'
+                        onchange="setNatureSounds('rain')" checked />
+                    light rain
+                </label>
+                <label>
+                    <input class='form-input' type='radio' value='storm' name='natureSounds'
+                        onchange="setNatureSounds('storm')" />
+                    summer storm
+                </label>
+                <label>
+                    <input class='form-input' type='radio' value='waves' name='natureSounds'
+                        onchange="setNatureSounds('waves')" />
+                    waves
+                </label>
+            </form>
+            <div class='form-heading enabled'>Quote</div>
+            <form id='talking'>
+                <label>
+                    <input class='form-input' type='radio' value='her' name='talking' onchange="setTalking('her')"
+                        checked />
+                    "I'm just looking at the world..."
+                </label>
+                <label>
+                    <input class='form-input' type='radio' value='exmachina' name='talking'
+                        onchange="setTalking('exmachina')" />
+                    "It makes me feel... sad"
+                </label>
+                <label>
+                    <input class='form-input' type='radio' value='irobot' name='talking'
+                        onchange="setTalking('irobot')" />
+                    "...can you?"
+                </label>
+            </form>
+            <div class='form-heading enabled'>AI Soloist</div>
+            <form id='soloist'>
+                <label>
+                    <input class='form-input' type='radio' value='ai-true' name='ai' onchange="setAI('true')" checked />
+                    on
+                </label>
+                <label>
+                    <input class='form-input' type='radio' value='ai-false' name='ai' onchange="setAI('false')" />
+                    off
+                </label>
+
+            </form>
+            <div id='buttons-wrapper'>
+                <button id='start' class='button'>start</button>
+                <button id='stop' class='button'>stop</button>
+            </div>
+        </div>
+        <div id='canvas'></div>
+    </div>
+</body>
+<script src='loaf-ai.js'></script>
+
+</html>

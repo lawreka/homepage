@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.visible {
+    display: flex;
+}
+
+.invisible {
+    display: none;
+}
+
+.disabled {
+    color: #d2d2d2;
+}
+
+.enabled {
+    color: #fff;
+}
+
+#loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://lofi-ai-assets.s3.amazonaws.com/images/nightsky.jpg');
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+#spinner {
+    width: 120px;
+    height: 120px;
+}
+
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://lofi-ai-assets.s3.amazonaws.com/images/nightsky.jpg');
+    background-size: cover;
+}
+
+#main-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+#menu-wrapper {
+    padding: 32px;
+}
+
+form {
+    padding: 8px 0px;
+    margin-bottom: 16px;
+    display: flex;
+}
+
+.form-heading {
+    padding: 8px 0px;
+}
+
+label {
+    margin-right: 24px;
+    max-width: 132px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+input {
+    margin-right: 8px;
+}
+
+#buttons-wrapper {
+    padding: 16px 0px;
+}
+
+.button {
+    padding: 4px 16px;
+    border-radius: 4px;
+    background-color: white;
+    border: 2px solid #a8a8a8;
+    margin-right: 24px;
+    font-size: 16px;
+}
+
+#canvas {
+    position: fixed;
+    bottom: 0;
+    background-color: #080d22;
+}
+
+#info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 16px;
+}
+
+#writeup-link {
+    color: #fff;
+    font-size: 12px;
+}

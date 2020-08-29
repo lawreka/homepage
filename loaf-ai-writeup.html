@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kathryn Isabelle Lawrence</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="homepage.css">
+    <link rel="icon" href="images/moonemoji.png">
+    <style>
+        div {
+            padding: 20px;
+            max-width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: justify;
+        }
+
+        #loafgif {
+            width: 100%;
+        }
+
+        @media (max-width: 450px) {
+            div {
+                max-width: 100%;
+            }
+
+            #video {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="video-container">
+        <img id="loafgif" src="./images/loafai.gif">
+    </div>
+    <div class="description">
+        <span style="font-weight:800;">loaf-ai</span><br>
+            loaf-ai was built for the BitRate: Machine Learning & Music hackathon sponsored by <a href="https://grayarea.org/">Gray
+            Area</a> and Google <a href="https://magenta.tensorflow.org/">Magenta</a>.
+    </div>
+    <div class="transcript">
+        loaf-ai allows the listener to assemble a lo fi hip hop track using piano, drum, and sound effect loops. While the
+        tracks are loaded into <a href="https://github.com/Tonejs/Tone.js/">Tone.js</a>, Magenta's Music RNN generates 40
+        samples of acoustic guitar improvisations to play over the selected chord progressions.<br>
+        <br>
+        The resulting composition is a 15-minute-long jam to study / work / relax / to that is complex enough to be
+        musically interesting, but not so unpredictable as to be a distraction. To add some visual interest and draw the
+        listener's attention to the AI soloist's contributions, the guitar track is highlighted as a waveform at the bottom of
+        the playing browser, adapted from Jason Sigal's <a href="https://github.com/therewasaguy/p5-music-viz">p5-music-viz</a>.<br>
+        <br>
+        Lo fi hip hop radio, a trend amongst music streamers on YouTube which <a
+            href="https://www.vice.com/en_us/article/594b3z/how-lofi-hip-hop-radio-to-relaxstudy-to-became-a-youtube-phenomenon">gained
+            prominence in 2017-2018</a> and <a
+            href="https://www.theverge.com/2020/4/20/21222294/lofi-chillhop-youtube-productivity-community-views-subscribers">has
+            not abated</a> in popularity, is fairly easy to reproduce. Numerous tutorials detail the genre's formula as it is
+        distilled in this project: combine a jazzy sample, usually from a piano, with some 80-90bpm bedroom hip hop beats, with
+        atmospheric sound effects like nostalgic movie clips and weather effects.<br>
+        <br>
+        Layering AI-generated music into this formula and making it sound true to genre was the main aesthetic challenge of this
+        project. When first starting with Tone and Magenta, most of the MIDI-based music I created sounded like MIDI: tinny and
+        flat. Using samples from libraries like Nicholaus Brosowsky's <a
+            href="https://github.com/nbrosowsky/tonejs-instruments">tonejs-instruments</a> and <a
+            href="https://splice.com/">Splice</a> went a long way towards making it sound more like "real" music.<br>
+        <br>
+        The next challenge was reigning in Magenta's compositional power. I often find that while computer-generated music is
+        interesting to listen to, it is not always pleasant due to its unpredictability. The model I chose for this project, <a
+            href="https://magenta.github.io/magenta-js/music/classes/_music_rnn_model_.musicrnn.html">MusicRNN</a>, has a
+        continueSequence function that can take chord progressions from the <a href="https://github.com/tonaljs/tonal">tonal</a>
+        library to guide its rampant creativity. The next step was to compose some chord progressions, mostly done in
+        GarageBand, and a starting sample of acoustic guitar noodling over those chords. With these training inputs, the output
+        from Magenta makes what would be a quickly boring 15 minutes of the same chords, beats, and atmospheric loops into a
+        unique composition.<br>
+        <br>
+        I could see an expansion of this project allowing for the user to pick their own chord progressions from any number of
+        chords, generating sequences of different lengths and tones, or to allow for more manipulation by Magenta of other
+        elements like the drums. In the interest of making the compositions as instantly listenable as possible, this project
+        may have compromised on flexibility, but as is, I have some pretty chill background music to train more AI to. 🎶 <br>
+        <hr>
+        <a href="loaf-ai.html"> -> loaf-ai</a><br>
+        <a href="https://github.com/lawreka/lofi"> -> github</a>
+    </div>
+</body>
+
+</html>
