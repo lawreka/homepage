@@ -20,6 +20,9 @@
         #loafgif {
             width: 100%;
         }
+        #video{
+            height: 500px;
+        }
 
         @media (max-width: 450px) {
             div {
@@ -35,11 +38,13 @@
 
 <body>
     <div class="video-container">
-        <img id="loafgif" src="./images/loafai.gif">
+        <iframe id="video" src="https://player.vimeo.com/video/453028009" width="100%" height="auto" frameborder="0"
+            allow="autoplay; fullscreen" allowfullscreen></iframe>
     </div>
     <div class="description">
         <span style="font-weight:800;">loaf-ai</span><br>
-            loaf-ai was built for the BitRate: Machine Learning & Music hackathon sponsored by <a href="https://grayarea.org/">Gray
+        loaf-ai was built for the BitRate: Machine Learning & Music hackathon sponsored by <a
+            href="https://grayarea.org/">Gray
             Area</a> and Google <a href="https://magenta.tensorflow.org/">Magenta</a>.
     </div>
     <div class="transcript">
@@ -82,6 +87,7 @@
         <hr>
         <a href="loaf-ai.html"> -> loaf-ai</a><br>
         <a href="https://github.com/lawreka/lofi"> -> github</a>
+       
     </div>
 </body>
 
