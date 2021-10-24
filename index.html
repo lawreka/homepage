@@ -7,28 +7,6 @@
     <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="homepage.css">
     <link rel="icon" href="images/moonemoji.png">
-    <script>
-      window.addEventListener('load', () => {
-        console.log('uwu');
-        const wait = (time) => {
-          return new Promise((resolve) => setTimeout(resolve, time))
-        }
-
-        const unfuzz = async () => {
-          const myface = document.getElementById('myface');
-          for (let i = 10; i > -1; i--) {
-            await wait(50);
-            myface.style.filter = `blur(${i}px)`;
-          }
-        }
-        myface.addEventListener('load', () => {
-          const myface = document.getElementById('myface');
-          myface.style.filter = 'blur(11px)';
-          myface.style.opacity = '1';
-          unfuzz();
-        });
-      });
-    </script>
   </head>
   <body>
       <marquee>welcome to my website (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ </marquee>
@@ -36,10 +14,8 @@
         <div id="faceplaceholder">
           <img
             id="myface"
-            class="hidden"
             src="https://res.cloudinary.com/klawkloud/image/upload/v1635093562/IMG_7504_copy_2edit_t8h4il.png"
             alt="Kathryn's face"
-            loading="lazy"
           />
         </div>
         <div id="about">
