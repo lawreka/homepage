@@ -4,43 +4,35 @@ body{
   background-color: #fff;
   color: #000;
 }
-#myface{
-  position:fixed;
-  top:0;
-  left: 0;
-  width: 40%;
-  height: 100vh;
-  display: inline-block;
-  overflow: hidden;
+@media (min-width: 450px) {
+  #content {
+    display: flex;
+  } 
 }
-#facepic{
-  padding: 20px;
+#faceplaceholder{
+  background-color: #46b9f2;
+}
+@media (min-width: 450px) {
+  #faceplaceholder{
+    max-width: 50%;
+    height: min-content;
+  }
+}
+#myface{
+  max-width: 100%;
+  height: auto;
+  opacity: 0;
+  margin-bottom: -4px;
 }
 #about{
-  position: fixed;
-  top: 0;
-  left: 30%;
-  width: 30%;
-  height: 100vh;
-  display: inline-block;
-  vertical-align: top;
-  overflow: scroll;
+  padding: 20px;
 }
-#projects{
-  position: fixed;
-  top: 0;
-  left: 60%;
-  width: 40%;
-  height: 100vh;
-  display: inline-block;
-  vertical-align: top;
-  overflow: scroll;
-}
-.abouttext{
+.myname{
+  font-size: 20px;
   padding: 20px;
 }
 .contactlist{
-  padding: 40px;
+  padding-left: 20px;
 }
 ul{
   list-style: none;
@@ -49,46 +41,11 @@ ul{
 a{
   text-decoration: none;
 }
-.myname{
-  font-size: 40px;
-}
-.contacts{
-  padding-bottom: 5px;
-  font-size: 16px;
-  text-align: center;
-}
-.project{
+#projects{
   padding: 20px;
 }
-.projecttext a{
-  color: #666;
-  text-decoration: underline;
-}
-@media (max-width: 450px) {
-  #myface{
-    width: 100%;
-    height: 40vh;
-  }
-  #about{
-    position: absolute;
-    top: 40vh;
-    left: 0;
-    width: 100%;
-    background-color: #fff;
-    padding: 0;
-  }
-  .contactlist{
-    padding: 0px;
-  }
-  .contacts{
-    text-align: left;
-  }
-  #projects{
-    position: absolute;
-    top: 100vh;
-    left: 0;
-    width: 100%;
-    background-color: #fff;
-    overflow: unset;
-  }
+
+.project{
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
