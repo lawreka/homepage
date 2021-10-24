@@ -14,7 +14,7 @@ body{
 }
 @media (min-width: 450px) {
   #faceplaceholder{
-    max-width: 50%;
+    max-width: 40%;
     height: min-content;
   }
 }
