@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+body {
+    margin: 0 !important;
+    font-family: "Inconsolata",
+    sans-serif;
+}
+
+.product-wrapper {
+    margin: 5%;
+    
+    @media (min-width: 0px) and (max-width: 767px) {
+        margin: 0 10px;
+    }
+}
+
+.product-textwrapper {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.product-title {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.product-price {
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.product-description {
+    font-size: 16px;
+    max-width: 500px;
+}
+
+.product-description a {
+    color: #000;
+}
+
+.checkout-button {
+    border: 2px solid black;
+    padding: 8px;
+    cursor: pointer;
+    width: min-content;
+}
+
+.note {
+    background-color: #3eff43;
+    margin-bottom: 16px;
+    padding: 8px;
+    max-width: 500px;
+}
