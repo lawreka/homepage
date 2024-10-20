@@ -40,7 +40,28 @@ li {
 }
 
 .todo {
+  font-size: 14px;
   padding: 16px;
-  font-size: 12px;
   color: #f00;
+}
+
+.ascii-tarot-png {
+  display: block;
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+}
+
+.video-container iframe {
+  height: 500px;
+}
+
+@media (max-width: 450px) {
+  .ascii-tarot-png {
+    width: 100%;
+  }
+
+  .video-container iframe {
+    height: 300px;
+  }
 }
