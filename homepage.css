@@ -1,51 +1,36 @@
-body{
-  margin: 0;
-  font-family: 'Inconsolata', monospace;
-  background-color: #fff;
-  color: #000;
-}
-@media (min-width: 450px) {
-  #content {
-    display: flex;
-  } 
-}
-#faceplaceholder{
-  background-color: #46b9f2;
-}
-@media (min-width: 450px) {
-  #faceplaceholder{
-    max-width: 40%;
-    height: min-content;
-  }
-}
-#myface{
-  max-width: 100%;
-  height: auto;
-  margin-bottom: -4px;
-  image-rendering: -webkit-optimize-contrast;
-}
-#about{
-  padding: 20px;
-}
-.myname{
-  font-size: 20px;
-  padding: 20px;
-}
-.contactlist{
-  padding-left: 20px;
-}
-ul{
-  list-style: none;
-  padding: 0;
-}
-a{
-  text-decoration: none;
-}
-#projects{
-  padding: 20px;
+body {
+  font-family: 'Courier New', Courier, monospace;
 }
 
-.project{
-  padding-left: 20px;
-  padding-bottom: 20px;
+div {
+  max-width: 800px;
+}
+
+.pageHeader {
+  display: flex;
+  padding: 16px;
+  gap: 16px;
+}
+
+.imagePlaceholderWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+.imagePlaceholder {
+  border: 1px solid #000;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.todo {
+  padding: 16px;
+  font-size: 12px;
+  color: #f00;
 }
