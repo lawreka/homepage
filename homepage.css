@@ -4,6 +4,16 @@ body {
 
 div {
   max-width: 800px;
+  margin-bottom: 8px;
+}
+
+ul {
+  max-width: 800px;
+}
+
+li {
+  max-width: 800px;
+  margin-bottom: 8px;
 }
 
 .pageHeader {
