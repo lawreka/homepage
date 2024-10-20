@@ -57,6 +57,10 @@ li {
 }
 
 @media (max-width: 650px) {
+  body {
+    margin: 0px 24px 0px 16px;
+  }
+
   .pageHeader {
     flex-direction: column;
     justify-content: center;
