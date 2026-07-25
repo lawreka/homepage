@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Declaring Clankruptcy</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./blog.css">
+    <link rel="stylesheet" type="text/css" href="../homepage.css">
+    <link rel="icon" href="images/moonemoji.png">
+</head>
+
+<body>
+    <div>
+        <h1>Declaring Clankruptcy</h1>
+        <h3>An experiment in agent orchestration</h3>
+        <br />
+        <div>
+            <i>This blog was <a href="https://www.mintlify.com/blog/declaring-clankruptcy">originally written for
+                    Mintlify</a>
+                and published in February of 2026</i>
+        </div>
+        <div>In the beginning of this year, Mintlify decided to open source its internal component system for making
+            beautiful
+            documentation. For redacted reasons, my Design Engineer colleague <a href="https://pqoqubbw.dev/">Dmytro</a>
+            and I were tasked with doing this as quickly as
+            possible.</div>
+        <figure>
+            <img src="./clankruptcy/declaring-clankruptcy-1.webp" alt="Dmytro (he's him)" />
+            <figcaption>Dmytro (he's him)</figcaption>
+        </figure>
+        <div>In my career working as a professional software developer since 2019, I was slow to adapt to the way AI
+            tooling was
+            changing my craft. I moved back to the Bay Area from Germany in January of 2025, and thought I really only
+            needed to
+            practice my leetcode for interviews. I wasn’t interested in using an IDE with a chat pane, or having my code
+            autocompleted. I wrote all my own brackets (having just abandoned the sweet embrace of <a
+                href="https://clojure.org/">Clojure parentheses</a>),
+            and have to
+            admit, writing my code the old fashioned way one character at a time made me feel morally superior to those
+            using
+            AI-powered coding tools.</div>
+        <div>I changed my tune real quick after joining Mintlify. I had to adapt to working with a team of Zoomer
+            engineers who were
+            all-in on using the latest AI-native tools. The Mintlify team doesn’t use the word “clanker” as a <a
+                href="https://en.wikipedia.org/wiki/Clanker">derogatory term</a> for an
+            AI agent, but refers to “clanking” specifically as an activity that is functionally distinct from
+            “programming.” My
+            plain VSCode setup was traded for Cursor and Claude Code. My code reviews were provided by <a
+                href="https://www.greptile.com/">Greptile</a> and
+            <a href="https://cursor.com/bugbot">Bugbot</a>. Claude
+            became my constant companion and pairing partner, and while I was skeptical at first, the improvements of
+            the various
+            coding models we used over the last year did accelerate my shipping velocity. As more advanced clanking
+            techniques
+            emerged, I learned about the <a
+                href="https://github.com/anthropics/claude-code/blob/main/plugins/ralph-wiggum/README.md">Ralph
+                Wiggum</a> loop and chuckled at the sprawling Zorklike insanity of <a
+                href="https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04">Gas Town</a>.
+        </div>
+        <img src="./clankruptcy/declaring-clankruptcy-2.webp"
+            alt="clankruptcy noun: starting your PR from scratch after attempting to vibe code it or delegate it to an agent who did not understand the assignment" />
+        <div>Migrating the components from our monorepo was a blessedly well-scoped project: look at approximately 36
+            named React
+            components, genericize the duplicates, remove NextJS-specific dependencies, purify them of cruft and
+            business logic,
+            migrate them to the latest Tailwind version, and publish them with examples in a Storybook.</div>
+        <div>I was doing this mostly by hand, with a little bit of clanking. As in most projects, the review loop was
+            the slowest
+            part of the development cycle: one engineer who was supporting the project was still intermittently
+            unavailable due to
+            holiday travel, and Dmytro is based in a different time zone, so I was mostly relying on Bugbot leaving
+            comments on my
+            PRs, which took ~10 minutes to re-run and comment again on every push. One PR went through 13 Bugbot
+            reviews; on average
+            it took 5. We developed a love-hate relationship, and I would only request a human reviewer once Bugbot was
+            satisfied.</div>
+        <div>We were two days into a project that was supposed to take just five and it was sitting at 11% completion
+            with 4 out of
+            36 components done. There’s a quote attributed to Warren Buffet that goes, “If you don’t find a way to make
+            money while
+            you sleep, you will work until you die.” If we didn’t learn to ship while we slept, there was no way we
+            would make this
+            deadline. I decided it was time to try agent orchestration.</div>
+        <div>I designated my local Claude CLI agent as “Boss Claude” and set up a pure markdown directory for my
+            orchestra:</div>
+        <pre>
+            orchestrator/
+            |-- plan.md
+            |-- components.md
+            |-- prompts/
+            | |-- migration.md
+            | |-- bugfix.md
+            |-- state/
+            |-- log.md
+            |-- active-workers.md
+            |-- bugbot-comments-seen.md
+        </pre>
+        <div><b>Top level:</b></div>
+        <div><b>plan.md</b>: Boss Claude’s instructions to keep track of logs and agents, spawning up to 3 parallel
+            workers
+            with
+            the Task
+            tool to execute the migration and bugfix tasks
+        </div>
+        <div><b>components.md</b>: my list of remaining components to migrate (after removing duplicates and works in
+            progress
+            delegated to
+            other humans, this was a docket of 18 components), with a table including the component name, branch name,
+            PR number, PR
+            status, and count of Bugbot review rounds completed
+        </div>
+        <div><b>Prompts:</b></div>
+        <div><b>migration.md</b>: the instructions for migrating a component from our monorepo to the open source
+            library, based on my
+            manual process and some additional agent rules</div>
+        <div><b>bugfix.md</b>: the instructions for the Bugbot review loop: to check for new PR comments from Bugbot
+            every minute, add them
+            to the bugbot-comments seen, and address them</div>
+        <div><b>State:</b></div>
+        <div><b>log.md</b>: an event log for Boss Claude to write to, including all the workers spawned, PRs opened, and
+            other events in
+            case I had to stop and restart the orchestration</div>
+        <div><b>active-workers.md</b>: an event log with a table containing the spawned agent ID, the component and PR
+            number they worked
+            on, their current task (migration or bugfix), and timestamp</div>
+        <div><b>bugbot-comments-seen.md</b>: an event log with a table containing the PR number, comment ID, timestamp
+            of the comment,
+            summary of the bug, and whether it was already fixed or not</div>
+        <div>
+            I told Boss Claude “go” at 13:00 local time, and in 45 minutes it had created 18 PRs, “completing” the first
+            pass of
+            migration for the remaining components.
+        </div>
+        <img src="./clankruptcy/declaring-clankruptcy-3.webp" alt="slack status report at 13:00" />
+        <div>In those 45 minutes, I:</div>
+        <ul>
+            <li>
+                watched the <a
+                    href="https://video.disney.com/watch/sorcerer-s-apprentice-fantasia-4ea9ebc01a74ea59a5867853">Sorcerer’s
+                    Apprentice</a> sequence from Fantasia
+            </li>
+            <li>listened to an episode of <a href="https://podcasts.apple.com/us/podcast/shell-game/id1753117762">Shell
+                    Game</a></li>
+            <li>played a little <a href="https://umamusume.com/">UmaMusume: Pretty Derby</a></li>
+            <li>ate a package of roasted seaweed snacks and <a
+                    href="https://en.wikipedia.org/wiki/Thinking_about_the_immortality_of_the_crab">pondered the
+                    immortality of the crab</a></li>
+        </ul>
+
+        <div>(all excellent uses of my time)</div>
+        <div>Once we were onto the review cycle for the PRs, I made a tweak to the orchestrator. Dmytro had pointed out
+            that instead
+            of waiting the 10 minutes for Bugbot re-reviews, we could try using the cursor-agent CLI, which would
+            theoretically take
+            the same machete to the PR, but could be run locally by the Task agents in a loop without pushing and
+            waiting.</div>
+        <img src="./clankruptcy/declaring-clankruptcy-4.webp"
+            alt="dmytro investigates usage of cursor-agent CLI via twitter" />
+        <div>By 14:18, all of the PRs were in the new Bugbot and cursor-agent review loop, and I was getting restless:
+        </div>
+        <img src="./clankruptcy/declaring-clankruptcy-5.webp" alt="kathryn slack update at 14:18" />
+        <img src="./clankruptcy/declaring-clankruptcy-6.webp"
+            alt="kathryn checking in with boss claude via the terminal" />
+        <div>Expecting the review loop to take much longer, I did more productive things than play on my phone for the
+            next two
+            hours, and by 16:06 the bots had finished. It was time to review all of the fully clanked PRs with my human
+            eyes: five
+            were surprisingly good, five were maybe OK with some work, and eight were hilariously bad.</div>
+        <div>At the end of that Wednesday, I declared the orchestration experiment a generous 40% successful, and spent
+            the next day
+            cleaning up the Claudes’ PRs in order from best to worst, hoping that they had created at least a good
+            starting point
+            for other engineers joining the project to jump in.</div>
+        <div>By the end of Thursday, only two more components had fully shipped after passing human review. The
+            orchestration
+            experiment made the work on this project 0% faster.</div>
+        <div>We didn’t make the deadline. Two more PRs were able to merge on Friday, and after two days trying to clean
+            them up, we
+            declared clankruptcy and closed the remaining Clauded branches.</div>
+        <img src="./clankruptcy/declaring-clankruptcy-7.webp" alt="kathryn status report declaring clankruptcy" />
+        <div>We pushed the deadline to the next Friday, and the next week I consistently woke up to new components being
+            shipped, but
+            it wasn’t agents shipping while I slept: it was my absolutely cracked colleague based in the CET time zone.
+            Dmytro and I
+            ended up migrating all of version 1.0.0 of the open source components library by our adjusted end date, and
+            despite
+            missing our original deadline, we think we did a pretty good job starting a project where Mintlify can learn
+            and grow
+            with its open source community (even if they demand that the next thing we do is <a
+                href="https://github.com/mintlify/components/issues/179">rewrite it in Rust</a>).</div>
+        <div><b>What did we learn:</b></div>
+        <ul>
+            <li><b>Git worktrees</b> were incredibly helpful for this project. Even after abandoning the agent branches,
+                I continued working in
+                worktrees</li>
+            <li><b>Markdown is all you need</b> - when I was figuring out how to set up the orchestrator, I very quickly
+                abandoned the idea of
+                using a python or bash script loop. Boss Claude followed all of the instructions I laid out and did
+                everything I needed
+                it to do with agents in three hours. Here’s the breakdown of the work from Boss Claude himself:
+                <pre>
+                ## Timeline & Duration
+                - **Round 1 started**: ~13:00 local time (workflow-started)
+                - **Round 1 completed**: ~14:00 (all 18 PRs opened)
+                - **Round 2 (code review)**: ~14:30-16:00
+                - **Final completion**: ~16:01 (last file write)
+                - **Total time**: ~3 hours
+                
+                ## Agents Spawned
+                - **Round 1 (migration)**: 18 workers (6 batches of 3)
+                - **Round 2 (code review)**: 18+ workers for reviews + additional fix workers
+                - **Total worker invocations**: ~40+
+                
+                ## Work Completed
+                | Metric                    | Count         |
+                |--------                   |-------        |
+                | Components migrated       | 18            |
+                | PRs opened                | 18 (#131-148) |
+                | Bugbot comments received  | 38            |
+                | Bugbot issues fixed       | 38 (100%)     |
+                | Cursor-agent issues fixed | ~30           |
+                | Builds passing            | 18/18         |
+            </pre>
+            </li>
+            <li><b>Claude is still pretty bad at frontend coding if you do not give him eyes.</b> If I were to use
+                coding agents to do this
+                kind of work again, I would definitely add a step with a browser automation in the loop, using Puppeteer
+                or Playwright
+                to compare the desired look of the components to the work in progress. Most of the manual cleanup
+                involved comparing the
+                existing and new Storybooks’ versions of the components, and that step need not have been manual if I
+                had set up more
+                tooling for Claude to do this.</li>
+        </ul>
+        <hr>
+        <a href="../index.html"> -> home</a><br>
+    </div>
+</body>
+
+</html>

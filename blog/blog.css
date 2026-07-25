@@ -1,0 +1,25 @@
+img {
+    display: block;
+    max-width: 80%;
+    width: auto;
+    height: auto;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure {
+    display: block;
+    max-width: 80%;
+    width: auto;
+    height: auto;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+pre {
+    text-wrap: auto;
+    background-color: #F0F0F0;
+    width: auto;
+}
