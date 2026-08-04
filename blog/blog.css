@@ -18,6 +18,10 @@ figure {
     margin-right: auto;
 }
 
+figcaption {
+    text-align: center;
+}
+
 pre {
     text-wrap: auto;
     background-color: #F0F0F0;
