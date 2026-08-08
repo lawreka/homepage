@@ -1,6 +1,8 @@
-img {
+img,
+figure,
+iframe {
     display: block;
-    max-width: 80%;
+    max-width: 100%;
     width: auto;
     height: auto;
     margin: 20px;
@@ -8,17 +10,8 @@ img {
     margin-right: auto;
 }
 
-figure {
-    display: block;
-    max-width: 80%;
-    width: auto;
-    height: auto;
-    margin: 20px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-figcaption {
+figcaption,
+h1 {
     text-align: center;
 }
 
