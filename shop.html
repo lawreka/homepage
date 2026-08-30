@@ -1,54 +1,79 @@
 <!DOCTYPE html>
 
 <head>
-    <title>buy the IRL deck</title>
+    <title>ascii-tarot the IRL deck 2nd edition</title>
     <meta name='viewport' content='width=device-width,initial-scale=1'>
-    <meta name="description" content="the deck" />
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+    <meta name="description" content="ascii-tarot the IRL deck 2nd edition" />
     <link rel='stylesheet' type='text/css' href='shop.css' />
+    <link rel="icon" href="images/moonemoji.png">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
 </head>
 
-<body>
-    <div class="product-wrapper">
-        <img src="https://res.cloudinary.com/klawkloud/image/upload/v1650110358/the-deck/DSC00826_jrkcke.jpg"
-            width="300px" height="auto" />
-        <img src="https://res.cloudinary.com/klawkloud/image/upload/v1650110355/the-deck/DSC00925_rexxn2.jpg"
-            width="300px" height="auto" />
-        <img src="https://res.cloudinary.com/klawkloud/image/upload/v1650110361/the-deck/DSC00840_ssfrsm.jpg"
-            width="300px" height="auto" />
-        <div class="product-textwrapper">
-            <div class="product-title">the IRL deck</div>
-            <div class="product-price">pay-what-thou-wilt (+ shipping)</div>
-            <div class="product-description">
-                <p>the ascii-tarot IRL deck (first edition, dark mode) </p>
-                <div class="note">
-                    if you are interested in receiving an email when the second edition of the IRL deck is available
-                    later this year, <a
-                        href="mailto:kathrynisabellelawrence@gmail.com?subject=add me to the irl deck update list plz">click
-                        here</a> to send me an email with the subject line "add me to the irl deck update list plz"
-                </div>
-                <p>79-card green-on-black tarot deck featuring the illustrations from the npm package <a
-                        href="https://www.npmjs.com/package/ascii-tarot">ascii-tarot</a>
-                </p>
-                <p>printed on S33 "Superior Smooth" card stock
-                </p>
-                <p>limited 101-deck print run</p>
-                <p>incl. black velvet carrying pouch</p>
+<body class="yinyang">
+    <div class="mode-switcher">
+        <button class="mode-btn" data-mode="light">&#9788;</button>
+        <button class="mode-btn active" data-mode="yinyang">&#9775;</button>
+        <button class="mode-btn" data-mode="dark">&#9789;</button>
+    </div>
 
-                <p>the ascii-tarot store has reopened via ko-fi allowing you to set your own price
-                    for the deck (they wouldn't let me set it to $0 so the minimum is $1) and pay only for shipping ($15
-                    within the US, $30 Canada, $50 international)</p>
+    <div class="banner">
+        <img class="light-img" src="images/shop/header-light.png" alt="ascii-tarot" />
+        <img class="dark-img" src="images/shop/header-dark.png" alt="ascii-tarot" />
+    </div>
 
-                <div class="checkout-button">
-                    <a href="https://ko-fi.com/s/5613fe733b">
-                        pay-what-thou-wilt via ko-fi
-                    </a>
-                </div>
-            </div>
-
-
+    <div class="cards">
+        <div class="card-side card-side-left">
+            <img class="light-img" src="images/shop/rules-card-light.png" alt="Rules Card" />
+            <img class="dark-img" src="images/shop/rules-card-dark.png" alt="Rules Card" />
+        </div>
+        <div class="model-wrapper">
+            <model-viewer class="model-light" src="images/shop/deck-model-light.glb" auto-rotate disable-zoom
+                disable-pan disable-tap camera-orbit="0deg 50deg auto" shadow-intensity="0" environment-image="neutral"
+                exposure="1" auto-rotate-delay="0" rotation-per-second="15deg" interaction-prompt="none"></model-viewer>
+            <model-viewer class="model-dark" src="images/shop/deck-model-dark.glb" auto-rotate disable-zoom disable-pan
+                disable-tap camera-orbit="0deg 50deg auto" shadow-intensity="0" environment-image="neutral" exposure="1"
+                auto-rotate-delay="0" rotation-per-second="15deg" interaction-prompt="none"></model-viewer>
+        </div>
+        <div class="card-side card-side-right">
+            <img class="light-img" src="images/shop/rules-card-light.png" alt="Rules Card" />
+            <img class="dark-img" src="images/shop/rules-card-dark.png" alt="Rules Card" />
         </div>
     </div>
+
+    <div class="product-info">
+        <div class="product-title">the IRL deck</div>
+        <div class="product-subtitle">2nd edition</div>
+        <p>79-card <span class="light-desc">pink-on-white</span><span class="yinyang-desc">/</span><span
+                class="dark-desc">green-on-black</span> tarot deck featuring the illustrations from the npm package <a
+                href="https://www.npmjs.com/package/ascii-tarot">ascii-tarot</a>
+        </p>
+        <p>printed on S33 "Superior Smooth" card stock
+        </p>
+        <p>2nd edition now available in light and dark modes</p>
+        <p>incl. velvet carrying pouch</p>
+
+        <p>the ascii-tarot store has reopened via ko-fi allowing you to set your own price
+            for the deck (they wouldn't let me set it to $0 so the minimum is $1) and pay only for shipping ($15
+            within the US, $30 Canada, $50 international)</p>
+
+        <div class="checkout-button">
+            <a href="https://ko-fi.com/s/5613fe733b">
+                pay-what-thou-wilt via ko-fi
+            </a>
+        </div>
+    </div>
+
+    <script>
+        const body = document.body;
+        const buttons = document.querySelectorAll('.mode-btn');
+        buttons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                buttons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                body.className = btn.dataset.mode;
+            });
+        });
+    </script>
 </body>
 
 </html>
